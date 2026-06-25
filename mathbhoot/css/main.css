@@ -1,0 +1,150 @@
+/* main.css */
+@import url('style.css'); /* Global styles like fonts and branding */
+@import url('home.css');  /* Homepage specific layouts */
+
+/* Margin for elements can touch edge */
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x:hidden; /*prevents horizontal scrollbar*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* Fix header to top*/
+.site-header{
+    padding-top: 0.45%;
+    position: fixed; /*keeps it locked at the top*/
+    top: 0;
+    left: 0;
+    width: 100%; /* ensures full width */
+    z-index: 1000;/*keep it above all content*/
+    background: #000000;
+    padding-bottom: 0.36%;
+}
+/* Base Navbar Styles */
+/* ensures the navbar inside follow the header width*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+    background: #000000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-toggle {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1 rem;
+    cursor: pointer;
+}
+/* Mobile Firsr: Default styles apply to all devices */
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block; /* Show toggle on mobile */
+    }
+    
+    .nav-links {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1a1a1a;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Shown when toggled */
+    }
+}
+/* add enough padding so content starts below the header*/
+main {
+    padding: top 80px;
+    flex:1; /* forces the main container to fill available spaces*/
+}
+
+/* fixed-quote*/
+.fixed-quote{
+    position:absolute;
+    bottom: 60px;
+    left:0;
+    width:100%;
+    text-align: center;
+    pointer-events: none;
+   
+
+}
+
+/* Footer Styles 100% width and stays at bottom */
+.site-footer {
+    padding-bottom: 0%;
+    width: 100%;
+    background: #000000da; /* Dark theme to match your mystery vibe */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Ensures it stays at bottom if page is short */
+    z-index: 1000;
+}
+
+.fixed-quote p{
+    color: #ffffff;
+    font-size: 1 rem;
+    font-style: italic;
+    /*glow*/
+    text-shadow:
+    0 0 5px #fff,
+    0 0 15px #b6b3ba,
+    0 0 40px #19013c,
+    0 0 80px #000000 ;
+    /*animation*/
+    text-shadow: 0.3s;
+    
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: blink;
+}
+
+/* Ensure body uses Flexbox for sticky footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
