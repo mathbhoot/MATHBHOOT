@@ -18,7 +18,7 @@ Reports will be reviewed and addressed as appropriate.
  supported Versions
 ---
 
-Mathbhoot is currently under active development.
+MATHBHOOT is currently under active development.
 
 Security updates are applied to the latest version available at:
 
@@ -29,7 +29,7 @@ Scope
 
 This policy applies to:
 
-- Mathbhoot website
+- MATHBHOOT website
 - Repository source code
 - Project infrastructure
 - Future web applications and services associated with Mathbhoot
@@ -43,4 +43,4 @@ Thank you for helping keep Mathbhoot secure.
 
 ---
 
-© 2026 Mathbhoot. All Rights Reserved.
+© 2026 MATHBHOOT. All Rights Reserved.

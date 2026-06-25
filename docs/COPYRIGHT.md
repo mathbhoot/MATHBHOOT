@@ -1,14 +1,14 @@
 # Copyright Notice 
 
 <h1>MATHBHOOT</h1>
-<h4>Where Mathematics Meets Mystery</h4>
+<h4>WHERE MATHEMATICS MEETS MYSTERY</h4>
 ---
 
 <small><b>© 2026 Mathbhoot. All Rights Reserved.</b></small>
 
 
 
-Mathbhoot is an original educational and storytelling project.
+MATHBHOOT is an original educational and storytelling project.
 
 The following are protected:
 

@@ -1,7 +1,7 @@
 Terms of Use
 ---
 <h1>MATHBHOOT</h1>
-<h4>Where Mathmematics Meets Mystery</h4>
+<h4>WHERE MATHEMATICS MEETS MYSTERY</h4>
 
 ---
 All content on this website and repository is protected by copyright and intellectual property laws.
@@ -11,7 +11,7 @@ Users may:
 
 - View publicly available content
 - Access educational materials for personal learning
-- Share links to official Mathbhoot pages
+- Share links to official MATHBHOOT pages
 
 Users may not:
 ---
@@ -20,9 +20,9 @@ Users may not:
 - Reproduce characters
 - Reuse artwork
 - Republish educational materials
-- Create derivative works based on Mathbhoot content
-- Use Mathbhoot branding without permission
+- Create derivative works based on MATHBHOOT content
+- Use MATHBHOOT branding without permission
 
-Mathbhoot reserves all rights not expressly granted.
+MATHBHOOT reserves all rights.
 
 For permissions or licensing requests, contact the project owner.
