@@ -1,38 +1,18 @@
-/* Layout the screen */
-body {
-    display: grid;
-    grid-template-columns: 1fr 200px; /* Main content + Sidebar */
-    padding: 20px;
-}
 
-/* Left Hero Section */
-.hero-content {
-    max-width: 500px;
-}
-/* Margin for elements can touch edge */
-body, html{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x:hidden; /*prevents horizontal scrollbar*/
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-/* Fix header to top*/
-.site-header{
-    padding-top: 0.45%;
-    position: fixed; /*keeps it locked at the top*/
-    top: 0;
-    left: 0;
-    width: 100%; /* ensures full width */
-    z-index: 1000;/*keep it above all content*/
-    background: #000000;
-    padding-bottom: 0.36%;
-}
+/* =========================
+   NAVBAR
+========================= */
 /* Base Navbar Styles */
 /* ensures the navbar inside follow the header width*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 .navbar {
+    position: fixed;
+    top:0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +28,7 @@ body, html{
 }
 
 .nav-links a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -57,17 +37,26 @@ body, html{
     display: none; /* Hidden on desktop */
     background: none;
     border: none;
-    color: white;
+    color: #ffffff;
     font-size: 1 rem;
     cursor: pointer;
 }
-
-/* add enough padding so content starts below the header*/
-main {
-    padding: top 80px;
-    flex:1; /* forces the main container to fill available spaces*/
+.nav-links a:hover,
+.nav-links a:focus-visible{
+    color:blueviolet;
+    border-bottom-color:blueviolet;
 }
 
+.nav-links a.active{
+    color:blueviolet;
+    border-bottom-color:blueviolet;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+/* add enough padding so content starts below the header*/
 /* fixed-quote*/
 .fixed-quote{
     position:absolute;
