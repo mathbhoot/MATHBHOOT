@@ -47,15 +47,58 @@
     display: block;
 }
 
+/* ===== ANDROID/MOBILE FIX ===== */
+/* Disable 3D transforms on mobile devices */
 @media (max-width: 700px){
     .banner{
         min-height: 360px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
     }
 
     .banner .slider{
         --card-width: clamp(72px, 20vw, 96px);
         --card-height: clamp(98px, 28vw, 130px);
         --gallery-radius: clamp(130px, 36vw, 175px);
-        top: 90px;
+        position: relative;
+        left: auto;
+        margin-left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        display: flex;
+        gap: 15px;
+        padding: 20px 15px;
+        animation: none;
+        transform: none !important;
+        transform-style: flat;
+        perspective: none;
+    }
+
+    .banner .slider .item{
+        position: relative;
+        inset: auto;
+        transform: none !important;
+        backface-visibility: visible;
+        flex: 0 0 auto;
+        width: var(--card-width);
+        height: var(--card-height);
+    }
+}
+
+@media (max-width: 480px){
+    .banner{
+        min-height: auto;
+    }
+
+    .banner .slider{
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .banner .slider .item{
+        width: clamp(60px, 18vw, 80px);
+        height: clamp(80px, 24vw, 110px);
     }
 }
