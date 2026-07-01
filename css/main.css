@@ -1,4 +1,3 @@
 /* main.css */
 @import url('style.css'); /* Global styles like fonts and branding */
 @import url('home.css');  /* Homepage specific layouts */
-@import url('about.css'); /* About page specific layout */

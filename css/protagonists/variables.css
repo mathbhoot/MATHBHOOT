@@ -1,0 +1,24 @@
+:root{
+
+--mb-bg:#050b09;
+
+--mb-card:#081310;
+
+--mb-green:#7ef5d8;
+
+--mb-green-dark:#27c9a7;
+
+--mb-border:#1f6b5f;
+
+--mb-glow:rgba(126,245,216,.65);
+
+--mb-text:#d9fdf4;
+
+--mb-muted:#9bc4bb;
+
+--mb-shadow:
+0 0 10px rgba(126,245,216,.15),
+0 0 25px rgba(126,245,216,.08);
+
+}
+

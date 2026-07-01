@@ -365,25 +365,17 @@ a{
     line-height:1.55;
     overflow-wrap:break-word;
 }
-/* This makes sure your 3D Canvas sits behind everything else */
-#webgl {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1; /* Behind the text */
+/* Footer */
+.site-footer {
+    padding-bottom: 0%;
+    width: 100%;
+    background: #000000; /* Dark theme to match your mystery vibe */
+    color: #ffffff;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: auto; /* Ensures it stays at bottom if page is short */
+    z-index: 1000;
 }
-
-/* This ensures your UI sits on top of the 3D scene */
-#home-scene {
-    position: relative;
-    z-index: 2; /* In front of the 3D scene */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
 
 /* =========================
    TABLETS

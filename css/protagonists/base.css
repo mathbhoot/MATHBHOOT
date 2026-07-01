@@ -1,0 +1,234 @@
+/* ================================= */
+/* MATHBHOOT PROTAGONIST BASE */
+/* ================================= */
+
+/* Theme Variables */
+@import url("../protagonists/variables.css");
+
+
+/* ================================= */
+/* RESET */
+/* ================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* flexbox grid top structure */
+.hero-wrapper{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.hero-left, .character-content{
+    flex: 1;
+}
+.hero-image img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* ================================= */
+/* GLOBAL */
+/* ================================= */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--mb-bg);
+
+    color:var(--mb-text);
+
+    font-family:
+    Georgia,
+    serif;
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+
+/* ================================= */
+/* LINKS */
+/* ================================= */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+
+/* ================================= */
+/* IMAGES */
+/* ================================= */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+
+/* ================================= */
+/* HEADINGS */
+/* ================================= */
+
+h1{
+
+    color:var(--mb-green);
+
+    font-size:clamp(3rem,6vw,6rem);
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+h2{
+
+    color:var(--mb-text);
+
+    font-size:clamp(1.5rem,3vw,2.5rem);
+
+    font-weight:400;
+
+}
+
+h3{
+
+    color:var(--mb-green);
+
+    font-size:1rem;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+
+/* ================================= */
+/* PARAGRAPHS */
+/* ================================= */
+
+p{
+
+    color:var(--mb-muted);
+
+    font-size:1rem;
+
+}
+
+
+/* ================================= */
+/* MAIN */
+/* ================================= */
+
+main{
+
+    width:min(1400px,95%);
+
+    margin:auto;
+
+}
+
+
+/* ================================= */
+/* SECTION */
+/* ================================= */
+
+section{
+
+    padding:5rem 0;
+
+}
+
+
+/* ================================= */
+/* BUTTONS */
+/* ================================= */
+
+button{
+
+    background:transparent;
+
+    color:var(--mb-green);
+
+    border:3px solid var(--mb-border);
+
+    padding:14px 28px;
+
+    cursor:pointer;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    transition:.35s ease;
+
+}
+
+button:hover{
+
+    box-shadow:var(--mb-shadow);
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ================================= */
+/* GENERIC CARD */
+/* ================================= */
+
+.card{
+
+    background:var(--mb-card);
+
+    border:1px solid var(--mb-border);
+
+    box-shadow:var(--mb-shadow);
+
+    border-radius:12px;
+
+    padding:1.5rem;
+
+}
+
+
+/* ================================= */
+/* SECTION TITLES */
+/* ================================= */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:3rem;
+
+    color:var(--mb-green);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+

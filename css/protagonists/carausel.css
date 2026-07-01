@@ -1,0 +1,112 @@
+.future-protagonists{
+    padding: 32px 20px;
+    overflow: hidden;
+}
+
+.protagonists-slider{
+    position: relative;
+    width: min(100%, 980px);
+    margin: 0 auto;
+    padding: 10px 48px 34px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.protagonists-slider .swiper-wrapper{
+    display: flex;
+    align-items: stretch;
+}
+
+.protagonists-slider .swiper-slide{
+    flex-shrink: 0;
+    height: auto;
+}
+
+.protagonist-card{
+    position: relative;
+    min-height: 320px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.protagonist-card a{
+    display: block;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.protagonist-card img{
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.protagonist-card .card-info{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 14px 16px;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.82));
+    color: #ffffff;
+}
+
+.protagonist-card .card-info h3,
+.protagonist-card .card-info p{
+    margin: 0;
+}
+
+.protagonists-slider .swiper-button-next,
+.protagonists-slider .swiper-button-prev{
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 38px;
+    height: 38px;
+    margin-top: -19px;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.52);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.protagonists-slider .swiper-button-prev{
+    left: 4px;
+}
+
+.protagonists-slider .swiper-button-next{
+    right: 4px;
+}
+
+.protagonists-slider .swiper-button-next::after,
+.protagonists-slider .swiper-button-prev::after{
+    display: block;
+    line-height: 36px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.protagonists-slider .swiper-button-prev::after{
+    content: "<";
+}
+
+.protagonists-slider .swiper-button-next::after{
+    content: ">";
+}
+
+@media (max-width: 700px){
+    .protagonists-slider{
+        padding-right: 42px;
+        padding-left: 42px;
+    }
+
+    .protagonist-card,
+    .protagonist-card img{
+        height: 280px;
+        min-height: 280px;
+    }
+}

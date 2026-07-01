@@ -1,0 +1,122 @@
+/* ================================= */
+/* FROM THE BOOK SECTION */
+/* ================================= */
+
+.book-section{
+
+    display:grid;
+
+    grid-template-columns:
+    280px
+    1fr;
+
+    gap:3rem;
+
+    align-items:center;
+
+    padding:4rem;
+
+    background:var(--mb-card);
+
+    border:1px solid var(--mb-border);
+
+    box-shadow:var(--mb-shadow);
+
+    border-radius:14px;
+
+}
+
+
+/* ================================= */
+/* BOOK COVER */
+/* ================================= */
+
+.book-cover{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.book-cover img{
+
+    width:240px;
+
+    border-radius:10px;
+
+    border:1px solid var(--mb-border);
+
+    transition:.4s ease;
+
+}
+
+.book-cover img:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 15px rgba(126,245,216,.25),
+    0 0 40px rgba(126,245,216,.15);
+
+}
+
+
+/* ================================= */
+/* BOOK CONTENT */
+/* ================================= */
+
+.book-content h2{
+
+    color:var(--mb-green);
+
+    margin-bottom:1rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.book-content p{
+
+    max-width:650px;
+
+    margin-bottom:2rem;
+
+}
+
+
+/* ================================= */
+/* BOOK BUTTON */
+/* ================================= */
+
+.book-content button{
+
+    min-width:220px;
+
+}
+
+
+/* ================================= */
+/* BOOK QUOTE */
+/* ================================= */
+
+.book-content i{
+
+    color:var(--mb-text);
+
+}
+
+
+/* ================================= */
+/* SECTION GLOW */
+/* ================================= */
+
+.book-section:hover{
+
+    box-shadow:
+    0 0 12px rgba(126,245,216,.15),
+    0 0 35px rgba(126,245,216,.08);
+
+}

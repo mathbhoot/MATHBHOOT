@@ -1,4 +1,3 @@
-
 /* =========================
    NAVBAR
 ========================= */
@@ -9,6 +8,7 @@
     padding:0;
     box-sizing:border-box;
 }
+
 .navbar {
     position: fixed;
     top:0;
@@ -24,12 +24,11 @@
 .nav-links {
     display: flex;
     list-style: none;
-    font-weight: bold;
     gap: 25px;
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -38,53 +37,26 @@
     display: none; /* Hidden on desktop */
     background: none;
     border: none;
-    color: #ffffff;
+    color: white;
     font-size: 1 rem;
     cursor: pointer;
 }
+
+
 .nav-links a:hover,
 .nav-links a:focus-visible{
-    color:blueviolet;
-    border-bottom-color:blueviolet;
+    color:rgba(126,245,216,.65);
+    border-bottom-color:rgba(126,245,216,.65);
 }
 
 .nav-links a.active{
-    color:blueviolet;
-    border-bottom-color:blueviolet;
+    color:rgba(126,245,216,.65);
+    border-bottom-color:rgba(126,245,216,.65);
 }
-
 
 html{
     scroll-behavior:smooth;
 }
-/* add enough padding so content starts below the header*/
-/* fixed-quote*/
-.fixed-quote{
-    position:absolute;
-    bottom: 60px;
-    left:0;
-    width:100%;
-    text-align: center;
-    pointer-events: none;
-   
-
-}
-
-.fixed-quote p{
-    color: #ffffff;
-    font-size: 1 rem;
-    font-style: italic;
-    /*glow*/
-    text-shadow:
-    0 0 5px #fff,
-    0 0 15px #b6b3ba,
-    0 0 40px #19013c,
-    0 0 80px #000000 ;
-    /*animation*/
-    text-shadow: 0.3s;
-    
-}
-
 
 /* Ensure body uses Flexbox for sticky footer */
 body{
@@ -98,7 +70,6 @@ body{
     line-height:1.8;
     padding: 5px;
 }
-
 /* Footer */
 .site-footer {
     padding-bottom: 0%;
@@ -110,11 +81,21 @@ body{
     margin-top: auto; /* Ensures it stays at bottom if page is short */
     z-index: 1000;
 }
-@media (max-width: 768px) {
+
+/* =========================
+   TABLETS
+========================= */
+
+@media(max-width:768px){
+    
     .nav-toggle {
         display: block; /* Show toggle on mobile */
     }
-    
+    .nav-logo {
+        width: 50px; /* Adjust this value to make the logo smaller */
+        height: auto;
+    }
+   
     .nav-links {
         display: none; /* Hide menu by default on mobile */
         flex-direction: column;
@@ -126,9 +107,10 @@ body{
         text-align: center;
         padding: 20px 0;
     }
-
     .nav-links.active {
         display: flex; /* Shown when toggled */
     }
 }
+
+
 

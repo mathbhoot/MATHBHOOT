@@ -1,0 +1,258 @@
+/* ================================= */
+/* STAT CARD GRID */
+/* ================================= */
+
+.ansh-stats{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:1.5rem;
+
+    margin:3rem 0;
+
+}
+
+
+/* ================================= */
+/* INDIVIDUAL STAT CARD */
+/* ================================= */
+
+.stat-card{
+
+    background:var(--mb-card);
+
+    border:1px solid var(--mb-border);
+
+    border-radius:12px;
+
+    padding:1.5rem;
+
+    text-align:center;
+
+    transition:.35s ease;
+
+    box-shadow:var(--mb-shadow);
+
+}
+
+
+.stat-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 0 15px rgba(126,245,216,.25),
+    0 0 35px rgba(126,245,216,.15);
+
+}
+
+
+/* ================================= */
+/* CARD TITLES */
+/* ================================= */
+
+.stat-card h3{
+
+    margin-bottom:.8rem;
+
+    color:var(--mb-green);
+
+    font-size:.9rem;
+
+    letter-spacing:1px;
+
+}
+
+
+/* ================================= */
+/* CARD VALUES */
+/* ================================= */
+
+.stat-card p{
+
+    color:var(--mb-text);
+
+    font-size:1rem;
+
+}
+
+
+/* ================================= */
+/* GENERIC INFO CARD */
+/* ================================= */
+
+.info-card{
+
+    background:var(--mb-card);
+
+    border:1px solid var(--mb-border);
+
+    border-radius:14px;
+
+    padding:2rem;
+
+    transition:.35s ease;
+
+    box-shadow:var(--mb-shadow);
+
+}
+
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* ================================= */
+/* ABILITY CARDS */
+/* ================================= */
+
+.ability-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:1.5rem;
+
+}
+
+
+.ability-card{
+
+    background:var(--mb-card);
+
+    border:1px solid var(--mb-border);
+
+    border-radius:12px;
+
+    padding:1.5rem;
+
+    transition:.35s ease;
+
+}
+
+
+.ability-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 0 15px rgba(126,245,216,.25);
+
+}
+
+
+.ability-card h3{
+
+    margin-bottom:.8rem;
+
+}
+
+
+/* ================================= */
+/* QUOTE CARD */
+/* ================================= */
+
+.quote-card{
+
+    text-align:center;
+
+    background:var(--mb-card);
+
+    border:1px solid var(--mb-border);
+
+    padding:2rem;
+
+    border-radius:14px;
+
+    box-shadow:var(--mb-shadow);
+
+}
+
+
+.quote-card p{
+
+    color:var(--mb-text);
+
+    font-style:italic;
+
+}
+
+
+/* ================================= */
+/* FUTURE LOCKED CARDS */
+/* ================================= */
+
+.locked-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border:1px solid var(--mb-border);
+
+    border-radius:14px;
+
+    background:var(--mb-card);
+
+    transition:.35s ease;
+
+}
+
+
+.locked-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+.locked-card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+.locked-card::after{
+
+    content:"LOCKED";
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:var(--mb-text);
+
+    letter-spacing:2px;
+
+}
+
+/* Carausel locked protagonist class ctyle*/
+
+.future-protagonists{
+    padding: 20px;
+}
+
+.protagonists-slider{
+    width: 100%;
+    overflow: hidden;
+}
+
+/* swiper */
+.swiper-button-next, .swiper-button-prev{
+    color:#ffffff ;
+}
