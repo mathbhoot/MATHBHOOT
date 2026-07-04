@@ -1,0 +1,47 @@
+{
+    "targetSelector": "[data-read-aloud-content]",
+    "controlsSelector": "[data-read-aloud-controls]",
+    "statusSelector": "[data-read-aloud-status]",
+    "playSelector": "[data-read-aloud-play]",
+    "pauseSelector": "[data-read-aloud-pause]",
+    "stopSelector": "[data-read-aloud-stop]",
+    "voiceSelector": "[data-read-aloud-voice]",
+    "speedSelector": "[data-read-aloud-speed]",
+    "defaultVoiceProfile": "ana-natural",
+    "voiceProfiles": {
+        "ana-natural": {
+            "label": "Ana Natural - US English",
+            "langs": ["en-US"],
+            "preferredNames": ["Microsoft Ana Online", "Microsoft Ana", "Ana"],
+            "fallbackPreferredNames": ["Microsoft Aria", "Aria", "Zira"],
+            "fallbackLangs": ["en-US"]
+        },
+        "us-boy": {
+            "label": "Boy Voice - US English",
+            "langs": ["en-US"],
+            "preferredNames": ["Microsoft Guy Online", "Microsoft Guy", "Guy", "Microsoft Davis", "Davis", "Microsoft Tony", "Tony", "Christopher", "Eric", "Roger"],
+            "fallbackPreferredNames": ["Microsoft Ana Online", "Microsoft Ana", "Ana"],
+            "fallbackLangs": ["en-US"]
+        }
+    },
+    "defaultRate": 0.92,
+    "pitch": 1.14,
+    "volume": 1,
+    "chunkMaxLength": 420,
+    "labels": {
+        "play": "Read aloud",
+        "resume": "Resume",
+        "restart": "Restart",
+        "pause": "Pause",
+        "stop": "Stop",
+        "ready": "Ready to read this story aloud.",
+        "loadingVoice": "Loading voice...",
+        "playing": "Reading aloud.",
+        "paused": "Paused.",
+        "stopped": "Stopped.",
+        "unsupported": "Read aloud is not supported in this browser.",
+        "noText": "No story text was found for read aloud.",
+        "noAllowedVoice": "No allowed US English voice is available in this browser.",
+        "voicePrefix": "Voice:"
+    }
+}
