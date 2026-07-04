@@ -45,98 +45,7 @@ Mathbhoot — Where Numbers Come Alive and So Do the Nightmares.">
 <link rel="icon" href="../../../assets/logo.png" type="image/png">
 <link rel="stylesheet" href="../../../css/protagonists/main.css">
 <link rel="stylesheet" href="../../../css/protagonists/mbbook.css">
-<style>
-    .toc-panel {
-        position: sticky;
-        top: 84px;
-        align-self: start;
-        padding: 0.5rem;
-        background: transparent;
-        max-width: 280px;
-    }
-
-    .toc-drawer {
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 22px;
-        overflow: hidden;
-        background: rgba(4, 7, 9, 0.98);
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
-    }
-
-    .toc-drawer summary {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 1.2rem;
-        font-size: 0.95rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--mb-green);
-        cursor: pointer;
-        list-style: none;
-    }
-
-    .toc-drawer summary::-webkit-details-marker {
-        display: none;
-    }
-
-    .toc-drawer summary::after {
-        content: '▾';
-        transition: transform 0.25s ease;
-        margin-left: 1rem;
-    }
-
-    .toc-drawer[open] summary::after {
-        transform: rotate(180deg);
-    }
-
-    .toc-drawer nav {
-        max-height: calc(100vh - 220px);
-        overflow-y: auto;
-        padding: 0.75rem 0 1rem;
-    }
-
-    .toc-drawer nav ul {
-        margin: 0;
-        padding: 0 1rem;
-        list-style: none;
-        display: grid;
-        gap: 0.6rem;
-    }
-
-    .toc-drawer nav a {
-        display: block;
-        padding: 0.65rem 0.9rem;
-        border-radius: 14px;
-        color: var(--mb-text);
-        background: rgba(255, 255, 255, 0.03);
-        transition: background 0.25s ease, transform 0.2s ease;
-    }
-
-    .toc-drawer nav a:hover,
-    .toc-drawer nav a:focus {
-        background: rgba(126, 245, 216, 0.14);
-        transform: translateX(2px);
-    }
-
-    .toc-drawer nav a:focus-visible {
-        outline: 2px solid rgba(126, 245, 216, 0.6);
-        outline-offset: 2px;
-    }
-
-    @media (max-width: 900px) {
-        .toc-panel {
-            position: static;
-            max-width: 100%;
-            margin-bottom: 1rem;
-        }
-
-        .toc-drawer nav {
-            max-height: 220px;
-        }
-    }
-</style>
+<link rel="stylesheet" href="../../../css/protagonists/read-aloud.css">
 
 <script type="application/ld+json">
 {
@@ -205,9 +114,31 @@ Mathbhoot — Where Numbers Come Alive and So Do the Nightmares.",
                 </details>
             </aside>
 <div class="page-content">
-<section class="protagonist-intro">
+<div class="read-aloud-panel" data-read-aloud-controls hidden>
+<button class="read-aloud-button" type="button" data-read-aloud-play>Read aloud</button>
+<button class="read-aloud-button" type="button" data-read-aloud-pause disabled>Pause</button>
+<button class="read-aloud-button" type="button" data-read-aloud-stop disabled>Stop</button>
+<div class="read-aloud-field">
+<label class="read-aloud-voice-label" for="read-aloud-voice-choice">Voice</label>
+<select class="read-aloud-select" id="read-aloud-voice-choice" data-read-aloud-voice>
+<option value="ana-natural">Ana Natural - US English</option>
+<option value="us-boy">Boy Voice - US English</option>
+</select>
+</div>
+<div class="read-aloud-field">
+<label class="read-aloud-voice-label" for="read-aloud-speed-choice">Speed</label>
+<select class="read-aloud-select" id="read-aloud-speed-choice" data-read-aloud-speed>
+<option value="0.82">Slow</option>
+<option value="0.92" selected>Normal</option>
+<option value="1.05">Fast</option>
+</select>
+</div>
+<span class="read-aloud-status" data-read-aloud-status aria-live="polite">Ready to read this story aloud.</span>
+</div>
+<section class="protagonist-intro" data-read-aloud-content>
 <div class="intro-content">
 <h2 class="intro-title" id="book-title-page">MATHBHOOT-NIGHTMARES</h2>
+<br>
 <h3>MATHBHOOT: WHERE NUMBERS COME ALIVE AND SO DO THE NIGHTMARES</h3>
 <br>
 <p class="intro-description" content="justify">At St. Xavier's School, Ansh is known for one thing — trouble. Prankster. Rule-breaker. Chaos magnet.
@@ -288,7 +219,7 @@ Teachers called him a distraction.<br>
 Juniors treated him like mythology.<br>
 And somehow, despite the punishments, warnings, confiscated notebooks, and endless threats of suspension, nobody stayed angry at him for long.<br>
 Noise followed him everywhere.<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img1.jpeg" alt="Ansh" class="center-image" height="400" width="300"><br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img1.jpeg" alt="img1" class="center-image" height="400" width="300"><br>
 He could transform a science practical into a stand-up performance. Convince half the class that a lizard was loose inside the fan ducts. Start a paper-ball war during free period without ever being caught holding ammunition himself.<br>
 Once, he had switched the classroom labels of two sections so perfectly that an entire batch attended the wrong lecture for fifteen minutes before anyone realised.<br>
 The story still survived in the hostel corridors like ancient folklore.<br>
@@ -303,7 +234,7 @@ Never ignore someone sitting alone.<br>
 Even his pranks carried strange warmth inside them, as though causing chaos was simply the language he used to keep life interesting.<br>
 Then came the announcement.<br>
 “Tomorrow,” said Sakshi  ma’am, raising a sheet of paper like a death sentence, “is your Mathematics examination.”<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img13.jpeg" alt="Sakshi Ma'am" class="center-image" height="400" width="300"><br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img13.jpeg" alt="img13" class="center-image" height="400" width="300"><br>
 A collective groan swept through the classroom.<br>
 One boy collapsed dramatically onto his desk. Someone in the back whispered a prayer for survival. Another muttered:<br>
 “Brothers… it’s over.”<br>
@@ -330,7 +261,7 @@ Like the first crack forming beneath ice.<br><br>
 ✦ ✦ ✦<br> 
 <br>
 Back in the hostel that evening, Ansh reached peak chaos.<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img2.jpeg" alt="Ansh" class="center-image" height="400" width="300"><br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img2.jpeg" alt="img2" class="center-image" height="400" width="300"><br>
 
 Paper rockets flew across the dormitory with military accuracy, somehow targeting only students who were trying to study. He convinced Raju that difficult equations were actually secret government codes designed to identify hidden child geniuses.<br>
 Later, he recreated the Battle of Panipat using mathematics textbooks as soldiers and a steel water bottle as artillery.<br>
@@ -340,7 +271,7 @@ At one point, he wrapped himself in a blanket and began impersonating Sakshi ma�
 Someone laughed so hard they rolled off the bed.<br>
 Eventually, even the students trying desperately to revise gave up completely.<br>
 The dormitory dissolved into noise.<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img3.jpeg" alt="Ansh" class="center-image" height="400" width="300"><br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img3.jpeg" alt="img3" class="center-image" height="400" width="300"><br>
 Flying socks.<br>
 Mock arguments.<br>
 Slippers skidding across the floor.<br>
@@ -367,7 +298,7 @@ In his place sat someone else entirely.<br>
 Focused.<br>
 Precise.<br>
 Hungry.<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img4.jpeg" alt="Ansh" class="center-image" height="400" width="300"><br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img4.jpeg" alt="img4" class="center-image" height="400" width="300"><br>
 His eyes moved rapidly across the page, stripped now of every trace of laziness he showed the world during the day. He worked through theorems the way detectives solve crimes — patiently dismantling one layer at a time until truth revealed itself beneath.<br>
 Equations crawled across the paper like hidden machinery.<br>
 Every few minutes he paused, staring silently into space as though rearranging entire systems inside his mind before diving back into the problem again.<br>
@@ -398,7 +329,7 @@ Fear.<br>
 Not sudden fear.<br>
 Slow fear.<br>
 The kind that enters quietly — like cold air slipping beneath a locked door.<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img5.jpeg" alt="Ansh" class="center-image" height="400" width="300"><br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img5.jpeg" alt="img5" class="center-image" height="400" width="300"><br>
 What if his mind went blank?<br>
 What if every formula disappeared the moment he saw the paper?<br>
 What if confidence had only been another performance?<br>
@@ -428,7 +359,7 @@ everything would change.<br>
 <p>
 The first thing Ansh noticed was the silence.<br>
 Not ordinary silence.<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img14.jpeg" alt="Ansh" class="center-image" height="400" width="300"><br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img14.jpeg" alt="img14" class="center-image" height="400" width="300"><br>
 Not the soft breathing quiet of sleeping students and rotating ceiling fans.<br>
 This silence felt… wrong.<br>
 Pressed.<br>
@@ -467,7 +398,7 @@ The sky outside looked diseased.<br>
 Dark clouds stretched from horizon to horizon in swollen layers, hanging so low they felt close enough to touch. There was no sunrise. No warmth. No trace of morning.<br>
 Only pressure.<br>
 The wind struck him the moment he stepped outside the hostel.<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img15.jpeg" alt="Ansh" class="center-image" height="400" width="300"><br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img15.jpeg" alt="img15" class="center-image" height="400" width="300"><br>
 Cold.<br>
 Violent.<br>
 Wrong for this season.<br>
@@ -488,7 +419,7 @@ Not casually leaving.<br>
 Running.<br>
 Students flooded toward the main gate with frightening urgency. Junior boys sprinted outright, bags bouncing violently against their backs. Seniors moved faster than dignity allowed, their faces tight with controlled panic.<br>
 Even the prefects looked terrified.<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img6.jpeg" alt="Ansh" class="center-image" height="400" width="300"><br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img6.jpeg" alt="img6" class="center-image" height="400" width="300"><br>
 Teachers pushed through the crowd without speaking.<br>
 The geography sir.<br>
 The Hindi ma’am.<br>
@@ -546,7 +477,7 @@ He spun around instantly.<br>
 Sakshi ma’am stood at the top of the school steps.<br>
 Her maroon saree snapped violently in the wind. Grey storm-light reflected across her silver-rimmed spectacles. Unlike everyone else, she wasn’t running.<br>
 She was waiting.<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img7.jpeg" alt="Sakshi Ma'am" class="center-image" height="400" width="300"><br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img7.jpeg" alt="img7" class="center-image" height="400" width="300"><br>
 Slowly, deliberately, she descended the staircase toward him.<br>
 And when she finally stopped in front of him, Ansh felt something colder than fear settle quietly inside his chest.<br>
 Concern.<br>
@@ -650,7 +581,7 @@ Small.<br>
 Rotting.<br>
 Wrong.<br>
 It crouched at the corridor’s end like something that had survived long after it should have died.<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img8.jpeg" alt="Ansh" class="center-image" height="400" width="300"><br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img8.jpeg" alt="img8" class="center-image" height="400" width="300"><br>
 Its wooden door was peeling in strips, exposing raw dark timber beneath centuries of paint.<br>
 Through the dirty glass panel beside it, Ansh could barely make out the interior.<br>
 Broken desks.<br>
@@ -744,7 +675,7 @@ The moment the thought formed—<br>
 something appeared.<br>
 ✦ ✦ ✦<br>
 <br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img9.jpeg" alt="light" class="center-image" height="400" width="300"><br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img9.jpeg" alt="img9" class="center-image" height="400" width="300"><br>
 A thread of silver.<br>
 Hair-thin.<br>
 Almost imaginary.<br>
@@ -781,6 +712,8 @@ Not painted.<br>
 Carved.<br>
 Deep into stone with terrifying precision.<br>
 Equations stretched endlessly through the corridor. Geometric patterns folded into themselves with impossible symmetry. Spirals repeated across the walls in perfect Fibonacci progression. Fractals branched outward infinitely, repeating at every scale no matter how closely he looked.<br>
+<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img17.jpeg" alt="img17" class="center-image" height="400" width="300"><br>
 The deeper he stared—<br>
 the more the patterns felt less like decoration…<br>
 …and more like language.<br>
@@ -810,6 +743,8 @@ The abandoned classroom was gone.<br>
 The school was gone.<br>
 In their place stood a stone path leading toward something enormous waiting in the distance.<br>
 The villa.<br>
+<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/MathVilla.jpeg" alt="MathVilla" class="center-image" height="400" width="300"><br>
 Ansh saw the gate first.<br>
 It towered ahead of him with unnatural presence, as though the structure understood it was being observed.<br>
 Black wrought iron curved upward into precise spirals — not random decoration, but exact mathematical forms shaped according to the golden ratio. Lanterns mounted on either side cast alternating pools of amber and sapphire light across the metalwork.<br>
@@ -892,6 +827,7 @@ Everything here obeyed rules.<br>
 Red light traced the lower edge of the villa like a glowing horizontal axis.<br>
 Blue light illuminated the wolf above like a vertical axis.<br>
 Coordinate geometry.<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img18.jpeg" alt="img18" class="center-image" height="400" width="300"><br>
 The entire structure was a coordinate plane.<br>
 X and Y.<br>
 The realization almost made him laugh.<br>
@@ -903,8 +839,6 @@ for the first time since entering the room—<br>
 he no longer felt afraid.<br>
 He felt understood.<br>
 ✦ ✦ ✦<br>
-<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/MathVilla.jpeg" alt="Ansh" class="center-image" height="400" width="300"><br>
 <br>
 The gate opened soundlessly beneath his hand.<br>
 Ansh walked forward.<br>
@@ -926,6 +860,7 @@ The warmth of something that wanted him to enter.<br>
 Ansh raised his hand toward the door—<br>
 And before his fingers touched it—<br>
 the door opened inward.<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img19.jpeg" alt="img19" class="center-image" height="400" width="300"><br>
 Golden light spilled across him.<br>
 Deep inside the impossible mathematics of the villa—<br>
 the voice waited.<br>
@@ -977,6 +912,7 @@ Near the ceiling, equations glimmered faintly beyond readable distance — mathe
 The walls seemed to whisper:<br>
 Come higher.<br>
 Learn more.<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img20.jpeg" alt="img20" class="center-image" height="400" width="300"><br>
 The marble floor beneath him was inlaid with a coordinate grid in deep charcoal stone.<br>
 Perfectly symmetrical.<br>
 Perfectly measured.<br>
@@ -1026,6 +962,8 @@ The staircase spiraled upward in widening arcs.<br>
 Golden spiral.<br>
 Fibonacci growth.<br>
 Ansh recognised the geometry instinctively.<br>
+<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img21.jpeg" alt="img21" class="center-image" height="400" width="300"><br>
 The staircase wasn’t random architecture.<br>
 It was a formula becoming physical.<br>
 Warm red light pulsed softly beneath each step.<br>
@@ -1044,8 +982,7 @@ The crimson glow brightened slightly beneath his shoe—<br>
 as though acknowledging him.<br>
 Ansh climbed.<br>
 ✦ ✦ ✦<br>
-<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/img16.jpeg" alt="MathVilla" class="center-image" height="400" width="300"><br>
+
 Step two.<br>
 Warm smoke curled around his ankles.<br>
 Step three.<br>
@@ -1105,6 +1042,8 @@ something stood watching.<br>
 Tall.<br>
 Still.<br>
 Wrong.<br>
+<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img22.jpeg" alt="img22" class="center-image" height="400" width="300"><br>
 Ansh looked away before his mind could understand what he had seen.<br>
 Then the third convulsion came.<br>
 And this one had a voice.<br>
@@ -1152,6 +1091,8 @@ Warm ivory became dead grey.<br>
 Grey became yellowed bone.<br>
 The bone became something damp.<br>
 Diseased.<br>
+<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img23.jpeg" alt="img23" class="center-image" height="400" width="300"><br>
 The vines outside the cracked windows blackened and recoiled violently from the walls as though the building itself had become poisonous.<br>
 The flower wreaths at the gate withered into twisted wire skeletons.<br>
 The lanterns along the path were extinguished.<br>
@@ -1196,6 +1137,8 @@ Go up. Evolve.<br>
 The inscription above the entrance returned to him suddenly.<br>
 Not an invitation.<br>
 Instruction.<br>
+<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img24.jpeg" alt="img24" class="center-image" height="400" width="300"><br>
 The faceless thing beyond the gate continued pointing upward patiently.<br>
 It would wait forever if necessary.<br>
 Ansh understood that instinctively.<br>
@@ -1229,6 +1172,8 @@ Not glowing.<br>
 Awakening.<br>
 The same cold colour that had spread through the equations inside MathVilla.<br>
 The same colour as the faceless creature beyond the gates.<br>
+<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img25.jpeg" alt="img25" class="center-image" height="400" width="300"><br>
 The wolf’s face was enormous.<br>
 Not sculpted like an animal.<br>
 Constructed like mathematics.<br>
@@ -1289,7 +1234,8 @@ Then the first note played.<br>
 ✦ ✦ ✦<br>
 <br>
 The sound resembled a piano.<br>
-Almost.<br>
+Almost.
+<br>
 One clear lonely note drifted through the darkness, hanging in the air with unnatural purity before another joined beneath it.<br>
 The distance between the notes felt exact.<br>
 Calculated.<br>
@@ -1356,7 +1302,11 @@ Three skeletal figures surrounded the central column.<br>
 Each robed.<br>
 Each distinct.<br>
 Yet fused together at the base like crystallised remains of something ancient.<br>
-<img src="../../../assets/protagonists/anshgallery/mb_nm/Statue.jpeg" alt="Statue" class="center-image" height="400" width="300"><br>
+<video width="400" height="500" controls>
+    <source src="../../../assets/video/statue.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<br>
 The first figure wore deep golden robes covered in embedded symbols and dark jewels that shimmered with impossible colours.<br>
 A crown of mathematical sigils rested upon its skull.<br>
 In its hands lay an open book.<br>
@@ -1400,6 +1350,8 @@ The surface felt cool.<br>
 Deep-water cool.<br>
 Ancient cool.<br>
 His fingertips touched the object.<br>
+<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img11.jpeg" alt="img11" class="center-image" height="400" width="300"><br>
 Everything stopped.<br>
 Instantly.<br>
 The rotation ceased.<br>
@@ -1572,6 +1524,8 @@ His father’s torch.<br>
 Small.<br>
 Cheap.<br>
 Ordinary.<br>
+<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img26.jpeg" alt="img26" class="center-image" height="400" width="300"><br>
 His father had clipped it there months ago for school power cuts.<br>
 Ansh had forgotten it existed.<br>
 Now it felt like discovering fire.<br>
@@ -1603,6 +1557,8 @@ Something was wrong.<br>
 He stepped closer.<br>
 Raised the torch higher.<br>
 And realised—<br>
+<br>
+<img src="../../../assets/protagonists/anshgallery/mb_nm/img12.jpeg" alt="img12" class="center-image" height="400" width="300"><br>
 there was an empty space.<br>
 A fourth position in the structure.<br>
 Clearly part of the original design.<br>
@@ -1635,5 +1591,6 @@ Why had he thought that?<br>
 </div>
 </footer>
 <script src="../../../js/main.js" defer></script>
+<script src="../../../js/protagonists/read-aloud/read-aloud.js" defer></script>
 </body>
 </html>
