@@ -43,7 +43,7 @@
         }
 
         .toc-drawer summary::after {
-            content: '▾';
+            content: '\25BE';
             transition: transform 0.25s ease;
             margin-left: 1rem;
         }
@@ -90,18 +90,131 @@
             min-width: 0;
         }
 
+        .protagonist-intro {
+            padding-top: 1.25rem;
+        }
+
+        .protagonist-intro .intro-content {
+            width: min(100%, 74ch);
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .protagonist-intro h2,
+        .protagonist-intro h3 {
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+            text-align: left;
+        }
+
+        .protagonist-intro p,
+        .protagonist-intro .intro-description {
+            max-width: 100%;
+            text-align: justify;
+            text-align-last: left;
+            hyphens: auto;
+            overflow-wrap: break-word;
+        }
+
+        .protagonist-intro .center-image {
+            width: min(100%, clamp(220px, 48vw, 420px));
+            height: auto;
+            max-height: min(68vh, 540px);
+            margin: 1.35rem auto;
+            border-radius: 16px;
+            object-fit: contain;
+            box-shadow:
+                0 18px 42px rgba(0, 0, 0, 0.34),
+                0 0 22px rgba(126, 245, 216, 0.12);
+        }
+
+        .protagonist-intro .center-image[src*="mbnightmare"] {
+            width: min(100%, clamp(280px, 68vw, 680px));
+            max-height: min(62vh, 430px);
+        }
+
         @media (max-width: 900px) {
             .page-layout {
                 grid-template-columns: 1fr;
             }
 
             .toc-panel {
-                position: static;
-                top: auto;
-                margin-bottom: 1.75rem;
+                position: sticky;
+                top: 58px;
+                z-index: 20;
+                margin-bottom: 0.9rem;
+                padding: 0.35rem;
+            }
+
+            .toc-drawer {
+                border-radius: 14px;
+            }
+
+            .toc-drawer summary {
+                min-height: 42px;
+                padding: 0.65rem 0.85rem;
+                font-size: 0.82rem;
             }
 
             .toc-drawer nav {
-                max-height: 220px;
+                max-height: min(24vh, 160px);
+                padding: 0.35rem 0 0.55rem;
+            }
+
+            .toc-drawer nav ul {
+                gap: 0.35rem;
+                padding: 0 0.55rem;
+            }
+
+            .toc-drawer nav a {
+                padding: 0.45rem 0.62rem;
+                border-radius: 10px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .protagonist-intro {
+                padding-top: 1rem;
+            }
+
+            .protagonist-intro .intro-content {
+                width: min(100%, 68ch);
+            }
+
+            .protagonist-intro .center-image {
+                width: min(100%, clamp(210px, 76vw, 360px));
+                max-height: min(62vh, 470px);
+                margin: 1.15rem auto;
+                border-radius: 14px;
+            }
+
+            .protagonist-intro .center-image[src*="mbnightmare"] {
+                width: min(100%, 92vw);
+                max-height: min(54vh, 340px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .protagonist-intro {
+                padding-top: 0.75rem;
+            }
+
+            .protagonist-intro p,
+            .protagonist-intro .intro-description {
+                text-align: justify;
+                text-align-last: left;
+            }
+
+            .protagonist-intro .center-image {
+                width: min(100%, 82vw);
+                max-height: min(58vh, 390px);
+                margin: 1rem auto;
+            }
+
+            .protagonist-intro .center-image[src*="mbnightmare"] {
+                width: min(100%, 94vw);
+                max-height: min(48vh, 300px);
             }
         }

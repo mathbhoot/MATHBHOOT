@@ -57,6 +57,8 @@ body{
 
     line-height:1.7;
 
+    padding-bottom:48px;
+
 }
 
 .quote,
@@ -67,6 +69,19 @@ body{
     overflow-wrap:anywhere;
 }
 
+.ansh-description p{
+    text-align:justify;
+    text-align-last:left;
+    hyphens:auto;
+}
+
+
+.stat-card p,
+.card-info p,
+.site-footer p{
+    text-align:center;
+    text-align-last:center;
+}
 
 /* ================================= */
 /* LINKS */
@@ -173,6 +188,10 @@ section{
 
 }
 
+#ansh-hero{
+    padding-top:1.25rem;
+}
+
 
 /* ================================= */
 /* BUTTONS */
@@ -254,6 +273,10 @@ button:hover{
         padding:3.25rem 0;
     }
 
+    #ansh-hero{
+        padding-top:1rem;
+    }
+
     .hero-wrapper{
         flex-direction:column;
         align-items:stretch;
@@ -284,7 +307,8 @@ button:hover{
     }
 
     .ansh-description p{
-        text-align:center;
+        text-align:justify;
+        text-align-last:left;
     }
 
     h1{
@@ -315,6 +339,10 @@ button:hover{
 
     section{
         padding:2.5rem 0;
+    }
+
+    #ansh-hero{
+        padding-top:.75rem;
     }
 
     .hero-image{
