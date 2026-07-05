@@ -48,7 +48,6 @@
     padding: 12px;
 }
 
-
 .nav-links a:hover,
 .nav-links a:focus-visible{
     color:rgba(126,245,216,.65);
@@ -74,18 +73,33 @@ body{
     color:var(--text);
     font-family:Georgia, serif;
     line-height:1.8;
-    padding: 5px;
+    padding: 5px 5px 48px;
 }
 /* Footer */
 .site-footer {
-    padding-bottom: 0%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    background: #000000; /* Dark theme to match your mystery vibe */
-    color: #ffffff;
-    padding: 25px 0;
+    background:
+        linear-gradient(90deg, rgba(5, 11, 9, 0.98), rgba(8, 19, 16, 0.98));
+    border-top: 1px solid rgba(126, 245, 216, 0.22);
+    color: var(--mb-muted);
+    padding: 8px 12px;
     text-align: center;
     margin-top: auto; /* Ensures it stays at bottom if page is short */
     z-index: 1000;
+    box-shadow: 0 -10px 28px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+.site-footer p {
+    margin: 0;
+    line-height: 1.2;
+    color: inherit;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
 }
 
 /* =========================
@@ -93,7 +107,7 @@ body{
 ========================= */
 
 @media(max-width:768px){
-    
+
     .nav-toggle {
         display: block; /* Show toggle on mobile */
         flex:0 0 auto;
@@ -105,7 +119,7 @@ body{
         width: 50px; /* Adjust this value to make the logo smaller */
         height: auto;
     }
-   
+
     .nav-links {
         display: none; /* Hide menu by default on mobile */
         flex-direction: column;
@@ -123,6 +137,4 @@ body{
         display: flex; /* Shown when toggled */
     }
 }
-
-
 

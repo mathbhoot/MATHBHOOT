@@ -102,19 +102,27 @@ body{
     color:var(--text);
     font-family:Georgia, serif;
     line-height:1.8;
-    padding: 5px;
+    padding: 5px 5px 48px;
 }
 
 /* Footer */
 .site-footer {
-    padding-bottom: 0%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
     background: #000000; /* Dark theme to match your mystery vibe */
     color: #ffffff;
-    padding: 25px 0;
+    padding: 8px 12px;
     text-align: center;
     margin-top: auto; /* Ensures it stays at bottom if page is short */
     z-index: 1000;
+}
+
+.site-footer p {
+    margin: 0;
+    line-height: 1.2;
 }
 @media (max-width: 768px) {
     .nav-toggle {

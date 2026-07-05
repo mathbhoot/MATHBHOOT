@@ -238,3 +238,19 @@
         border-radius:10px;
     }
 }
+.book-section > div p{
+    max-width:650px;
+    margin-bottom:2rem;
+    text-align:justify;
+    text-align-last:left;
+    hyphens:auto;
+}
+
+@media (max-width: 768px){
+    .book-section > div p{
+        margin-right:auto;
+        margin-left:auto;
+        text-align:justify;
+        text-align-last:left;
+    }
+}
