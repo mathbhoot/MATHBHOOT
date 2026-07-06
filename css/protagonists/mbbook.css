@@ -4,6 +4,7 @@
             grid-template-columns: minmax(240px, 280px) minmax(0, 1fr);
             gap: 2rem;
             align-items: flex-start;
+            min-width: 0;
         }
 
         .toc-panel {
@@ -92,6 +93,7 @@
 
         .protagonist-intro {
             padding-top: 1.25rem;
+            min-width: 0;
         }
 
         .protagonist-intro .intro-content {
@@ -137,6 +139,29 @@
         @media (max-width: 900px) {
             .page-layout {
                 grid-template-columns: 1fr;
+            }
+
+            .protagonist-intro .intro-content {
+                max-width: calc(100vw - 56px);
+            }
+
+            .protagonist-intro h2,
+            .protagonist-intro h3 {
+                line-height: 1.3;
+                letter-spacing: 0.04em;
+                overflow-wrap: anywhere;
+            }
+
+            .protagonist-intro h3 {
+                font-size: 0.9rem;
+                max-width: min(100%, 34ch);
+            }
+
+            .protagonist-intro p,
+            .protagonist-intro .intro-description {
+                text-align: left;
+                text-align-last: left;
+                line-height: 1.65;
             }
 
             .toc-panel {
@@ -201,10 +226,8 @@
                 padding-top: 0.75rem;
             }
 
-            .protagonist-intro p,
-            .protagonist-intro .intro-description {
-                text-align: justify;
-                text-align-last: left;
+            .protagonist-intro .intro-content {
+                width: min(calc(100% - 32px), 34rem);
             }
 
             .protagonist-intro .center-image {
