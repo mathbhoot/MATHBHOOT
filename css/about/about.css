@@ -279,37 +279,39 @@ a{
     margin:0 auto;
 }
 
+
 /* =========================
    PROFILE CARD
 ========================= */
 
-.profile-card{
-    display:grid;
-    place-items:center;
-    min-width:0;
-    position:relative;
+.profile-card {
+    display: grid;
+    place-items: center;
+    min-width: 0;
+    position: relative;
+    padding: 28px;
 }
 
-.profile-card::before{
-    content:"";
-    position:absolute;
-    width:min(92%, 420px);
-    aspect-ratio:1;
-    border:1px solid rgba(200,178,66,.35);
-    border-radius:50%;
-    box-shadow:0 0 46px rgba(200,178,66,.18);
-    animation:study-orbit 18s linear infinite;
+.profile-card::before {
+    content: "";
+    position: absolute;
+    width: min(88%, 360px);
+    aspect-ratio: 1;
+    border: 1px solid rgba(200, 178, 66, 0.28);
+    border-radius: 50%;
+    box-shadow: 0 0 38px rgba(200, 178, 66, 0.14);
+    animation: study-orbit 18s linear infinite;
 }
 
-.profile-card img{
-    position:relative;
-    z-index:1;
-    width:min(100%,420px);
-    border:2px solid #e9c512;
-    border-radius:8px;
+.profile-card img {
+    position: relative;
+    z-index: 1;
+    width: min(82vw, 360px);
+    border: 2px solid #e9c512;
+    border-radius: 8px;
     box-shadow:
-        0 22px 60px rgba(136, 133, 133, 0.45),
-        0 0 30px rgba(64, 61, 56, 0.35);
+        0 22px 60px rgba(136, 133, 133, 0.35),
+        0 0 30px rgba(64, 61, 56, 0.28);
 }
 
 /* =========================
