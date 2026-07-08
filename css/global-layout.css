@@ -1,0 +1,277 @@
+/*
+ * MATHBHOOT shared layout foundation
+ * Desktop-first defaults; page/theme styles may override visual tokens.
+ */
+
+:root {
+    --global-content-width: 1200px;
+    --global-reading-width: 72ch;
+    --global-header-height: 58px;
+    --global-footer-height: 34px;
+    --global-page-gutter: clamp(1rem, 3vw, 2rem);
+    --global-section-space: clamp(2.5rem, 6vw, 5rem);
+    --global-nav-gap: clamp(1rem, 2vw, 1.6rem);
+    --global-body-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+    --global-heading-line-height: 1.15;
+    --global-body-line-height: 1.7;
+    --global-nav-background: #000;
+    --global-nav-color: #fff;
+    --global-footer-background: #000;
+    --global-footer-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    min-width: 320px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+    min-height: 100svh;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: var(--global-body-size);
+    line-height: var(--global-body-line-height);
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, figure) {
+    margin-top: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+    line-height: var(--global-heading-line-height);
+    text-wrap: balance;
+}
+
+:where(p, li) {
+    overflow-wrap: break-word;
+}
+
+:where(p) {
+    max-width: var(--global-reading-width);
+}
+
+:where(img, svg, video, canvas) {
+    max-width: 100%;
+}
+
+:where(img) {
+    height: auto;
+}
+
+:where(.image-center, figure > img) {
+    display: block;
+    margin-inline: auto;
+}
+
+:where(.content-container, .section-container) {
+    width: min(100% - (2 * var(--global-page-gutter)), var(--global-content-width));
+    margin-inline: auto;
+}
+
+:where(.content-justify) {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+:where(main, section) {
+    min-width: 0;
+}
+
+:where(section) {
+    scroll-margin-top: calc(var(--global-header-height) + 1rem);
+}
+
+/* Shared desktop navigation */
+:where(.site-header) {
+    width: 100%;
+}
+
+:where(.navbar) {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: var(--global-header-height);
+    padding-inline: var(--global-page-gutter);
+    background: var(--global-nav-background);
+    color: var(--global-nav-color);
+}
+
+:where(.logo-container) {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+:where(.nav-logo) {
+    display: block;
+    width: 58px;
+    height: auto;
+}
+
+:where(.nav-links) {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    gap: var(--global-nav-gap);
+    list-style: none;
+}
+
+:where(.nav-links a) {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+:where(.nav-toggle) {
+    display: none;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.65rem;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.35rem;
+    line-height: 1;
+}
+
+/* Shared fixed footer geometry; themes retain their own colors and effects. */
+:where(.site-footer) {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 1000;
+    display: flex;
+    width: 100%;
+    min-height: var(--global-footer-height);
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem var(--global-page-gutter);
+    background: var(--global-footer-background);
+    color: var(--global-footer-color);
+    text-align: center;
+}
+
+:where(.site-footer p) {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    font-size: clamp(0.75rem, 0.72rem + 0.15vw, 0.9rem);
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Tablet layout */
+@media (max-width: 1024px) {
+    :root {
+        --global-page-gutter: clamp(1rem, 3vw, 1.5rem);
+        --global-section-space: clamp(2.25rem, 5vw, 4rem);
+        --global-nav-gap: clamp(0.75rem, 1.5vw, 1.1rem);
+    }
+}
+
+/* Android phones and other narrow touch layouts */
+@media (max-width: 768px) {
+    :root {
+        --global-header-height: 58px;
+        --global-page-gutter: clamp(0.875rem, 4vw, 1.25rem);
+        --global-section-space: clamp(2rem, 9vw, 3.5rem);
+    }
+
+    :where(.nav-logo) {
+        width: 50px;
+    }
+
+    .navbar > .nav-toggle {
+        position: absolute;
+        top: 7px;
+        right: var(--global-page-gutter);
+        z-index: 1001;
+        display: inline-flex;
+        flex: 0 0 auto;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        border: 0;
+        color: inherit;
+        font-size: 0;
+    }
+
+    .navbar > .nav-toggle::before {
+        content: "\2630";
+        font-size: 1.35rem;
+        line-height: 1;
+    }
+
+    :where(.nav-links) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        width: 100%;
+        max-width: 100vw;
+        max-height: calc(100svh - var(--global-header-height));
+        overflow-y: auto;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.75rem var(--global-page-gutter) 1rem;
+        gap: 0.25rem;
+        background: var(--global-nav-background);
+        text-align: center;
+    }
+
+    :where(.nav-links.active) {
+        display: flex;
+    }
+
+    :where(.nav-links a) {
+        justify-content: center;
+        width: 100%;
+    }
+
+    :where(.content-justify) {
+        text-align: start;
+    }
+}
+
+/* Small Android phones */
+@media (max-width: 480px) {
+    :root {
+        --global-page-gutter: 0.875rem;
+        --global-body-size: 1rem;
+    }
+
+    :where(.site-footer) {
+        padding-inline: 0.5rem;
+    }
+
+    :where(.site-footer p) {
+        font-size: 0.75rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}

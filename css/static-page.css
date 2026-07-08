@@ -1,6 +1,8 @@
 /* Shared layout for simple Mathbhoot placeholder pages. */
 /*shared colour, text theme for ganith, antagonist and escape guide page*/
 
+@import url('global-layout.css');
+
 :root {
     --static-bg: #05070d;
     --static-panel: rgba(13, 20, 34, 0.92);
