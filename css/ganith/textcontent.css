@@ -1,0 +1,81 @@
+/* -------------------------
+   GANITH DESCRIPTION
+--------------------------*/
+
+.ganith-description{
+    position: relative;
+    background: linear-gradient(to bottom,#f7f7f4 0%,#fdfcf8 100%);
+    padding: 8rem 1.5rem 7rem;
+}
+
+.description-container{
+    max-width:850px;
+    margin:auto;
+}
+
+.section-intro{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    margin-bottom:70px;
+}
+
+.section-intro .line{
+    width:80px;
+    height:1px;
+    background:#9d8b55;
+    opacity:.5;
+}
+
+.intro-text{
+    letter-spacing:.45em;
+    font-size:.75rem;
+    color:#777;
+    text-transform:uppercase;
+}
+
+.ganith-description h2{
+    font-size:2.4rem;
+    text-align:center;
+    margin-bottom:3rem;
+    color:#1b1b1b;
+    letter-spacing:.05em;
+}
+
+.ganith-description p{
+    font-size:1.15rem;
+    line-height:2.1;
+    color:#333;
+    text-align:justify;
+    margin-bottom:2.5rem;
+}
+
+.ganith-description p::first-letter{
+    font-size:3.4rem;
+    float:left;
+    line-height:1;
+    padding-right:10px;
+    color:#4e3487;
+    font-weight:bold;
+}
+
+blockquote{
+    margin:6rem auto 0;
+    max-width:700px;
+    text-align:center;
+    font-style:italic;
+    font-size:1.45rem;
+    line-height:1.8;
+    color:#3d2b65;
+    position:relative;
+}
+
+blockquote::before{
+    content:"❝";
+    display:block;
+    font-size:4rem;
+    color:#8f7bd6;
+    opacity:.35;
+    margin-bottom:10px;
+}
