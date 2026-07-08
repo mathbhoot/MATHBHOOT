@@ -1,6 +1,7 @@
 (function () {
     const AUDIO_VOLUME = 0.75;
     const USER_UNLOCK_EVENTS = ['click', 'touchstart', 'keydown', 'pointerdown'];
+    const START_RETRY_DELAYS = [120, 350, 700, 1000];
 
     function initBookToggleSound() {
         const bookToggle = document.getElementById('mobile-book-toggle');
@@ -14,6 +15,8 @@
 
         bookAudio.volume = AUDIO_VOLUME;
         bookAudio.loop = true;
+        bookAudio.preload = 'auto';
+        bookAudio.load();
 
         const tryStartAudio = () => {
             if (hasStoppedForBook || !bookAudio.paused) {
@@ -41,6 +44,16 @@
             });
         };
 
+        const queueLandingStartAttempts = () => {
+            tryStartAudio();
+            START_RETRY_DELAYS.forEach((delay) => {
+                window.setTimeout(tryStartAudio, delay);
+            });
+        };
+
+        bookAudio.addEventListener('loadeddata', tryStartAudio, { once: true });
+        bookAudio.addEventListener('canplay', tryStartAudio, { once: true });
+
         if (bookToggle) {
             bookToggle.addEventListener('click', () => {
                 hasStoppedForBook = true;
@@ -55,7 +68,7 @@
             bookAudio.pause();
         });
 
-        tryStartAudio();
+        queueLandingStartAttempts();
     }
 
     if (document.readyState === 'loading') {
