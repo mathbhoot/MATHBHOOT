@@ -52,7 +52,7 @@
     max-width: none;
 }
 
-.ganith-description p::first-letter{
+.ganith-description p:first-of-type::first-letter{
     font-size:3.4rem;
     float:left;
     line-height:1;
