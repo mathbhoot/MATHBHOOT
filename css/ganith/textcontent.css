@@ -48,17 +48,27 @@
     line-height:2.1;
     color:#333;
     text-align:justify;
+    text-justify: inter-word;
     margin-bottom:2.5rem;
     max-width: none;
 }
 
-.ganith-description p:first-of-type::first-letter{
-    font-size:3.4rem;
-    float:left;
-    line-height:1;
-    padding-right:10px;
+.ganith-description p::first-letter{
+    -webkit-initial-letter: 2;
+    initial-letter: 2;
+    margin-right:.28em;
     color:#4e3487;
     font-weight:bold;
+}
+
+@supports not (initial-letter: 2) {
+    .ganith-description p::first-letter{
+        float:left;
+        font-size:2.65rem;
+        line-height:.86;
+        padding-top:.18rem;
+        padding-right:.42rem;
+    }
 }
 
 .ganith-description blockquote{
@@ -97,5 +107,20 @@
 
     .ganith-description p {
         text-align: start;
+    }
+
+    .ganith-description p::first-letter{
+        -webkit-initial-letter: 1.6;
+        initial-letter: 1.6;
+        margin-right:.18em;
+    }
+
+    @supports not (initial-letter: 2) {
+        .ganith-description p::first-letter{
+            font-size:2.25rem;
+            line-height:.9;
+            padding-top:.12rem;
+            padding-right:.34rem;
+        }
     }
 }
