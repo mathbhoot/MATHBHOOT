@@ -3,15 +3,14 @@
 =========================================== */
 
 body.theme-ganith {
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0 0 var(--global-footer-height, 34px);
 }
 
 .ganith-hero {
     position: relative;
     display: grid;
     width: 100%;
-    min-height: calc(100svh - 58px);
+    min-height: 100svh;
     overflow: hidden;
     isolation: isolate;
 }
@@ -42,9 +41,9 @@ body.theme-ganith {
 
 .ganith-hero .hero-content {
     width: min(1200px, 92%);
-    min-height: calc(100svh - 58px);
+    min-height: 100svh;
     margin: 0 auto;
-    padding: clamp(4.5rem, 8vw, 7rem) 0 clamp(5rem, 8vw, 7rem);
+    padding: calc(var(--global-header-height, 58px) + clamp(3rem, 6vw, 5rem)) 0 clamp(5rem, 8vw, 7rem);
     display: flex;
     align-items: center;
 }
@@ -108,7 +107,7 @@ body.theme-ganith {
 
 @media (max-width: 820px) {
     .ganith-hero {
-        min-height: max(720px, calc(100svh - 58px));
+        min-height: max(720px, 100svh);
     }
 
     .ganith-hero .hero-bg {
@@ -127,7 +126,7 @@ body.theme-ganith {
 
     .ganith-hero .hero-content {
         width: min(100% - 2rem, 38rem);
-        min-height: max(720px, calc(100svh - 58px));
+        min-height: max(720px, 100svh);
         padding: 42svh 0 5.5rem;
         align-items: end;
     }
@@ -155,7 +154,7 @@ body.theme-ganith {
 
 @media (max-width: 480px) {
     .ganith-hero {
-        min-height: max(680px, calc(100svh - 58px));
+        min-height: max(680px, 100svh);
     }
 
     .ganith-hero .hero-bg {
@@ -164,7 +163,7 @@ body.theme-ganith {
 
     .ganith-hero .hero-content {
         width: min(100% - 1.5rem, 26rem);
-        min-height: max(680px, calc(100svh - 58px));
+        min-height: max(680px, 100svh);
         padding: 40svh 0 4.75rem;
     }
 
