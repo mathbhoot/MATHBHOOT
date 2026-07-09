@@ -60,7 +60,7 @@
     font-weight:bold;
 }
 
-blockquote{
+.ganith-description blockquote{
     margin:6rem auto 0;
     max-width:700px;
     text-align:center;
@@ -71,7 +71,7 @@ blockquote{
     position:relative;
 }
 
-blockquote::before{
+.ganith-description blockquote::before{
     content:"❝";
     display:block;
     font-size:4rem;
