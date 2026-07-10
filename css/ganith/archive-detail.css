@@ -32,6 +32,30 @@ body.theme-ganith.archive-body {
     background-size: cover;
 }
 
+.archive-detail-hero--manuscript {
+    --archive-hero-image: url('../../assets/ganith/ganith_manuscript.jpeg');
+}
+
+.archive-detail-hero--timeline {
+    --archive-hero-image: url('../../assets/ganith/ganith_timeline.jpeg');
+}
+
+.archive-detail-hero--symbols {
+    --archive-hero-image: url('../../assets/ganith/ganith_symbols.jpeg');
+}
+
+.archive-detail-hero--purple-orb {
+    --archive-hero-image: url('../../assets/ganith/ganith_purpleorb.jpeg');
+}
+
+.archive-detail-hero--lore-entries {
+    --archive-hero-image: url('../../assets/ganith/ganith_glimpse.png');
+}
+
+.archive-detail-hero--locations {
+    --archive-hero-image: url('../../assets/ganith/ganith_locations.jpeg');
+}
+
 .archive-detail-hero-inner,
 .archive-detail-section-inner {
     width: min(100%, 1160px);
@@ -137,7 +161,7 @@ body.theme-ganith.archive-body {
     text-transform: uppercase;
 }
 
-.bob-focus {
+.orb-focus {
     border-color: rgba(126, 80, 191, .42);
     background:
         radial-gradient(circle at 18% 18%, rgba(126, 80, 191, .16), transparent 12rem),
