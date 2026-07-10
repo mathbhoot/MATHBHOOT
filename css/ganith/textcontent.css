@@ -5,12 +5,12 @@
 .ganith-description{
     position: relative;
     background: linear-gradient(to bottom,#f7f7f4 0%,#fdfcf8 100%);
-    padding: 8rem 1.5rem 7rem;
+    padding: clamp(5rem, 8vw, 8rem) var(--global-page-gutter, 1.5rem) clamp(4.5rem, 7vw, 7rem);
 }
 
 .description-container{
-    max-width:850px;
-    margin:auto;
+    width: min(100%, 1080px);
+    margin: auto;
 }
 
 .section-intro{
@@ -48,21 +48,32 @@
     line-height:2.1;
     color:#333;
     text-align:justify;
+    text-justify: inter-word;
     margin-bottom:2.5rem;
+    max-width: none;
 }
 
 .ganith-description p::first-letter{
-    font-size:3.4rem;
-    float:left;
-    line-height:1;
-    padding-right:10px;
+    -webkit-initial-letter: 2;
+    initial-letter: 2;
+    margin-right:.28em;
     color:#4e3487;
     font-weight:bold;
 }
 
-blockquote{
-    margin:6rem auto 0;
-    max-width:700px;
+@supports not (initial-letter: 2) {
+    .ganith-description p::first-letter{
+        float:left;
+        font-size:2.65rem;
+        line-height:.86;
+        padding-top:.18rem;
+        padding-right:.42rem;
+    }
+}
+
+.ganith-description blockquote{
+    margin:clamp(4rem, 7vw, 6rem) auto 0;
+    max-width:760px;
     text-align:center;
     font-style:italic;
     font-size:1.45rem;
@@ -71,11 +82,45 @@ blockquote{
     position:relative;
 }
 
-blockquote::before{
+.ganith-description blockquote::before{
     content:"❝";
     display:block;
     font-size:4rem;
     color:#8f7bd6;
     opacity:.35;
     margin-bottom:10px;
+}
+
+@media (max-width: 760px) {
+    .section-intro {
+        gap: 14px;
+        margin-bottom: 48px;
+    }
+
+    .section-intro .line {
+        width: 44px;
+    }
+
+    .intro-text {
+        letter-spacing: .22em;
+    }
+
+    .ganith-description p {
+        text-align: start;
+    }
+
+    .ganith-description p::first-letter{
+        -webkit-initial-letter: 1.6;
+        initial-letter: 1.6;
+        margin-right:.18em;
+    }
+
+    @supports not (initial-letter: 2) {
+        .ganith-description p::first-letter{
+            font-size:2.25rem;
+            line-height:.9;
+            padding-top:.12rem;
+            padding-right:.34rem;
+        }
+    }
 }
