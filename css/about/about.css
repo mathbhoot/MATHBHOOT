@@ -214,25 +214,6 @@ a{
     max-width:100%;
 }
 
-.creator-content h1::after,
-.journey h2::after,
-.section-heading h2::after,
-.lore-copy h2::after,
-.info-card h2::after{
-    content:"";
-    position:absolute;
-    top:.12em;
-    right:-.35em;
-    width:.24em;
-    height:.24em;
-    border-radius:50%;
-    background:#fff5bf;
-    box-shadow:
-        0 0 8px rgba(255,245,191,.95),
-        0 0 18px rgba(247,215,107,.72);
-    animation:heading-sparkle 2.8s ease-in-out infinite;
-}
-
 /* =========================
    HERO
 ========================= */
@@ -826,14 +807,22 @@ a{
 }
 
 .reveal{
-    opacity:0;
-    transform:translateY(22px);
-    transition:opacity .7s ease, transform .7s ease;
+    opacity:1;
+    transform:none;
+    transition:none;
 }
 
 .reveal.is-visible{
     opacity:1;
-    transform:translateY(0);
+    transform:none;
+}
+
+/* Author page is intentionally static. */
+*,
+*::before,
+*::after{
+    animation:none !important;
+    transition:none !important;
 }
 
 @keyframes float-rune{
