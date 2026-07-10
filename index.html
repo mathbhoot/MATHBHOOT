@@ -33,6 +33,8 @@
     <meta name="twitter:image" content="https://mathbhoot.com/assets/og-home.png">
     <meta name="twitter:image:alt" content="The haunted MATHBHOOT portal glowing with mathematical mystery">
 
+    <link rel="preload" href="/assets/portal-bg.jpg" as="image" fetchpriority="high">
+    <link rel="preload" href="/assets/wordmark.png" as="image" fetchpriority="high">
     <link rel="icon" href="/assets/logo.png" type="image/png">
     <link rel="stylesheet" href="/css/main.css">
 
@@ -70,7 +72,7 @@
                 <a href="index.html" aria-label="Go to MATHBHOOT home"><img src="assets/logo.png" alt="MATHBHOOT Logo" class="nav-logo"></a>
             </div>
             <!-- Toggle button for mobile-->
-             <button class="nav-toggle" type="button"aria-label="Open main navigation"aria-controls="primaryNavigation"aria-expanded="false">☰</button>
+             <button class="nav-toggle" type="button" aria-label="Open main navigation" aria-controls="primaryNavigation" aria-expanded="false">&#9776;</button>
                
              <!--Navigation links-->
              <ul class="nav-links" id="primaryNavigation">
@@ -82,39 +84,31 @@
                <li><a href="html/about/about.html">About</a></li>
             
             </ul>
-        </div>
         </nav>
     </header>
-     <canvas id="webgl"></canvas>
-     <div class="page-wrapper"></div>
     <main>
         <section class="homepage-hero" aria-labelledby="homepageTitle">
-            <h1 id="homepageTitle" class="hero-title"></h1>
             <div class="homepage-bg" aria-hidden="true"></div>
             <div class="homepage-overlay" aria-hidden="true"></div>
-            <br>
-            <br>
-            
             <div class="hero-content">
-                <h1 class="hero-title">
-                <img src="assets/wordmark.png"
-                alt="Mathbhoot Wordmark"
-                class="hero-title-image"
-                width="530"
-                height="300"
-                decoding="async">
-                
-                <br>
-                <br>
+                <h1 id="homepageTitle" class="hero-title">
+                    <img src="assets/wordmark.png"
+                         alt="MATHBHOOT"
+                         class="hero-title-image"
+                         width="530"
+                         height="300"
+                         decoding="sync"
+                         fetchpriority="high">
+                </h1>
+                <p class="hero-tagline" aria-label="Where mathematics meets mystery">
+                    <span class="tagline-light">Where</span>
+                    <span class="tagline-purple">Mathematics</span>
+                    <span class="tagline-light">Meets</span>
+                    <span class="tagline-purple">Mystery</span>
+                </p>
             </div>
-
         </section>
-        <br>
-        <br>
-        <br>
     </main>
-            
-    <br>
 
      <!--FOOTER-->
     <footer class="site-footer">
@@ -126,11 +120,3 @@
 <script src="js/main.js"></script>
 </body>
 </html>
-
-
-        
-    
-
-    
-
-    
