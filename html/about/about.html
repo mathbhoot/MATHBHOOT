@@ -36,39 +36,35 @@
     <meta name="twitter:image:alt" content="Sakshi Soni, creator of MATHBHOOT | WHERE MATHEMATICS MEETS MYSTERY">
     
     <link rel="icon" href="/assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="../../css/global-layout.css">
     <link rel="stylesheet" href="/css/about/about.css">
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPNB4LNP9J"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-JPNB4LNP9J');
-    </script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "MATHBHOOT",
-        "url": "https://mathbhoot.com/",
-        "description": "MATHBHOOT is an interactive mathematical mystery adventure created by Sakshi Soni.",
+        "@type": "ProfilePage",
+        "name": "About Sakshi Soni | MATHBHOOT",
+        "url": "https://mathbhoot.com/html/about/about.html",
+        "description": "Meet Sakshi Soni, mathematics educator and creator of MATHBHOOT.",
         "image": "https://mathbhoot.com/assets/og-home.png",
-        "creator": {
+        "mainEntity": {
             "@type": "Person",
             "name": "Sakshi Soni",
             "url": "https://mathbhoot.com/html/about/about.html",
-            "image": "https://mathbhoot.com/assets/sakshi.png"
-        },
-        "logo": "https://mathbhoot.com/assets/logo.png"
+            "image": "https://mathbhoot.com/assets/sakshi.png",
+            "jobTitle": "Mathematics Educator and Author",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "MATHBHOOT",
+                "url": "https://mathbhoot.com/"
+            }
+        }
     }
     </script>
 
 </head>
 
 <body>
-    <div id="magic-particles"></div>
-    <div class="fog"></div>
-
     <!-- NAVBAR -->
 
     <header class="site-header">
@@ -92,7 +88,8 @@
     </header>
     <!-- HERO SECTION -->
 
-    <section class="hero reveal">
+    <main>
+    <section class="hero">
 
         <div class="hero-overlay"></div>
 
@@ -143,7 +140,7 @@
     </section>
     <!-- TIMELINE -->
 
-    <section class="journey reveal">
+    <section class="journey">
 
         <h2>THE STORY SO FAR</h2>
 
@@ -215,7 +212,7 @@
 
 
 
-    <section class="writer-desk reveal" aria-labelledby="writer-desk-title">
+    <section class="writer-desk" aria-labelledby="writer-desk-title">
         <div class="section-heading">
             <span class="small-heading">INSIDE THE STUDY</span>
             <h2 id="writer-desk-title">WHAT GUIDES THE WRITING</h2>
@@ -242,7 +239,7 @@
         </div>
     </section>
 
-    <section class="lore-room reveal" aria-labelledby="lore-room-title">
+    <section class="lore-room" aria-labelledby="lore-room-title">
         <div class="lore-copy">
             <span class="small-heading">THE AUTHOR'S ALCHEMY</span>
             <h2 id="lore-room-title">WHERE LESSONS BECOME LEGENDS</h2>
@@ -275,7 +272,7 @@
         </div>
     </section>
 
-    <section class="manuscript reveal" aria-labelledby="manuscript-title">
+    <section class="manuscript" aria-labelledby="manuscript-title">
         <div class="section-heading">
             <span class="small-heading">FROM THE MANUSCRIPT</span>
             <h2 id="manuscript-title">THE PROMISE OF MATHBHOOT</h2>
@@ -301,7 +298,7 @@
 
     <!-- INFO CARDS -->
 
-    <section class="cards reveal">
+    <section class="cards" aria-label="About MATHBHOOT">
 
         <div class="info-card">
 
@@ -351,12 +348,13 @@
         </section>
 
         <!--QUOTE-->
-        <section class="quote-section reveal">
+        <section class="quote-section">
             <blockquote>
                 Every mystery hides a mathematical secret. Every secret becomes a doorway. Every doorway asks the reader to think before they escape.
             </blockquote>
 
         </section>
+    </main>
         
 
 
@@ -368,6 +366,5 @@
     </footer>
 
     <script src="../../js/main.js"></script>
-    <script src="../../js/about/about.js"></script>
     </body>
 </html>
