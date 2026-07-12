@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antagonists | MATHBHOOT</title>
-    <meta name="description" content="Antagonists of the MATHBHOOT universe. This section is being prepared.">
-    <meta name="robots" content="noindex, follow">
+    <title>The Architect | Antagonists of MATHBHOOT</title>
+    <meta name="description" content="Enter the restricted MATHBHOOT antagonist archive and meet the intelligence controlling MathVilla.">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://mathbhoot.com/html/antagonists/antagonists.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="MATHBHOOT">
     <meta property="og:title" content="Antagonists | MATHBHOOT">
-    <meta property="og:description" content="Antagonists of the MATHBHOOT universe. This section is being prepared.">
+    <meta property="og:description" content="Enter the restricted MATHBHOOT antagonist archive and meet the intelligence controlling MathVilla.">
     <meta property="og:url" content="https://mathbhoot.com/html/antagonists/antagonists.html">
     <meta property="og:image" content="https://mathbhoot.com/assets/logo.png">
     <meta property="og:image:secure_url" content="https://mathbhoot.com/assets/logo.png">
@@ -20,18 +20,19 @@
     <meta property="og:image:alt" content="MATHBHOOT logo">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Antagonists | MATHBHOOT">
-    <meta name="twitter:description" content="Antagonists of the MATHBHOOT universe. This section is being prepared.">
+    <meta name="twitter:description" content="Enter the restricted MATHBHOOT antagonist archive and meet the intelligence controlling MathVilla.">
     <meta name="twitter:image" content="https://mathbhoot.com/assets/logo.png">
     <meta name="twitter:image:alt" content="MATHBHOOT logo">
     <link rel="icon" href="../../assets/logo.png" type="image/png">
-    <link rel="stylesheet" href="../../css/static-page.css">
+    <link rel="stylesheet" href="../../css/global-layout.css">
+    <link rel="stylesheet" href="../../css/antagonists/antagonists.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Antagonists | MATHBHOOT",
       "url": "https://mathbhoot.com/html/antagonists/antagonists.html",
-      "description": "Antagonists of the MATHBHOOT universe. This section is being prepared.",
+      "description": "Enter the restricted MATHBHOOT antagonist archive and meet the intelligence controlling MathVilla.",
       "image": "https://mathbhoot.com/assets/logo.png",
       "isPartOf": {
         "@type": "WebSite",
@@ -41,7 +42,7 @@
     }
     </script>
 </head>
-<body class="theme-antagonists">
+<body class="antagonist-page">
     <header class="site-header">
         <nav class="navbar" aria-label="Main navigation">
             <div class="logo-container">
@@ -58,14 +59,77 @@
             </ul>
         </nav>
     </header>
-    <main class="placeholder-main">
-        <section class="placeholder-panel">
-            <h1>Antagonists</h1>
-            <p>The darker forces of MathVilla are being documented. This chamber will reveal the minds, rules, and threats that challenge every protagonist.</p>
-            <a href="../../index.html">Return Home</a>
-        </section>
+    <main class="antagonist-interface" id="antagonistApp">
+        <article class="antagonist-shell">
+            <section class="profile-hero" aria-labelledby="antagonistTitle">
+                <div class="profile-copy">
+                    <p class="eyebrow">LEAD ANTAGONIST ·</p>
+                    <h1 class="profile-title" id="antagonistTitle">THE ONE WHO CONTROLS<b><span>MATHBHOOT VILLA</span></b></h1>
+                    <blockquote class="profile-quote">"In this villa, every number obeys me." Chaos is an intrusion. Intrusion must be erased</blockquote>
+                    <a class="profile-button" href="villastatus.html">Access Villa Status</a>
+                </div>
+                <div class="profile-visual">
+                    <img src="../../assets/antagonists/img_1.png" alt="The Architect, a shadowed figure controlling MathVilla" width="1122" height="1402" decoding="async">
+                </div>
+            </section>
+
+            <section class="status-panel" id="villaStatus" aria-labelledby="statusHeading">
+                <div class="status-alert">
+                    <p class="status-kicker" id="statusHeading">Villa System Status</p>
+                    <div class="alert-row">
+                        <span class="alert-icon" aria-hidden="true">!</span>
+                        <div>
+                            <h2 class="alert-title">SYSTEM LAG </h2>
+                            <p class="alert-copy">Network unstable... Searching for the source...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="status-metrics">
+                    <ul class="metric-list">
+                        <li class="metric"><span class="metric-name">Villa Security</span><span class="metric-track"><span class="metric-fill metric-fill-64"></span></span><span class="metric-value">64%</span></li>
+                        <li class="metric"><span class="metric-name">Magic Network</span><span class="metric-track"><span class="metric-fill metric-fill-41"></span></span><span class="metric-value">41%</span></li>
+                        <li class="metric"><span class="metric-name">Symbolic Control</span><span class="metric-track"><span class="metric-fill metric-fill-58"></span></span><span class="metric-value">58%</span></li>
+                        <li class="metric" data-error="true"><span class="metric-name">Entity Tracking</span><span class="metric-track"><span class="metric-fill metric-fill-100"></span></span><span class="metric-value">ERROR</span></li>
+                        <li class="metric"><span class="metric-name">Realm Stability</span><span class="metric-track"><span class="metric-fill metric-fill-32"></span></span><span class="metric-value">32%</span></li>
+                    </ul>
+                </div>
+                <aside class="anomaly-card">
+                    <p class="anomaly-label">Anomaly Detected</p>
+                    <div class="anomaly-signal" aria-hidden="true"></div>
+                    <p class="anomaly-copy">Unknown entities detected inside the villa. Tracing...</p>
+                </aside>
+            </section>
+
+            <section class="intruder-search" id="intruderSearch" aria-labelledby="intruderHeading">
+                <div class="intruder-copy">
+                    <p class="eyebrow">Search Initiated</p>
+                    <h2 class="intruder-title" id="intruderHeading">Who Dared <span>To Enter?</span></h2>
+                    <div class="intruder-narrative">
+                        <p>Last protagonist entered.<br> 
+                            Who else entered?<br>
+                            Together they are breaking the system...<br>
+                        </p>
+                        <p><ul>
+                            <li>Prisoners are being set free.</li>
+                            <li>Protection spells are collapsing.</li>
+                            <li>Control nodes are going offline.</li>
+                            <li>Time is no longer in favour.</li>
+                        </ul>
+                    
+                        </p>
+                        <p class="intruder-vow">I will find the intruder and restore order, no matter the cost.</p>
+                    </div>
+                    <a class="profile-button" href="#intruderIntel">Trace the Intruder</a>
+                </div>
+                <div class="intruder-visual">
+                    <img src="../../assets/antagonists/img_2.jpeg" alt="A lone intruder standing before a glowing mathematical gateway" width="1536" height="1024" loading="lazy" decoding="async">
+                </div>
+               
+            </section>
+        </article>
     </main>
     <footer class="site-footer"><p>&copy;2026 MATHBHOOT. All rights reserved.</p></footer>
     <script src="../../js/main.js"></script>
+    <script src="../../js/antagonists/antagonists.js" defer></script>
 </body>
 </html>
