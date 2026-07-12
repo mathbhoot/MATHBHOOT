@@ -47,6 +47,10 @@ body::before {
 
 a { color: inherit; }
 
+.navbar {
+    padding-inline: 15px;
+}
+
 .nav-links a:hover,
 .nav-links a:focus-visible,
 .nav-links a.active {
