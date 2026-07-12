@@ -1,0 +1,40 @@
+{
+  "profile": {
+    "classification": "LEAD ANTAGONIST ·",
+    "titleLead": "THE ONE WHO CONTROLS",
+    "titleAccent": "MATHBHOOT VILLA",
+    "quote": "In this villa, every number obeys me. Chaos is an intrusion. Intrusion must be erased",
+    "actionLabel": "Access Villa Status",
+    "image": "../../assets/antagonists/img_1.png",
+    "imageAlt": "The Architect, a shadowed figure controlling MathVilla"
+  },
+  "status": {
+    "kicker": "Villa System Status",
+    "title": "SYSTEM LAG", 
+    "message": "Network unstable... Searching for the source..."
+  },
+  "metrics": [
+    { "label": "Villa Security", "value": 64 },
+    { "label": "Magic Network", "value": 41 },
+    { "label": "Symbolic Control", "value": 58 },
+    { "label": "Entity Tracking", "value": "ERROR" },
+    { "label": "Realm Stability", "value": 32 }
+  ],
+  "anomaly": {
+    "label": "Anomaly Detected",
+    "message": "Unknown entities detected inside the villa. Tracing..."
+  },
+  "intruderSearch": {
+    "kicker": "Search Initiated",
+    "titleLead": "Who Dared",
+    "titleAccent": "To Enter?",
+    "paragraphs": [
+      "Last protagonist entered.", "Who else entered?" ,"Together they are breaking the system...",
+      "Prisoners are being set free." , "Protection spells are collapsing.", "Control nodes are going offline.", "Time is no longer in favour.", 
+      "I will find the intruder and restore order, no matter the cost."
+    ],
+    "actionLabel": "Trace the Intruder",
+    "image": "../../assets/antagonists/img_2.jpeg",
+    "imageAlt": "A lone intruder standing before a glowing mathematical gateway"
+  }
+}
