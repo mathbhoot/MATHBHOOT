@@ -2,3 +2,4 @@
 @import url('global-layout.css');
 @import url('style.css'); /* Global styles like fonts and branding */
 @import url('home.css');  /* Homepage specific layouts */
+@import url('home-hero.css'); /* Isolated homepage hero composition */
