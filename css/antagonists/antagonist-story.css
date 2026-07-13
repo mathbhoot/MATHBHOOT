@@ -6,6 +6,9 @@
 }
 
 .antagonist-story-page {
+    --global-nav-background: #080305;
+    --global-footer-background: #180509;
+    --global-footer-color: #f8e9eb;
     min-width: 320px;
     padding-bottom: var(--global-footer-height);
     color: #f1e9ea;
@@ -16,6 +19,13 @@
 .antagonist-story-page .navbar {
     border-bottom: 1px solid var(--story-line);
     background: rgba(2, 2, 3, .96);
+}
+
+.antagonist-story-page .site-footer {
+    border-top: 1px solid var(--story-line);
+    color: var(--global-footer-color);
+    background: linear-gradient(90deg, #0c0305, #24070d 50%, #0c0305);
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, .36);
 }
 
 .antagonist-story-page .nav-links a:hover,
