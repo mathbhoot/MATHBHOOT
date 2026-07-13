@@ -10,7 +10,7 @@
     };
 
     const renderProfile = (data) => {
-        if (!data || !data.profile || !data.status || !Array.isArray(data.metrics) || !data.intruderSearch || !Array.isArray(data.intruderSearch.intel)) return false;
+        if (!data || !data.profile || !data.status || !data.anomaly || !Array.isArray(data.metrics) || !data.intruderSearch) return false;
 
         const shell = createElement('article', 'antagonist-shell');
         const hero = createElement('section', 'profile-hero');
@@ -21,13 +21,19 @@
 
         const title = createElement('h1', 'profile-title');
         title.id = 'antagonistTitle';
-        title.append(document.createTextNode(data.profile.titleLead + ' '));
-        title.append(createElement('span', '', data.profile.titleAccent));
+        const titleLines = Array.isArray(data.profile.titleLines) ? data.profile.titleLines : [data.profile.titleLead];
+        titleLines.forEach((line) => title.append(createElement('span', 'profile-title-line', line)));
+        title.append(createElement('span', 'profile-title-accent', data.profile.titleAccent));
         copy.append(title);
-        copy.append(createElement('blockquote', 'profile-quote', data.profile.quote));
+        const quote = createElement('blockquote', 'profile-quote');
+        const quoteLines = Array.isArray(data.profile.quote) ? data.profile.quote : [data.profile.quote];
+        quoteLines.forEach((line, index) => {
+            quote.append(createElement('span', index >= Number(data.profile.quoteAlertStart) ? 'quote-alert' : '', line));
+        });
+        copy.append(quote);
 
         const profileLink = createElement('a', 'profile-button', data.profile.actionLabel);
-        profileLink.href = '#villaStatus';
+        profileLink.href = data.profile.actionHref || '#villaStatus';
         copy.append(profileLink);
 
         const visual = createElement('div', 'profile-visual');
@@ -98,7 +104,7 @@
         });
         searchCopy.append(narrative);
         const searchLink = createElement('a', 'profile-button', data.intruderSearch.actionLabel);
-        searchLink.href = '#intruderIntel';
+        searchLink.href = data.intruderSearch.actionHref || '#villaStatus';
         searchCopy.append(searchLink);
 
         const searchVisual = createElement('div', 'intruder-visual');
@@ -111,20 +117,7 @@
         searchImage.decoding = 'async';
         searchVisual.append(searchImage);
 
-        const intelGrid = createElement('ul', 'intel-grid');
-        intelGrid.id = 'intruderIntel';
-        intelGrid.setAttribute('aria-label', 'Intruder intelligence summary');
-        data.intruderSearch.intel.forEach((item) => {
-            const card = createElement('li', 'intel-card');
-            const icon = createElement('span', 'intel-symbol', item.symbol);
-            icon.setAttribute('aria-hidden', 'true');
-            const intelCopy = createElement('div');
-            intelCopy.append(createElement('h3', '', item.label));
-            intelCopy.append(createElement('p', '', item.value));
-            card.append(icon, intelCopy);
-            intelGrid.append(card);
-        });
-        search.append(searchCopy, searchVisual, intelGrid);
+        search.append(searchCopy, searchVisual);
 
         shell.append(hero, status, search);
         app.replaceChildren(shell);

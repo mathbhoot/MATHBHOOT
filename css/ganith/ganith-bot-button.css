@@ -1,0 +1,45 @@
+.ganith-bot-cta {
+    display: grid;
+    width: min(100% - (2 * var(--global-page-gutter)), 1200px);
+    margin: clamp(2.5rem, 6vw, 5rem) auto;
+    place-items: center;
+}
+
+.ganith-bot-button {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    padding: .9rem 1.4rem;
+    border: 1px solid rgba(255, 255, 255, .56);
+    border-radius: 999px;
+    color: #f8f8f8;
+    background: linear-gradient(135deg, #0d0d10, #35353c);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .28), inset 0 1px rgba(255, 255, 255, .14);
+    font: 700 clamp(.82rem, 1.6vw, .95rem)/1.2 Georgia, "Times New Roman", serif;
+    letter-spacing: .12em;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: not-allowed;
+    opacity: .9;
+}
+
+.ganith-bot-button::before {
+    content: "✦";
+    color: #d9d9df;
+    font-size: 1.1em;
+}
+
+.ganith-bot-status {
+    color: #c8c8cf;
+    font-size: .68em;
+    letter-spacing: .08em;
+}
+
+@media (max-width: 480px) {
+    .ganith-bot-button {
+        width: 100%;
+        padding-inline: 1rem;
+    }
+}

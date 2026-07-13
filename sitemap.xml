@@ -19,6 +19,24 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://mathbhoot.com/html/antagonists/antagonists.html</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://mathbhoot.com/html/antagonists/behind_story.html</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://mathbhoot.com/html/antagonists/more_antagonists.html</loc>
+        <lastmod>2026-07-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://mathbhoot.com/html/about/about.html</loc>
         <lastmod>2026-06-26</lastmod>
         <changefreq>weekly</changefreq>
