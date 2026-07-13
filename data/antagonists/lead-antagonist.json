@@ -1,16 +1,31 @@
 {
   "profile": {
-    "classification": "LEAD ANTAGONIST ·",
-    "titleLead": "THE ONE WHO CONTROLS",
+    "classification": "FROM CONTROL ROOM",
+    "titleLead": "THE ARCHITECT BEHIND",
+    "titleLines": ["THE", "ARCHITECT", "BEHIND"],
     "titleAccent": "MATHBHOOT VILLA",
-    "quote": "In this villa, every number obeys me. Chaos is an intrusion. Intrusion must be erased",
-    "actionLabel": "Access Villa Status",
+    "quote": [
+      "Ah... Perfect!",
+      "Every equation bows in harmony...",
+      "Every signal marches to its master...",
+      "Just one final move...",
+      "And the crown of absolute power will be mine...",
+      "I can almost hear destiny...",
+      "Whispering my name...",
+      "But wait...",
+      "...What?",
+      "No...",
+      "This cannot be happening!"
+    ],
+    "quoteAlertStart": 7,
+    "actionLabel": "Access the Dossier",
+    "actionHref": "behind_story.html",
     "image": "../../assets/antagonists/img_1.png",
     "imageAlt": "The Architect, a shadowed figure controlling MathVilla"
   },
   "status": {
     "kicker": "Villa System Status",
-    "title": "SYSTEM LAG", 
+    "title": "SYSTEM LAG",
     "message": "Network unstable... Searching for the source..."
   },
   "metrics": [
@@ -26,14 +41,24 @@
   },
   "intruderSearch": {
     "kicker": "Search Initiated",
-    "titleLead": "Who Dared",
-    "titleAccent": "To Enter?",
+    "titleLead": "SO MANY",
+    "titleAccent": "IMPOSSIBLE VARIABLES.",
     "paragraphs": [
-      "Last protagonist entered.", "Who else entered?" ,"Together they are breaking the system...",
-      "Prisoners are being set free." , "Protection spells are collapsing.", "Control nodes are going offline.", "Time is no longer in favour.", 
+      "Mathematics has never betrayed me.",
+      "It is the language of truth...",
+      "So who dares teach it to lie?",
+      "Only one signal is expected.",
+      "Then why are there so many?",
+      "Why is the network trembling?",
+      "Why is the system crashing?",
+      "Prisoners are being set free.",
+      "Protection spells are collapsing.",
+      "Control nodes are going offline.",
+      "Time is no longer in our favour.",
       "I will find the intruder and restore order, no matter the cost."
     ],
-    "actionLabel": "Trace the Intruder",
+    "actionLabel": "HELP THE ANTAGONIST",
+    "actionHref": "more_antagonists.html",
     "image": "../../assets/antagonists/img_2.jpeg",
     "imageAlt": "A lone intruder standing before a glowing mathematical gateway"
   }

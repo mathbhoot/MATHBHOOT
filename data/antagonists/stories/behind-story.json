@@ -1,0 +1,20 @@
+{
+  "kicker": "Restricted Dossier",
+  "title": "The Precision Is Glitching",
+  "image": {
+    "src": "../../assets/antagonists/behind_story.jpeg",
+    "alt": "The Architect faces two young intruders as the MathVilla system begins to lag",
+    "width": 1536,
+    "height": 1024
+  },
+  "paragraphs": [
+    "The Architect built MathVilla on one certainty: every equation would produce an obedient result.",
+    "From the control room, impossible problems were generated, protection spells were calculated, and every active node answered to a single design.",
+    "Then unfamiliar signals entered the network. A torch revealed paths that should have remained hidden, while the Purple Orb disturbed patterns the Architect believed were absolute.",
+    "The system lag is not random. It is proof that courage, collaboration, and curiosity can introduce variables no perfect plan can control."
+  ],
+  "links": [
+    { "label": "Return to Antagonists", "href": "antagonists.html" },
+    { "label": "Enter the Workspace", "href": "more_antagonists.html" }
+  ]
+}

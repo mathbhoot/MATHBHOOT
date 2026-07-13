@@ -7,10 +7,8 @@
 
     <meta name="description"
         content="Enter MATHBHOOT, a story-driven mathematics mystery where students solve puzzles, unlock secrets, and escape the haunted MathVilla.">
-    <meta name="keywords"
-        content="MATHBHOOT,mathbhoot,MathBhoot,MathVerse,MathBhootVerse, math escape game, math puzzles, mathematical adventure, math mystery, escape room math, learning mathematics">
     <meta name="author" content="Sakshi Soni">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://mathbhoot.com/">
 
     <meta property="og:type" content="website">
@@ -33,24 +31,66 @@
     <meta name="twitter:image" content="https://mathbhoot.com/assets/og-home.png">
     <meta name="twitter:image:alt" content="The haunted MATHBHOOT portal glowing with mathematical mystery">
 
-    <link rel="icon" href="/assets/logo.png" type="image/png">
+    <link rel="icon" href="assets/mathbhoot-search-logo.png" type="image/png" sizes="512x512">
     <link rel="stylesheet" href="/css/main.css">
 
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "MATHBHOOT",
-        "url": "https://mathbhoot.com",
-        "description": "MATHBHOOT is an interactive mathematical mystery adventure created by Sakshi Soni.",
-        "image": "https://mathbhoot.com/assets/og-home.png",
-        "creator": {
-            "@type": "Person",
-            "name": "Sakshi Soni",
-            "url": "https://mathbhoot.com/html/about/about.html",
-            "image": "https://mathbhoot.com/assets/sakshi.png"
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://mathbhoot.com/#organization",
+          "name": "MATHBHOOT",
+          "alternateName": ["Mathbhoot", "MathBhoot"],
+          "url": "https://mathbhoot.com/",
+          "description": "MATHBHOOT creates story-driven mathematics mysteries, educational math puzzles, and interactive mathematical adventures.",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://mathbhoot.com/#logo",
+            "contentUrl": "https://mathbhoot.com/assets/mathbhoot-search-logo.png",
+            "url": "https://mathbhoot.com/assets/mathbhoot-search-logo.png",
+            "width": 512,
+            "height": 512,
+            "caption": "MATHBHOOT logo"
+          },
+          "founder": { "@id": "https://mathbhoot.com/html/about/about.html#sakshi-soni" }
         },
-        "logo": "https://mathbhoot.com/assets/logo.png"
+        {
+          "@type": "WebSite",
+          "@id": "https://mathbhoot.com/#website",
+          "name": "MATHBHOOT",
+          "alternateName": "Mathbhoot - Where Mathematics Meets Mystery",
+          "url": "https://mathbhoot.com/",
+          "description": "A story-driven mathematics mystery where students solve educational math puzzles and explore MathVilla.",
+          "publisher": { "@id": "https://mathbhoot.com/#organization" },
+          "creator": { "@id": "https://mathbhoot.com/html/about/about.html#sakshi-soni" },
+          "image": "https://mathbhoot.com/assets/og-home.png"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://mathbhoot.com/#webpage",
+          "url": "https://mathbhoot.com/",
+          "name": "MATHBHOOT | Where Mathematics Meets Mystery",
+          "isPartOf": { "@id": "https://mathbhoot.com/#website" },
+          "about": { "@id": "https://mathbhoot.com/#organization" },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "contentUrl": "https://mathbhoot.com/assets/og-home.png",
+            "width": 1899,
+            "height": 877,
+            "caption": "MATHBHOOT mathematical mystery adventure"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://mathbhoot.com/html/about/about.html#sakshi-soni",
+          "name": "Sakshi Soni",
+          "url": "https://mathbhoot.com/html/about/about.html",
+          "image": "https://mathbhoot.com/assets/sakshi.png",
+          "jobTitle": "Mathematics Educator and Author"
+        }
+      ]
     }
     </script>
 </head>
