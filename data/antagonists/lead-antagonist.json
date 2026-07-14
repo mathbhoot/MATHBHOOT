@@ -19,7 +19,7 @@
     ],
     "quoteAlertStart": 7,
     "actionLabel": "Access the Dossier",
-    "actionHref": "behind_story.html",
+    "actionHref": "dossier.html",
     "image": "../../assets/antagonists/img_1.png",
     "imageAlt": "The Architect, a shadowed figure controlling MathVilla"
   },
@@ -57,7 +57,7 @@
       "Time is no longer in our favour.",
       "I will find the intruder and restore order, no matter the cost."
     ],
-    "actionLabel": "HELP THE ANTAGONIST",
+    "actionLabel": "ENTER CONTROL ROOM",
     "actionHref": "more_antagonists.html",
     "image": "../../assets/antagonists/img_2.jpeg",
     "imageAlt": "A lone intruder standing before a glowing mathematical gateway"

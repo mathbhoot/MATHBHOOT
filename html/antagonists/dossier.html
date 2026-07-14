@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restricted Dossiers | MATHBHOOT Archives</title>
+    <meta name="description" content="Enter the restricted MATHBHOOT archives and inspect recovered incident, entity, artifact, and system dossiers.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mathbhoot.com/html/antagonists/dossier.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MATHBHOOT">
+    <meta property="og:title" content="Restricted Dossiers | MATHBHOOT Archives">
+    <meta property="og:description" content="Inspect recovered files from the restricted MathVilla archive.">
+    <meta property="og:url" content="https://mathbhoot.com/html/antagonists/dossier.html">
+    <meta property="og:image" content="https://mathbhoot.com/assets/antagonists/dossier/the_first_breach.png">
+    <meta property="og:image:alt" content="The restricted MathVilla dossier archive">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Restricted Dossiers | MATHBHOOT Archives">
+    <meta name="twitter:description" content="Inspect recovered files from the restricted MathVilla archive.">
+    <meta name="twitter:image" content="https://mathbhoot.com/assets/antagonists/dossier/the_first_breach.png">
+    <link rel="icon" href="../../assets/mathbhoot-search-logo.png" type="image/png" sizes="512x512">
+    <link rel="stylesheet" href="../../css/global-layout.css">
+    <link rel="stylesheet" href="../../css/antagonists/dossier.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Restricted Dossiers | MATHBHOOT Archives",
+      "url": "https://mathbhoot.com/html/antagonists/dossier.html",
+      "description": "A restricted collection of recovered MathVilla incident, entity, artifact, and system dossiers.",
+      "image": "https://mathbhoot.com/assets/antagonists/dossier/the_first_breach.png",
+      "isPartOf": { "@type": "WebSite", "name": "MATHBHOOT", "url": "https://mathbhoot.com/" }
+    }
+    </script>
+</head>
+<body class="dossier-page">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo-container"><a href="../../index.html" aria-label="Go to MATHBHOOT home"><img src="../../assets/logo.png" alt="MATHBHOOT Logo" class="nav-logo"></a></div>
+            <button class="nav-toggle" type="button" aria-label="Open main navigation" aria-controls="primaryNavigation" aria-expanded="false">&#9776;</button>
+            <ul class="nav-links" id="primaryNavigation">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../protagonists/protagonists.html">Protagonists</a></li>
+                <li><a href="antagonists.html" class="active">Antagonists</a></li>
+                <li><a href="../ganith/ganith.html">Ganith</a></li>
+                <li><a href="../escapeguide/escape.html">EscapeGuide</a></li>
+                <li><a href="../about/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="dossier-interface" id="dossierApp" aria-live="polite">
+        <p class="dossier-loading">Decrypting restricted archive…</p>
+    </main>
+    <dialog class="dossier-viewer" id="dossierViewer" aria-labelledby="viewerTitle">
+        <div class="viewer-frame">
+            <header class="viewer-header">
+                <div><span class="viewer-code" id="viewerCode"></span><h2 id="viewerTitle"></h2></div>
+                <button class="viewer-close" type="button" aria-label="Close dossier">×</button>
+            </header>
+            <img id="viewerImage" src="" alt="">
+        </div>
+    </dialog>
+    <div class="lock-notice" id="lockNotice" role="status" aria-live="assertive" hidden>
+        <span aria-hidden="true">⌕</span>
+        <strong>ACCESS DENIED</strong>
+        <small>Unknown dossier remains locked</small>
+    </div>
+    <footer class="site-footer"><p>&copy;2026 MATHBHOOT. All rights reserved.</p></footer>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/antagonists/dossier.js" defer></script>
+</body>
+</html>
