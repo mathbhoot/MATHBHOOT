@@ -1,15 +1,15 @@
 {
   "archive": {
-    "kicker": "Clearance required · Level 9",
+    "kicker": "Clearance required ·",
     "title": "Restricted Archives",
-    "description": "Only fragments have survived. Every dossier contains evidence recovered from inside MathVilla.",
+    "description": "Only fragments have survived. Every dossier contains evidence recovered from inside MATHBHOOT Villa.",
     "heroImage": "../../assets/antagonists/dossier/architect_dossier.png",
-    "recovery": 37,
+    "recovery": 1,
     "warning": "These files are partially decrypted. Accessing them may reveal unstable records."
   },
   "navigation": [
     {
-      "label": "Visit Main Antagonists Page",
+      "label": "Return to Antagonists",
       "href": "antagonists.html"
     },
     {
@@ -34,6 +34,8 @@
       "summary": "Ansh ignored the warning and crossed the forbidden doorway.",
       "image": "../../assets/antagonists/dossier/the_first_breach.png",
       "imageAlt": "Recovered dossier showing the first breach",
+      "detailImage": "../../assets/antagonists/dossier_insiders/001.jpeg",
+      "detailImageAlt": "Decrypted classified report detailing Ansh's first breach",
       "locked": false
     },
     {
@@ -64,6 +66,8 @@
       "summary": "A paradox entity carrying the orb. All records remain encrypted.",
       "image": "../../assets/antagonists/dossier/ganith_dossier.png",
       "imageAlt": "Recovered dossier identifying Ganith",
+      "detailImage": "../../assets/antagonists/dossier_insiders/004.jpeg",
+      "detailImageAlt": "Decrypted anomaly report detailing Ganith",
       "locked": false
     },
     {

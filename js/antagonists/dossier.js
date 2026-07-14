@@ -29,11 +29,12 @@
             showLockNotice();
             return;
         }
-        if (!record.image) return;
+        const detailImage = record.detailImage || record.image;
+        if (!detailImage) return;
         viewerCode.textContent = record.id;
         viewerTitle.textContent = record.title;
-        viewerImage.src = record.image;
-        viewerImage.alt = record.imageAlt || record.title;
+        viewerImage.src = detailImage;
+        viewerImage.alt = record.detailImageAlt || record.imageAlt || record.title;
         if (typeof viewer.showModal === 'function') viewer.showModal();
         else viewer.setAttribute('open', '');
     };
