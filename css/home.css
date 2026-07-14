@@ -102,7 +102,7 @@ body{
     color:var(--text);
     font-family:Georgia, serif;
     line-height:1.8;
-    padding: 5px 5px 48px;
+    padding: 5px 5px calc(var(--global-footer-height, 52px) + 0.5rem);
 }
 
 /* Footer */
@@ -124,6 +124,14 @@ body{
     margin: 0;
     line-height: 1.2;
 }
+
+.site-footer a,
+.site-footer a:visited,
+.site-footer a:hover,
+.site-footer a:focus-visible {
+    color: #ffffff;
+}
+
 @media (max-width: 768px) {
     .nav-toggle {
         display: block; /* Show toggle on mobile */

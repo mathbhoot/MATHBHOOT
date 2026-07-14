@@ -73,7 +73,7 @@ body{
     color:var(--text);
     font-family:Georgia, serif;
     line-height:1.8;
-    padding: 5px 5px 48px;
+    padding: 5px 5px var(--global-footer-height, 52px);
 }
 /* Footer */
 .site-footer {

@@ -1,3 +1,5 @@
+@import url('global/legal-footer-link.css');
+
 /*
  * MATHBHOOT shared layout foundation
  * Desktop-first defaults; page/theme styles may override visual tokens.
@@ -7,7 +9,7 @@
     --global-content-width: 1200px;
     --global-reading-width: 72ch;
     --global-header-height: 58px;
-    --global-footer-height: 34px;
+    --global-footer-height: 52px;
     --global-page-gutter: clamp(1rem, 3vw, 2rem);
     --global-section-space: clamp(2.5rem, 6vw, 5rem);
     --global-nav-gap: clamp(1rem, 2vw, 1.6rem);
@@ -173,12 +175,19 @@ body {
 }
 
 :where(.site-footer p) {
+    display: grid;
     width: 100%;
     max-width: none;
     margin: 0;
+    justify-items: center;
+    gap: 0.08rem;
     font-size: clamp(0.75rem, 0.72rem + 0.15vw, 0.9rem);
     line-height: 1.2;
     text-align: center;
+}
+
+:where(.global-footer-copyright) {
+    display: block;
 }
 
 /* Tablet layout */

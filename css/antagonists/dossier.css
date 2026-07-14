@@ -66,9 +66,9 @@
     white-space: nowrap;
 }
 
-.archive-hero-copy { z-index: 1; display: grid; align-content: center; padding: clamp(2rem, 5vw, 4.5rem); }
+.archive-hero-copy { z-index: 1; display: grid; min-width: 0; align-content: center; padding: clamp(2rem, 5vw, 4.5rem); }
 .archive-kicker { margin: 0 0 .7rem; color: var(--archive-red-bright); font-size: .75rem; letter-spacing: .18em; text-transform: uppercase; }
-.archive-title { max-width: 10ch; margin: 0; color: #c32b35; font-size: clamp(2.7rem, 7vw, 6.5rem); font-weight: 400; line-height: .88; letter-spacing: .05em; text-transform: uppercase; text-shadow: 0 0 22px rgba(218, 45, 57, .2); }
+.archive-title { width: 100%; max-width: 10ch; margin: 0; color: #c32b35; font-size: clamp(2.7rem, 7vw, 6.5rem); font-weight: 400; line-height: .88; letter-spacing: .05em; overflow-wrap: anywhere; text-transform: uppercase; text-shadow: 0 0 22px rgba(218, 45, 57, .2); }
 .archive-description { max-width: 48ch; margin: 1.2rem 0 0; color: #c8b8ba; line-height: 1.6; }
 
 .recovery-panel { z-index: 1; display: grid; place-items: center; padding: 1.5rem; border-left: 1px solid var(--archive-line); background: rgba(5, 2, 3, .55); text-align: center; }
@@ -147,8 +147,8 @@
 
 @media (max-width: 480px) {
     .dossier-interface { width: min(100% - 1rem, 1240px); }
-    .archive-hero-copy { padding: 1.5rem; }
-    .archive-title { font-size: clamp(2.4rem, 15vw, 4.2rem); }
+    .archive-hero-copy { padding: clamp(1rem, 5vw, 1.5rem); }
+    .archive-title { max-width: 100%; font-size: clamp(2rem, 11vw, 3.2rem); letter-spacing: clamp(.01em, .6vw, .035em); }
     .recovery-panel { padding: 1rem; }
     .dossier-card { padding: .85rem; }
     .lock-notice { right: .5rem; bottom: calc(var(--global-footer-height) + .5rem); }

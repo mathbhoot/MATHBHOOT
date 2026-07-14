@@ -46,6 +46,8 @@
       "summary": "The Architect discovers that impossible variables have entered the system.",
       "image": "../../assets/antagonists/dossier/system_lag.png",
       "imageAlt": "Recovered dossier recording the MathVilla system lag",
+      "detailImage": "../../assets/antagonists/dossier_insiders/002.jpeg",
+      "detailImageAlt": "Decrypted system lag report from the MathVilla archive",
       "locked": false
     },
     {
@@ -56,6 +58,8 @@
       "summary": "An unknown energy source. Origin and purpose remain classified.",
       "image": "../../assets/antagonists/dossier/orb_dossier.png",
       "imageAlt": "Recovered dossier about the mysterious purple orb",
+      "detailImage": "../../assets/antagonists/dossier_insiders/003.jpeg",
+      "detailImageAlt": "Decrypted artifact dossier analysing the Purple Orb",
       "locked": false
     },
     {
@@ -78,6 +82,8 @@
       "summary": "The mind behind MathVilla and the system built to control it.",
       "image": "../../assets/antagonists/dossier/architect_dossier.png",
       "imageAlt": "Recovered dossier profiling the Architect",
+      "detailImage": "../../assets/antagonists/dossier_insiders/005.jpg",
+      "detailImageAlt": "Decrypted classified profile of MathVilla's primary antagonist",
       "locked": false
     },
     {
