@@ -1,3 +1,15 @@
+const legalFooterScript = document.createElement('script');
+const mainScriptSource = document.currentScript?.src;
+legalFooterScript.src = mainScriptSource
+    ? new URL('global/legal-footer-link.js', mainScriptSource).href
+    : '/js/global/legal-footer-link.js';
+legalFooterScript.defer = true;
+legalFooterScript.dataset.mathbhootLegalFooterLoader = 'true';
+
+if (document.head && !document.querySelector('[data-mathbhoot-legal-footer-loader]')) {
+    document.head.appendChild(legalFooterScript);
+}
+
 const analyticsScript = document.createElement('script');
 analyticsScript.src = '/js/analytics/google-analytics.js';
 analyticsScript.async = true;

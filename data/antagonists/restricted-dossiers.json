@@ -1,0 +1,99 @@
+{
+  "archive": {
+    "kicker": "Clearance required ·",
+    "title": "Restricted Archives",
+    "description": "Only fragments have survived. Every dossier contains evidence recovered from inside MATHBHOOT Villa.",
+    "heroImage": "../../assets/antagonists/dossier/architect_dossier.png",
+    "recovery": 1,
+    "warning": "These files are partially decrypted. Accessing them may reveal unstable records."
+  },
+  "navigation": [
+    {
+      "label": "Return to Antagonists",
+      "href": "antagonists.html"
+    },
+    {
+      "label": "Enter the Control Room",
+      "href": "more_antagonists.html"
+    }
+  ],
+  "categories": [
+    { "id": "all", "label": "All Files" },
+    { "id": "incidents", "label": "Incidents" },
+    { "id": "entities", "label": "Entities" },
+    { "id": "artifacts", "label": "Artifacts" },
+    { "id": "reports", "label": "Reports" },
+    { "id": "hidden", "label": "Old Hidden Dossier" }
+  ],
+  "dossiers": [
+    {
+      "id": "DOSSIER-001",
+      "category": "incidents",
+      "status": "Decrypted · 100%",
+      "title": "The First Breach",
+      "summary": "Ansh ignored the warning and crossed the forbidden doorway.",
+      "image": "../../assets/antagonists/dossier/the_first_breach.png",
+      "imageAlt": "Recovered dossier showing the first breach",
+      "detailImage": "../../assets/antagonists/dossier_insiders/001.jpeg",
+      "detailImageAlt": "Decrypted classified report detailing Ansh's first breach",
+      "locked": false
+    },
+    {
+      "id": "DOSSIER-002",
+      "category": "reports",
+      "status": "Decrypted · 82%",
+      "title": "The System Lag",
+      "summary": "The Architect discovers that impossible variables have entered the system.",
+      "image": "../../assets/antagonists/dossier/system_lag.png",
+      "imageAlt": "Recovered dossier recording the MathVilla system lag",
+      "detailImage": "../../assets/antagonists/dossier_insiders/002.jpeg",
+      "detailImageAlt": "Decrypted system lag report from the MathVilla archive",
+      "locked": false
+    },
+    {
+      "id": "DOSSIER-003",
+      "category": "artifacts",
+      "status": "Decrypted · 35%",
+      "title": "The Purple Orb",
+      "summary": "An unknown energy source. Origin and purpose remain classified.",
+      "image": "../../assets/antagonists/dossier/orb_dossier.png",
+      "imageAlt": "Recovered dossier about the mysterious purple orb",
+      "detailImage": "../../assets/antagonists/dossier_insiders/003.jpeg",
+      "detailImageAlt": "Decrypted artifact dossier analysing the Purple Orb",
+      "locked": false
+    },
+    {
+      "id": "DOSSIER-004",
+      "category": "entities",
+      "status": "Identity unstable",
+      "title": "Ganith",
+      "summary": "A paradox entity carrying the orb. All records remain encrypted.",
+      "image": "../../assets/antagonists/dossier/ganith_dossier.png",
+      "imageAlt": "Recovered dossier identifying Ganith",
+      "detailImage": "../../assets/antagonists/dossier_insiders/004.jpeg",
+      "detailImageAlt": "Decrypted anomaly report detailing Ganith",
+      "locked": false
+    },
+    {
+      "id": "DOSSIER-005",
+      "category": "entities",
+      "status": "Profile recovered",
+      "title": "The Architect",
+      "summary": "The mind behind MathVilla and the system built to control it.",
+      "image": "../../assets/antagonists/dossier/architect_dossier.png",
+      "imageAlt": "Recovered dossier profiling the Architect",
+      "detailImage": "../../assets/antagonists/dossier_insiders/005.jpg",
+      "detailImageAlt": "Decrypted classified profile of MathVilla's primary antagonist",
+      "locked": false
+    },
+    {
+      "id": "DOSSIER-006",
+      "category": "hidden",
+      "status": "Redacted",
+      "title": "Unknown Dossier",
+      "summary": "Clearance rejected. This identity has been removed from the archive.",
+      "imageAlt": "Locked and fully redacted dossier",
+      "locked": true
+    }
+  ]
+}
