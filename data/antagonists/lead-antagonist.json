@@ -58,7 +58,7 @@
       "I will find the intruder and restore order, no matter the cost."
     ],
     "actionLabel": "ENTER CONTROL ROOM",
-    "actionHref": "more_antagonists.html",
+    "actionHref": "control-room/",
     "image": "../../assets/antagonists/img_2.jpeg",
     "imageAlt": "A lone intruder standing before a glowing mathematical gateway"
   }

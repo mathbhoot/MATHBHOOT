@@ -53,14 +53,18 @@
 
 .story-hero {
     position: relative;
-    min-height: clamp(320px, 56vw, 660px);
+    display: flex;
+    min-height: 0;
+    flex-direction: column;
+    background: #080305;
 }
 
 .story-hero img {
     display: block;
     width: 100%;
-    height: clamp(320px, 56vw, 660px);
-    object-fit: cover;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
     filter: saturate(.86) contrast(1.08) brightness(.72);
 }
 
@@ -73,18 +77,16 @@
 }
 
 .story-hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(0deg, #050304 0, rgba(5, 3, 4, .16) 58%, rgba(0, 0, 0, .2));
-    pointer-events: none;
+    display: none;
 }
 
 .story-heading {
-    position: absolute;
-    z-index: 1;
-    inset: auto clamp(1.25rem, 5vw, 4rem) clamp(1.5rem, 5vw, 4rem);
-    max-width: 760px;
+    position: static;
+    width: 100%;
+    max-width: none;
+    padding: clamp(1.35rem, 3vw, 2.5rem) clamp(1.25rem, 5vw, 4rem);
+    border-top: 1px solid var(--story-line);
+    background: linear-gradient(135deg, rgba(35, 8, 14, .96), #080305);
 }
 
 .story-kicker {
@@ -167,9 +169,9 @@
 @media (max-width: 900px) {
     .story-hero,
     .story-hero img {
-        min-height: 360px;
-        height: 58vw;
-        max-height: 520px;
+        min-height: 0;
+        height: auto;
+        max-height: none;
     }
 
     .story-dossier .story-hero img {

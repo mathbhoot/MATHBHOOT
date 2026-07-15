@@ -68,7 +68,7 @@
 
 .archive-hero-copy { z-index: 1; display: grid; min-width: 0; align-content: center; padding: clamp(2rem, 5vw, 4.5rem); }
 .archive-kicker { margin: 0 0 .7rem; color: var(--archive-red-bright); font-size: .75rem; letter-spacing: .18em; text-transform: uppercase; }
-.archive-title { width: 100%; max-width: 10ch; margin: 0; color: #c32b35; font-size: clamp(2.7rem, 7vw, 6.5rem); font-weight: 400; line-height: .88; letter-spacing: .05em; overflow-wrap: anywhere; text-transform: uppercase; text-shadow: 0 0 22px rgba(218, 45, 57, .2); }
+.archive-title { width: 100%; max-width: 10ch; margin: 0; color: #c32b35; font-size: clamp(2.7rem, 7vw, 6.5rem); font-weight: 400; line-height: .88; letter-spacing: .05em; overflow-wrap: normal; word-break: normal; text-transform: uppercase; text-shadow: 0 0 22px rgba(218, 45, 57, .2); }
 .archive-description { max-width: 48ch; margin: 1.2rem 0 0; color: #c8b8ba; line-height: 1.6; }
 
 .recovery-panel { z-index: 1; display: grid; place-items: center; padding: 1.5rem; border-left: 1px solid var(--archive-line); background: rgba(5, 2, 3, .55); text-align: center; }

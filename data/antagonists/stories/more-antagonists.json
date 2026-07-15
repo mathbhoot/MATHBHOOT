@@ -15,6 +15,6 @@
   ],
   "links": [
     { "label": "Return to Antagonists", "href": "antagonists.html" },
-    { "label": "Read the Dossier", "href": "behind_story.html" }
+    { "label": "Access the Dossier", "href": "dossier.html" }
   ]
 }
