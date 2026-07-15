@@ -5,33 +5,37 @@
     "titleAccent": "Antagonist",
     "titleEnd": "Program",
     "statement": "Every perfect prison begins with a perfect equation.",
-    "description": "MATHBHOOT needs curious minds to create mathematical traps, characters, artifacts, rooms, and rules for an experiential horror-learning universe.",
+    "description": "MATHBHOOT needs brilliant minds. Create traps. Build characters. Design rules. Help shape a world where mathematics is power, and curiosity changes every outcome.",
     "image": "../../../assets/antagonists/control_room_workspace/page_character.jpg",
     "imageAlt": "A masked mathematical antagonist holding a glowing geometric construct",
     "actionLabel": "Accept the Invitation",
     "orderTitle": "Classified Order",
-    "orderText": "Challenge protagonists through reasoning, patterns, technology, and real-life mathematics. Every idea must remain safe, original, lawful, and educational."
+    "orderText": "The protagonist must be challenged. Not by force, but by numbers. Lock every path in calculations. Trap every turn in logic. Leave one brilliant way through."
   },
   "missionsHeading": "Your Missions",
+  "missionActionLabel": "Create Now",
   "missions": [
-    { "number": "01", "symbol": "△", "title": "Create a Mathematical Trap", "description": "Design a safe challenge that uses real-life mathematics to confuse, test, and ultimately teach the protagonist.", "category": "trap" },
-    { "number": "02", "symbol": "♟", "title": "Build an NPC", "description": "Create a student, teacher, ghost, guide, or historical mathematician with a meaningful role in MathVilla.", "category": "npc" },
-    { "number": "03", "symbol": "◇", "title": "Design an Ancient Artifact", "description": "Invent a mathematical object whose powers and limitations follow understandable rules.", "category": "artifact" },
-    { "number": "04", "symbol": "⌂", "title": "Create a MathVilla Room", "description": "Plan an atmospheric room where clues, technology, story, and mathematical reasoning work together.", "category": "room" },
-    { "number": "05", "symbol": "▤", "title": "Design a New Rule", "description": "Propose a mathematical law that controls part of MathVilla without contradicting established world logic.", "category": "rule" }
+    { "number": "01", "symbol": "△", "title": "Create a Mathematical Trap", "description": "Design a trap that uses mathematics to confuse, challenge, and test the protagonist.", "category": "trap", "contributionType": "Mathematical Trap" },
+    { "number": "02", "symbol": "♟", "title": "Build an NPC", "description": "Create students, teachers, ghosts, guides, or ancient mathematicians who exist in MathVilla.", "category": "npc", "contributionType": "NPC or Character" },
+    { "number": "03", "symbol": "◇", "title": "Design an Ancient Artifact", "description": "Invent a powerful mathematical artifact that can help or challenge the protagonist.", "category": "artifact", "contributionType": "Ancient Artifact" },
+    { "number": "04", "symbol": "⌂", "title": "Create a Room of MathVilla", "description": "Design a mysterious room filled with puzzles, clues, rules, and experiential dangers.", "category": "room", "contributionType": "MathVilla Room" },
+    { "number": "05", "symbol": "▤", "title": "Design a New Rule", "description": "Create a mathematical law that controls part of the world of MathVilla.", "category": "rule", "contributionType": "Mathematical Rule" }
   ],
   "application": {
     "heading": "Become Part of the Shadow Network",
-    "description": "Create a private draft on this device. Online accounts and submissions will open after the secure workspace is connected.",
+    "description": "Fill the dossier below and prepare your first contribution to the Antagonist Program.",
     "fields": [
       { "id": "alias", "label": "Your alias", "type": "text", "autocomplete": "nickname", "placeholder": "Enter your creator alias", "required": true, "maxlength": 40 },
       { "id": "email", "label": "Email address", "type": "email", "autocomplete": "email", "placeholder": "Enter your email", "required": true, "maxlength": 120 },
       { "id": "role", "label": "Choose your role", "type": "select", "required": true, "options": ["Trap Designer", "Mathematics Researcher", "Story and Character Designer", "Environment Designer", "Technology Integrator", "Learning Experience Designer"] },
-      { "id": "motivation", "label": "What drives you to join MATHBHOOT?", "type": "textarea", "placeholder": "Describe your curiosity, skills, and the kind of mathematical experiences you want to create.", "required": true, "maxlength": 1200 }
+      { "id": "contributionType", "label": "Choose your mission", "type": "select", "required": true, "options": ["Mathematical Trap", "NPC or Character", "Ancient Artifact", "MathVilla Room", "Mathematical Rule"] },
+      { "id": "contributionTitle", "label": "Contribution title", "type": "text", "placeholder": "Give your idea a classified title", "required": true, "maxlength": 100 },
+      { "id": "mathematicalFoundation", "label": "Mathematical foundation", "type": "text", "placeholder": "Example: probability, geometry, ratios, algebra", "required": true, "maxlength": 160 },
+      { "id": "contribution", "label": "Describe your contribution", "type": "textarea", "placeholder": "Explain the idea, how a player experiences it, the mathematical challenge, clues, solution, and learning outcome.", "required": true, "maxlength": 3000 }
     ],
-    "consentLabel": "I understand this is currently a voluntary creative program. Submission, approval, payment, employment, fame, or future revenue is not guaranteed.",
-    "saveLabel": "Save Private Draft",
-    "draftNotice": "This draft stays only in this browser. It is not sent to MATHBHOOT or any external service."
+    "consentLabel": "I confirm that this is my original idea and that it is designed as a safe mathematical experience.",
+    "saveLabel": "Save Dossier Draft",
+    "draftNotice": "Draft mode: this dossier remains private in this browser until the secure submission channel is activated."
   },
   "ranksHeading": "Antagonist Ranks",
   "ranks": [
@@ -43,18 +47,10 @@
   ],
   "processHeading": "What Happens Next?",
   "process": [
-    { "number": "1", "label": "Apply" },
+    { "number": "1", "label": "Submit" },
     { "number": "2", "label": "Review" },
     { "number": "3", "label": "Approval" },
-    { "number": "4", "label": "Create" }
-  ],
-  "principlesHeading": "Creator Protocol",
-  "principles": [
-    "Original work only; copied characters, stories, code, art, or puzzles are not accepted.",
-    "Horror must build atmosphere without encouraging real-world harm, harassment, discrimination, or dangerous acts.",
-    "Every trap must have a valid mathematical idea, an explainable solution, and an educational purpose.",
-    "Personal information, secrets, passwords, financial details, and identifying data must never be placed inside a concept draft.",
-    "Ownership, attribution, withdrawal, privacy, age eligibility, and contributor terms will be shown before online submission opens."
+    { "number": "4", "label": "Creator Token" }
   ],
   "closing": {
     "lead": "Your mind is the weapon.",

@@ -3,7 +3,6 @@
 
     const app = document.getElementById('recruitmentApp');
     const source = document.body?.dataset.recruitmentSource;
-    const draftKey = 'mathbhoot.antagonistRecruitment.draft.v1';
     if (!app || !source) return;
 
     const make = (tag, className, text) => {
@@ -63,12 +62,14 @@
         data.missions.forEach((mission) => {
             const card = make('article', 'mission-card');
             card.dataset.category = mission.category || '';
+            const missionLink = makeLink(data.missionActionLabel || 'Create Now', '#application', 'mission-link');
+            missionLink.dataset.contributionType = mission.contributionType || '';
             card.append(
                 make('span', 'mission-number', mission.number),
                 make('span', 'mission-symbol', mission.symbol),
                 make('h3', '', mission.title),
                 make('p', '', mission.description),
-                makeLink('Plan This Mission', '#application', 'mission-link')
+                missionLink
             );
             grid.append(card);
         });
@@ -105,15 +106,17 @@
     };
 
     const loadDraft = (form, status) => {
+        const store = window.MathbhootContributionStore;
+        if (!store || store.mode !== 'local-draft') return;
         try {
-            const draft = JSON.parse(localStorage.getItem(draftKey) || 'null');
-            if (!draft || typeof draft !== 'object') return;
-            ['alias', 'email', 'role', 'motivation'].forEach((name) => {
+            const draft = store.loadDraft();
+            if (!draft) return;
+            store.fields.forEach((name) => {
                 const field = form.elements.namedItem(name);
                 if (field && typeof draft[name] === 'string') field.value = draft[name];
             });
-            const consent = form.elements.namedItem('voluntaryConsent');
-            if (consent) consent.checked = Boolean(draft.voluntaryConsent);
+            const consent = form.elements.namedItem('originalityConfirmed');
+            if (consent) consent.checked = Boolean(draft.originalityConfirmed);
             status.textContent = 'Your private draft was restored from this browser.';
         } catch {
             status.textContent = 'A previous local draft could not be restored.';
@@ -125,16 +128,18 @@
             event.preventDefault();
             if (!form.reportValidity()) return;
             const formData = new FormData(form);
-            const draft = {
-                alias: String(formData.get('alias') || ''),
-                email: String(formData.get('email') || ''),
-                role: String(formData.get('role') || ''),
-                motivation: String(formData.get('motivation') || ''),
-                voluntaryConsent: formData.get('voluntaryConsent') === 'on',
-                savedAt: new Date().toISOString()
-            };
+            const store = window.MathbhootContributionStore;
+            if (!store || store.mode !== 'local-draft') {
+                status.textContent = 'Draft storage is temporarily unavailable.';
+                return;
+            }
+            const draft = {};
+            store.fields.forEach((name) => {
+                draft[name] = String(formData.get(name) || '');
+            });
+            draft.originalityConfirmed = formData.get('originalityConfirmed') === 'on';
             try {
-                localStorage.setItem(draftKey, JSON.stringify(draft));
+                store.saveDraft(draft);
                 status.textContent = 'Private draft saved on this device. Nothing was uploaded or submitted.';
             } catch {
                 status.textContent = 'This browser blocked local draft storage. Copy your text before leaving the page.';
@@ -155,7 +160,7 @@
         const consent = make('label', 'consent-field');
         const checkbox = make('input');
         checkbox.type = 'checkbox';
-        checkbox.name = 'voluntaryConsent';
+        checkbox.name = 'originalityConfirmed';
         checkbox.required = true;
         consent.append(checkbox, make('span', '', application.consentLabel));
 
@@ -197,15 +202,6 @@
         return sidebar;
     };
 
-    const renderPrinciples = (data) => {
-        const section = make('section', 'principles-panel');
-        section.append(make('h2', 'section-title', data.principlesHeading));
-        const list = make('ul');
-        data.principles.forEach((principle) => list.append(make('li', '', principle)));
-        section.append(list);
-        return section;
-    };
-
     const renderClosing = (closing) => {
         const section = make('section', 'recruitment-closing');
         section.append(
@@ -216,14 +212,28 @@
         return section;
     };
 
+    const bindMissionSelection = (workspace) => {
+        const typeField = workspace.querySelector('#contributionType');
+        if (!typeField) return;
+        workspace.querySelectorAll('.mission-link[data-contribution-type]').forEach((link) => {
+            link.addEventListener('click', () => {
+                const option = link.dataset.contributionType;
+                if (option && Array.from(typeField.options).some((item) => item.value === option)) {
+                    typeField.value = option;
+                }
+            });
+        });
+    };
+
     const render = (data) => {
-        const valid = data?.hero && Array.isArray(data.missions) && data.application && Array.isArray(data.ranks) && Array.isArray(data.process) && Array.isArray(data.principles) && data.closing;
+        const valid = data?.hero && Array.isArray(data.missions) && data.application && Array.isArray(data.ranks) && Array.isArray(data.process) && data.closing;
         if (!valid) return false;
         const workspace = make('div', 'recruitment-workspace');
         const joinGrid = make('div', 'join-grid');
         joinGrid.append(renderApplication(data.application), renderSidebar(data));
-        workspace.append(renderHero(data.hero), renderMissions(data), joinGrid, renderPrinciples(data), renderClosing(data.closing));
+        workspace.append(renderHero(data.hero), renderMissions(data), joinGrid, renderClosing(data.closing));
         app.replaceChildren(workspace);
+        bindMissionSelection(workspace);
         return true;
     };
 

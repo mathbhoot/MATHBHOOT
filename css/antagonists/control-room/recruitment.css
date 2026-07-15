@@ -127,8 +127,7 @@
 .join-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(290px, .75fr); gap: 1rem; }
 .application-panel,
 .rank-panel,
-.process-panel,
-.principles-panel { border: 1px solid var(--recruit-line); background: rgba(9, 5, 6, .94); }
+.process-panel { border: 1px solid var(--recruit-line); background: rgba(9, 5, 6, .94); }
 .application-panel { padding: clamp(1.4rem, 4vw, 3rem); }
 .application-panel h2,
 .rank-panel h2,
@@ -168,11 +167,6 @@
 .process-list span { display: grid; width: 34px; aspect-ratio: 1; place-items: center; border: 1px solid var(--recruit-red); color: var(--recruit-red-bright); }
 .process-list strong { font-size: .58rem; }
 
-.principles-panel { padding: clamp(1.4rem, 4vw, 3rem); }
-.principles-panel ul { display: grid; margin: 0; padding: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem 1.5rem; list-style: none; }
-.principles-panel li { position: relative; padding-left: 1.2rem; color: var(--recruit-muted); line-height: 1.6; }
-.principles-panel li::before { content: "◆"; position: absolute; left: 0; color: var(--recruit-red); font-size: .55rem; }
-
 .recruitment-closing { display: grid; justify-items: center; padding: clamp(2rem, 6vw, 4rem); border-block: 1px solid var(--recruit-line); background: radial-gradient(circle, rgba(116, 12, 22, .18), transparent 62%); text-align: center; text-transform: uppercase; }
 .recruitment-closing strong { font-size: clamp(1.5rem, 3vw, 2.6rem); font-weight: 400; }
 .recruitment-closing > span { margin: .3rem 0 1.2rem; color: var(--recruit-red-bright); font-size: clamp(1.1rem, 2vw, 1.7rem); }
@@ -190,16 +184,19 @@
     .recruitment-hero-visual { height: min(115vw, 620px); }
     .recruitment-hero-visual img { object-fit: contain; mask-image: linear-gradient(180deg, #000 83%, transparent); }
     .recruitment-hero-copy { padding: 1.5rem 1.25rem 2rem; }
-    .recruitment-title { font-size: clamp(2.7rem, 14vw, 5rem); }
+    .recruitment-title { font-size: clamp(2.2rem, 10.5vw, 4rem); line-height: .88; letter-spacing: -.01em; }
     .classified-order { margin: 0 1.25rem 1.25rem; }
     .mission-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .join-grid { grid-template-columns: 1fr; }
-    .principles-panel ul { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 620px) {
     .mission-grid,
     .application-form { grid-template-columns: 1fr; }
+    .application-field { min-width: 0; }
+    .application-field input,
+    .application-field select,
+    .application-field textarea { min-width: 0; }
     .application-field,
     .consent-field,
     .draft-notice,
