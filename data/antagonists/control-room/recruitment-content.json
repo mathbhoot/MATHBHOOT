@@ -1,0 +1,65 @@
+{
+  "hero": {
+    "eyebrow": "MATHBHOOT Recruitment Program",
+    "titleLead": "Join the",
+    "titleAccent": "Antagonist",
+    "titleEnd": "Program",
+    "statement": "Every perfect prison begins with a perfect equation.",
+    "description": "MATHBHOOT needs curious minds to create mathematical traps, characters, artifacts, rooms, and rules for an experiential horror-learning universe.",
+    "image": "../../../assets/antagonists/control_room_workspace/page_character.jpg",
+    "imageAlt": "A masked mathematical antagonist holding a glowing geometric construct",
+    "actionLabel": "Accept the Invitation",
+    "orderTitle": "Classified Order",
+    "orderText": "Challenge protagonists through reasoning, patterns, technology, and real-life mathematics. Every idea must remain safe, original, lawful, and educational."
+  },
+  "missionsHeading": "Your Missions",
+  "missions": [
+    { "number": "01", "symbol": "△", "title": "Create a Mathematical Trap", "description": "Design a safe challenge that uses real-life mathematics to confuse, test, and ultimately teach the protagonist.", "category": "trap" },
+    { "number": "02", "symbol": "♟", "title": "Build an NPC", "description": "Create a student, teacher, ghost, guide, or historical mathematician with a meaningful role in MathVilla.", "category": "npc" },
+    { "number": "03", "symbol": "◇", "title": "Design an Ancient Artifact", "description": "Invent a mathematical object whose powers and limitations follow understandable rules.", "category": "artifact" },
+    { "number": "04", "symbol": "⌂", "title": "Create a MathVilla Room", "description": "Plan an atmospheric room where clues, technology, story, and mathematical reasoning work together.", "category": "room" },
+    { "number": "05", "symbol": "▤", "title": "Design a New Rule", "description": "Propose a mathematical law that controls part of MathVilla without contradicting established world logic.", "category": "rule" }
+  ],
+  "application": {
+    "heading": "Become Part of the Shadow Network",
+    "description": "Create a private draft on this device. Online accounts and submissions will open after the secure workspace is connected.",
+    "fields": [
+      { "id": "alias", "label": "Your alias", "type": "text", "autocomplete": "nickname", "placeholder": "Enter your creator alias", "required": true, "maxlength": 40 },
+      { "id": "email", "label": "Email address", "type": "email", "autocomplete": "email", "placeholder": "Enter your email", "required": true, "maxlength": 120 },
+      { "id": "role", "label": "Choose your role", "type": "select", "required": true, "options": ["Trap Designer", "Mathematics Researcher", "Story and Character Designer", "Environment Designer", "Technology Integrator", "Learning Experience Designer"] },
+      { "id": "motivation", "label": "What drives you to join MATHBHOOT?", "type": "textarea", "placeholder": "Describe your curiosity, skills, and the kind of mathematical experiences you want to create.", "required": true, "maxlength": 1200 }
+    ],
+    "consentLabel": "I understand this is currently a voluntary creative program. Submission, approval, payment, employment, fame, or future revenue is not guaranteed.",
+    "saveLabel": "Save Private Draft",
+    "draftNotice": "This draft stays only in this browser. It is not sent to MATHBHOOT or any external service."
+  },
+  "ranksHeading": "Antagonist Ranks",
+  "ranks": [
+    { "name": "Recruit", "requirement": "Joined the program" },
+    { "name": "Shadow", "requirement": "5 accepted creations" },
+    { "name": "Nightmare", "requirement": "20 accepted creations" },
+    { "name": "Phantom", "requirement": "50 accepted creations" },
+    { "name": "Grand Antagonist", "requirement": "Invitation only" }
+  ],
+  "processHeading": "What Happens Next?",
+  "process": [
+    { "number": "1", "label": "Apply" },
+    { "number": "2", "label": "Review" },
+    { "number": "3", "label": "Approval" },
+    { "number": "4", "label": "Create" }
+  ],
+  "principlesHeading": "Creator Protocol",
+  "principles": [
+    "Original work only; copied characters, stories, code, art, or puzzles are not accepted.",
+    "Horror must build atmosphere without encouraging real-world harm, harassment, discrimination, or dangerous acts.",
+    "Every trap must have a valid mathematical idea, an explainable solution, and an educational purpose.",
+    "Personal information, secrets, passwords, financial details, and identifying data must never be placed inside a concept draft.",
+    "Ownership, attribution, withdrawal, privacy, age eligibility, and contributor terms will be shown before online submission opens."
+  ],
+  "closing": {
+    "lead": "Your mind is the weapon.",
+    "accent": "Let mathematics be the trap.",
+    "linkLabel": "Return to the Control Room Story",
+    "linkHref": "../more_antagonists.html"
+  }
+}
