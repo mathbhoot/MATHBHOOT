@@ -1,5 +1,3 @@
-@import url('global/legal-footer-link.css');
-
 /*
  * MATHBHOOT shared layout foundation
  * Desktop-first defaults; page/theme styles may override visual tokens.
@@ -184,10 +182,6 @@ body {
     font-size: clamp(0.75rem, 0.72rem + 0.15vw, 0.9rem);
     line-height: 1.2;
     text-align: center;
-}
-
-:where(.global-footer-copyright) {
-    display: block;
 }
 
 /* Tablet layout */
