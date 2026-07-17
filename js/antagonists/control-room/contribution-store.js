@@ -3,13 +3,10 @@
 
     const storageKey = 'mathbhoot.antagonistContribution.draft.v1';
     const allowedFields = Object.freeze([
-        'alias',
+        'username',
         'email',
-        'role',
-        'contributionType',
-        'contributionTitle',
-        'mathematicalFoundation',
-        'contribution'
+        'mission',
+        'ideaDescription'
     ]);
 
     const cleanDraft = (input) => {
@@ -33,10 +30,13 @@
         return stored && typeof stored === 'object' ? cleanDraft(stored) : null;
     };
 
+    const clearDraft = () => localStorage.removeItem(storageKey);
+
     window.MathbhootContributionStore = Object.freeze({
         mode: 'local-draft',
         fields: allowedFields,
         saveDraft,
-        loadDraft
+        loadDraft,
+        clearDraft
     });
 })();
