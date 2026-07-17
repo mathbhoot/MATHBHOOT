@@ -7,6 +7,10 @@ if (document.head && !document.querySelector('[data-mathbhoot-analytics-loader]'
     document.head.appendChild(analyticsScript);
 }
 
+import('./auth/auth-ui.js').catch(() => {
+    console.warn('[MATHBHOOT] Account controls are temporarily unavailable.');
+});
+
 const navToggles = document.querySelectorAll('.nav-toggle');
 
 navToggles.forEach((navToggle) => {
