@@ -159,10 +159,17 @@ const initialize = async () => {
                             if (submit) submit.disabled = true;
                             setStatus(status, content.messages.captchaExpired);
                         },
-                        'error-callback': () => {
+                        'error-callback': (errorCode) => {
                             token = '';
                             if (submit) submit.disabled = true;
-                            setStatus(status, content.messages.captchaError);
+                            const safeCode = /^\d{3,6}$/.test(String(errorCode || ''))
+                                ? String(errorCode)
+                                : 'unknown';
+                            const diagnosticMessage = content.messages.captchaErrorCode
+                                ?.replace('{code}', safeCode)
+                                || content.messages.captchaError;
+                            console.warn('[MATHBHOOT] Turnstile client error:', safeCode);
+                            setStatus(status, diagnosticMessage);
                             return true;
                         }
                     });
