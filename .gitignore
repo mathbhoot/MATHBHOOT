@@ -1,1 +1,14 @@
 node_modules/
+
+# Local and deployment environment files
+.env
+.env.*
+!.env.example
+
+# Local browser configuration overrides
+config/*.local.js
+
+# Supabase CLI state and temporary files
+.supabase/
+supabase/.branches/
+supabase/.temp/

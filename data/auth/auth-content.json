@@ -62,6 +62,7 @@
     "captchaErrorCode": "The security check failed (Cloudflare code: {code}). Please try again or contact MATHBHOOT support.",
     "connectionUnavailable": "Secure account services are temporarily unavailable.",
     "genericError": "The request could not be completed safely. Please check the details and try again.",
+    "serviceErrorCode": "The request could not be completed safely (service code: {code}). Please try again shortly.",
     "loginFailed": "The email or password is incorrect, or the email has not been verified.",
     "loggedOut": "You have been logged out safely.",
     "sessionExpired": "Your session has expired. Please log in again."

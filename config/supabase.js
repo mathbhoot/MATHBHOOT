@@ -1,4 +1,4 @@
-const SUPABASE_CDN_URL = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+const SUPABASE_CDN_URL = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.7/+esm';
 
 const isConfigured = ({ url, publishableKey } = {}) => {
     if (typeof url !== 'string' || typeof publishableKey !== 'string') return false;
