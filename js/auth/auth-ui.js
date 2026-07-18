@@ -5,6 +5,7 @@ const moduleRoot = new URL('../../', import.meta.url);
 const contentUrl = new URL('data/auth/auth-content.json', moduleRoot);
 const styleUrl = new URL('css/auth/auth-ui.css', moduleRoot);
 const turnstileScriptUrl = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+const turnstileLoadTimeoutMs = 12000;
 
 let turnstilePromise;
 
@@ -29,25 +30,47 @@ const loadTurnstile = () => {
     if (turnstilePromise) return turnstilePromise;
 
     turnstilePromise = new Promise((resolve, reject) => {
-        const resolveLoadedApi = () => {
-            if (window.turnstile) resolve(window.turnstile);
-            else reject(new Error('Turnstile API unavailable'));
+        let timeoutId;
+        let script = document.querySelector('[data-mathbhoot-turnstile]');
+
+        const cleanup = () => {
+            window.clearTimeout(timeoutId);
+            script?.removeEventListener('load', resolveLoadedApi);
+            script?.removeEventListener('error', rejectLoad);
         };
-        const existing = document.querySelector('[data-mathbhoot-turnstile]');
-        if (existing) {
-            existing.addEventListener('load', resolveLoadedApi, { once: true });
-            existing.addEventListener('error', reject, { once: true });
+        const resolveLoadedApi = () => {
+            cleanup();
+            if (window.turnstile) {
+                if (script) script.dataset.loaded = 'true';
+                resolve(window.turnstile);
+            } else {
+                rejectLoad();
+            }
+        };
+        const rejectLoad = () => {
+            cleanup();
+            script?.remove();
+            reject(new Error('Turnstile API unavailable'));
+        };
+
+        if (!script) {
+            script = document.createElement('script');
+            script.src = turnstileScriptUrl;
+            script.async = true;
+            script.defer = true;
+            script.dataset.mathbhootTurnstile = 'true';
+        } else if (script.dataset.loaded === 'true') {
+            resolveLoadedApi();
             return;
         }
 
-        const script = document.createElement('script');
-        script.src = turnstileScriptUrl;
-        script.async = true;
-        script.defer = true;
-        script.dataset.mathbhootTurnstile = 'true';
         script.addEventListener('load', resolveLoadedApi, { once: true });
-        script.addEventListener('error', reject, { once: true });
-        document.head.append(script);
+        script.addEventListener('error', rejectLoad, { once: true });
+        timeoutId = window.setTimeout(rejectLoad, turnstileLoadTimeoutMs);
+        if (!script.isConnected) document.head.append(script);
+    }).catch((error) => {
+        turnstilePromise = undefined;
+        throw error;
     });
 
     return turnstilePromise;
@@ -116,6 +139,21 @@ const initialize = async () => {
         status.dataset.state = state;
     };
 
+    const safeServiceCode = (error) => {
+        const code = String(error?.code || 'unknown').toLowerCase();
+        return /^[a-z0-9_-]{2,64}$/.test(code) ? code : 'unknown';
+    };
+
+    const setServiceError = (status, error) => {
+        const code = safeServiceCode(error);
+        console.warn('[MATHBHOOT] Authentication service error:', code);
+        setStatus(
+            status,
+            content.messages.serviceErrorCode?.replace('{code}', code)
+                || content.messages.genericError
+        );
+    };
+
     const setWorking = (form, working) => {
         form.querySelectorAll('button, input').forEach((control) => {
             control.disabled = working;
@@ -130,6 +168,17 @@ const initialize = async () => {
         if (submit) submit.disabled = true;
         form.insertBefore(container, submit);
 
+        const setCaptchaStatus = (message) => {
+            status.dataset.source = 'captcha';
+            setStatus(status, message);
+        };
+
+        const clearCaptchaStatus = () => {
+            if (status.dataset.source !== 'captcha') return;
+            delete status.dataset.source;
+            setStatus(status);
+        };
+
         loadTurnstile()
             .then((turnstile) => {
                 if (!turnstile || !container.isConnected) return;
@@ -141,21 +190,17 @@ const initialize = async () => {
                     callback: (value) => {
                         token = value;
                         if (submit) submit.disabled = false;
-                        if (status.textContent === content.messages.captchaWaiting
-                            || status.textContent === content.messages.captchaExpired
-                            || status.textContent === content.messages.captchaError) {
-                            setStatus(status);
-                        }
+                        clearCaptchaStatus();
                     },
                     'expired-callback': () => {
                         token = '';
                         if (submit) submit.disabled = true;
-                        setStatus(status, content.messages.captchaExpired);
+                        setCaptchaStatus(content.messages.captchaExpired);
                     },
                     'timeout-callback': () => {
                         token = '';
                         if (submit) submit.disabled = true;
-                        setStatus(status, content.messages.captchaExpired);
+                        setCaptchaStatus(content.messages.captchaExpired);
                     },
                     'error-callback': (errorCode) => {
                         token = '';
@@ -167,12 +212,12 @@ const initialize = async () => {
                             ?.replace('{code}', safeCode)
                             || content.messages.captchaError;
                         console.warn('[MATHBHOOT] Turnstile client error:', safeCode);
-                        setStatus(status, diagnosticMessage);
+                        setCaptchaStatus(diagnosticMessage);
                         return true;
                     }
                 });
             })
-            .catch(() => setStatus(status, content.messages.captchaError));
+            .catch(() => setCaptchaStatus(content.messages.captchaError));
 
         return Object.freeze({
             getToken: () => token,
@@ -247,8 +292,8 @@ const initialize = async () => {
                 if (error) throw error;
                 activeForm.reset();
                 setStatus(activeStatus, content.signup.success, 'success');
-            } catch {
-                setStatus(activeStatus, content.messages.genericError);
+            } catch (error) {
+                setServiceError(activeStatus, error);
             } finally {
                 setWorking(activeForm, false);
                 captcha?.reset();
@@ -293,8 +338,8 @@ const initialize = async () => {
                 if (error) throw error;
                 activeForm.reset();
                 setStatus(activeStatus, content.reset.success, 'success');
-            } catch {
-                setStatus(activeStatus, content.messages.genericError);
+            } catch (error) {
+                setServiceError(activeStatus, error);
             } finally {
                 setWorking(activeForm, false);
                 captcha?.reset();
