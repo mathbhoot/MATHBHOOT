@@ -4,26 +4,16 @@
   "title": "MATHBHOOT Antagonist Contribution Record",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "userId", "alias", "email", "role", "contributionType", "contributionTitle", "mathematicalFoundation", "contribution", "status", "createdAt", "updatedAt", "rewardTokens"],
+  "required": ["id", "userId", "username", "email", "mission", "ideaDescription", "status", "createdAt"],
   "properties": {
     "id": { "type": "string", "format": "uuid" },
     "userId": { "type": "string", "format": "uuid" },
-    "alias": { "type": "string", "minLength": 2, "maxLength": 40 },
-    "email": { "type": "string", "format": "email", "maxLength": 120 },
-    "role": { "type": "string", "maxLength": 80 },
-    "contributionType": { "enum": ["Mathematical Trap", "NPC or Character", "Ancient Artifact", "MathVilla Room", "Mathematical Rule"] },
-    "contributionTitle": { "type": "string", "minLength": 3, "maxLength": 100 },
-    "mathematicalFoundation": { "type": "string", "minLength": 2, "maxLength": 160 },
-    "contribution": { "type": "string", "minLength": 40, "maxLength": 3000 },
-    "status": { "enum": ["draft", "submitted", "under_review", "revision_requested", "approved", "rejected", "implemented"] },
-    "reviewNote": { "type": "string", "maxLength": 2000 },
+    "username": { "type": "string", "pattern": "^[A-Za-z0-9_]{3,30}$" },
+    "email": { "type": "string", "format": "email", "maxLength": 254 },
+    "mission": { "enum": ["Mathematical Trap", "NPC or Character", "Ancient Artifact", "MathVilla Room", "Mathematical Rule", "Other"] },
+    "ideaDescription": { "type": "string", "minLength": 40, "maxLength": 3000 },
+    "status": { "enum": ["submitted", "under_review", "approved", "rejected"] },
     "createdAt": { "type": "string", "format": "date-time" },
-    "updatedAt": { "type": "string", "format": "date-time" },
-    "submittedAt": { "type": ["string", "null"], "format": "date-time" },
-    "reviewedAt": { "type": ["string", "null"], "format": "date-time" },
-    "approvedAt": { "type": ["string", "null"], "format": "date-time" },
-    "implementedAt": { "type": ["string", "null"], "format": "date-time" },
-    "rewardTokens": { "type": "integer", "minimum": 0 },
-    "revision": { "type": "integer", "minimum": 1 }
+    "reviewedAt": { "type": ["string", "null"], "format": "date-time" }
   }
 }

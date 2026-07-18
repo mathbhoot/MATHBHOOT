@@ -59,6 +59,7 @@
     "captchaWaiting": "Complete the security check before continuing.",
     "captchaExpired": "The security check expired. Please complete it again.",
     "captchaError": "The security check could not be loaded. Check your connection and try again.",
+    "captchaErrorCode": "The security check failed (Cloudflare code: {code}). Please try again or contact MATHBHOOT support.",
     "connectionUnavailable": "Secure account services are temporarily unavailable.",
     "genericError": "The request could not be completed safely. Please check the details and try again.",
     "loginFailed": "The email or password is incorrect, or the email has not been verified.",

@@ -88,7 +88,7 @@
             control.rows = 5;
         } else if (field.type === 'select') {
             control = make('select');
-            control.append(new Option('Select your role', ''));
+            control.append(new Option(field.placeholder || 'Select an option', ''));
             (field.options || []).forEach((option) => control.append(new Option(option, option)));
         } else {
             control = make('input');
@@ -101,6 +101,9 @@
         if (field.placeholder) control.placeholder = field.placeholder;
         if (field.autocomplete) control.autocomplete = field.autocomplete;
         if (field.maxlength) control.maxLength = Number(field.maxlength);
+        if (field.minlength) control.minLength = Number(field.minlength);
+        if (field.pattern) control.pattern = field.pattern;
+        if (field.title) control.title = field.title;
         group.append(label, control);
         return group;
     };
@@ -124,11 +127,12 @@
     };
 
     const bindDraftForm = (form, status) => {
-        form.addEventListener('submit', (event) => {
+        form.addEventListener('submit', async (event) => {
             event.preventDefault();
             if (!form.reportValidity()) return;
             const formData = new FormData(form);
             const store = window.MathbhootContributionStore;
+            const service = window.MathbhootRecruitmentSubmission;
             if (!store || store.mode !== 'local-draft') {
                 status.textContent = 'Draft storage is temporarily unavailable.';
                 return;
@@ -140,9 +144,33 @@
             draft.originalityConfirmed = formData.get('originalityConfirmed') === 'on';
             try {
                 store.saveDraft(draft);
-                status.textContent = 'Private draft saved on this device. Nothing was uploaded or submitted.';
             } catch {
                 status.textContent = 'This browser blocked local draft storage. Copy your text before leaving the page.';
+                return;
+            }
+
+            if (!service || typeof service.submit !== 'function') {
+                status.textContent = 'The secure submission service is temporarily unavailable. Your draft remains on this device.';
+                return;
+            }
+
+            const submit = form.querySelector('.application-submit');
+            if (submit) submit.disabled = true;
+            status.textContent = 'Securing your submission…';
+
+            try {
+                const result = await service.submit(draft);
+                if (result.verificationSent) {
+                    status.textContent = 'Verification email sent. Open its link, return here, and confirm once more to submit your idea.';
+                } else {
+                    store.clearDraft();
+                    form.reset();
+                    status.textContent = 'Submission received securely. Your reference is ' + result.reference + '.';
+                }
+            } catch (error) {
+                status.textContent = error?.message || 'Submission failed safely. Your draft remains on this device.';
+            } finally {
+                if (submit) submit.disabled = false;
             }
         });
     };
@@ -213,7 +241,7 @@
     };
 
     const bindMissionSelection = (workspace) => {
-        const typeField = workspace.querySelector('#contributionType');
+        const typeField = workspace.querySelector('#mission');
         if (!typeField) return;
         workspace.querySelectorAll('.mission-link[data-contribution-type]').forEach((link) => {
             link.addEventListener('click', () => {
