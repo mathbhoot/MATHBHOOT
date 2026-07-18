@@ -133,46 +133,43 @@ const initialize = async () => {
         loadTurnstile()
             .then((turnstile) => {
                 if (!turnstile || !container.isConnected) return;
-                turnstile.ready(() => {
-                    if (!container.isConnected) return;
-                    widgetId = turnstile.render(container, {
-                        sitekey: turnstileConfig.siteKey,
-                        theme: 'dark',
-                        size: 'flexible',
-                        action,
-                        callback: (value) => {
-                            token = value;
-                            if (submit) submit.disabled = false;
-                            if (status.textContent === content.messages.captchaWaiting
-                                || status.textContent === content.messages.captchaExpired
-                                || status.textContent === content.messages.captchaError) {
-                                setStatus(status);
-                            }
-                        },
-                        'expired-callback': () => {
-                            token = '';
-                            if (submit) submit.disabled = true;
-                            setStatus(status, content.messages.captchaExpired);
-                        },
-                        'timeout-callback': () => {
-                            token = '';
-                            if (submit) submit.disabled = true;
-                            setStatus(status, content.messages.captchaExpired);
-                        },
-                        'error-callback': (errorCode) => {
-                            token = '';
-                            if (submit) submit.disabled = true;
-                            const safeCode = /^\d{3,6}$/.test(String(errorCode || ''))
-                                ? String(errorCode)
-                                : 'unknown';
-                            const diagnosticMessage = content.messages.captchaErrorCode
-                                ?.replace('{code}', safeCode)
-                                || content.messages.captchaError;
-                            console.warn('[MATHBHOOT] Turnstile client error:', safeCode);
-                            setStatus(status, diagnosticMessage);
-                            return true;
+                widgetId = turnstile.render(container, {
+                    sitekey: turnstileConfig.siteKey,
+                    theme: 'dark',
+                    size: 'flexible',
+                    action,
+                    callback: (value) => {
+                        token = value;
+                        if (submit) submit.disabled = false;
+                        if (status.textContent === content.messages.captchaWaiting
+                            || status.textContent === content.messages.captchaExpired
+                            || status.textContent === content.messages.captchaError) {
+                            setStatus(status);
                         }
-                    });
+                    },
+                    'expired-callback': () => {
+                        token = '';
+                        if (submit) submit.disabled = true;
+                        setStatus(status, content.messages.captchaExpired);
+                    },
+                    'timeout-callback': () => {
+                        token = '';
+                        if (submit) submit.disabled = true;
+                        setStatus(status, content.messages.captchaExpired);
+                    },
+                    'error-callback': (errorCode) => {
+                        token = '';
+                        if (submit) submit.disabled = true;
+                        const safeCode = /^\d{3,6}$/.test(String(errorCode || ''))
+                            ? String(errorCode)
+                            : 'unknown';
+                        const diagnosticMessage = content.messages.captchaErrorCode
+                            ?.replace('{code}', safeCode)
+                            || content.messages.captchaError;
+                        console.warn('[MATHBHOOT] Turnstile client error:', safeCode);
+                        setStatus(status, diagnosticMessage);
+                        return true;
+                    }
                 });
             })
             .catch(() => setStatus(status, content.messages.captchaError));
