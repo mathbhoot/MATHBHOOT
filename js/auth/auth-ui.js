@@ -326,13 +326,14 @@ const initialize = async () => {
                 setStatus(activeStatus, content.messages.captchaWaiting);
                 return;
             }
+            const values = new FormData(activeForm);
+            const email = String(values.get('email') || '').trim().toLowerCase();
             setWorking(activeForm, true);
             setStatus(activeStatus, content.messages.working);
             try {
                 client ||= await getClient();
-                const values = new FormData(activeForm);
                 const { error } = await client.auth.resetPasswordForEmail(
-                    String(values.get('email') || '').trim().toLowerCase(),
+                    email,
                     { redirectTo: cleanReturnUrl(), captchaToken }
                 );
                 if (error) throw error;
@@ -408,14 +409,16 @@ const initialize = async () => {
                 setStatus(activeStatus, content.messages.captchaWaiting);
                 return;
             }
+            const values = new FormData(activeForm);
+            const email = String(values.get('email') || '').trim().toLowerCase();
+            const password = String(values.get('password') || '');
             setWorking(activeForm, true);
             setStatus(activeStatus, content.messages.working);
             try {
                 client ||= await getClient();
-                const values = new FormData(activeForm);
                 const { error } = await client.auth.signInWithPassword({
-                    email: String(values.get('email') || '').trim().toLowerCase(),
-                    password: String(values.get('password') || ''),
+                    email,
+                    password,
                     options: { captchaToken }
                 });
                 if (error) throw error;
