@@ -106,6 +106,16 @@ const passwordIsStrong = (password) => password.length >= 12
     && /\d/.test(password)
     && /[^A-Za-z0-9]/.test(password);
 
+const ageOnDate = (dateOfBirth, today = new Date()) => {
+    const birthDate = new Date(`${dateOfBirth}T00:00:00`);
+    if (Number.isNaN(birthDate.getTime())) return -1;
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const birthdayPending = today.getMonth() < birthDate.getMonth()
+        || (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate());
+    if (birthdayPending) age -= 1;
+    return age;
+};
+
 const initialize = async () => {
     const navLists = document.querySelectorAll('.navbar .nav-links');
     if (!navLists.length || !document.body) return;
@@ -264,6 +274,15 @@ const initialize = async () => {
             }
             const values = new FormData(activeForm);
             const password = String(values.get('password') || '');
+            const dateOfBirth = String(values.get('dateOfBirth') || '');
+            if (ageOnDate(dateOfBirth) < Number(content.signup.minimumAge || 18)) {
+                setStatus(activeStatus, content.messages.minimumAge);
+                return;
+            }
+            if (values.get('legalConsent') !== 'accepted') {
+                setStatus(activeStatus, content.messages.legalConsentRequired);
+                return;
+            }
             if (password !== String(values.get('passwordConfirm') || '')) {
                 setStatus(activeStatus, content.signup.passwordMismatch);
                 return;
@@ -285,7 +304,9 @@ const initialize = async () => {
                         captchaToken,
                         data: {
                             full_name: String(values.get('fullName') || '').trim(),
-                            date_of_birth: String(values.get('dateOfBirth') || '')
+                            date_of_birth: dateOfBirth,
+                            terms_accepted: true,
+                            policy_version: content.signup.policyVersion
                         }
                     }
                 });
@@ -301,8 +322,34 @@ const initialize = async () => {
         });
         const note = make('p', 'auth-form-note', content.signup.passwordRule);
         const privacy = make('p', 'auth-form-note', content.signup.privacyNotice);
+        const ageRequirement = make('p', 'auth-form-note', content.signup.ageRequirement);
+        const legal = make('label', 'auth-legal-consent');
+        const legalCheckbox = make('input');
+        legalCheckbox.type = 'checkbox';
+        legalCheckbox.name = 'legalConsent';
+        legalCheckbox.value = 'accepted';
+        legalCheckbox.required = true;
+        const legalText = make('span');
+        const termsLink = make('a', '', content.signup.termsLabel);
+        termsLink.href = content.signup.termsUrl;
+        termsLink.target = '_blank';
+        termsLink.rel = 'noopener';
+        const privacyLink = make('a', '', content.signup.privacyLabel);
+        privacyLink.href = content.signup.privacyUrl;
+        privacyLink.target = '_blank';
+        privacyLink.rel = 'noopener';
+        legalText.append(
+            document.createTextNode('I agree to the '),
+            termsLink,
+            document.createTextNode(' and acknowledge the '),
+            privacyLink,
+            document.createTextNode('.')
+        );
+        legal.append(legalCheckbox, legalText);
         form.insertBefore(note, form.querySelector('.auth-submit'));
         form.insertBefore(privacy, form.querySelector('.auth-submit'));
+        form.insertBefore(ageRequirement, form.querySelector('.auth-submit'));
+        form.insertBefore(legal, form.querySelector('.auth-submit'));
         captcha = mountCaptcha(form, status, 'signup');
         activeCaptcha = captcha;
         const dob = form.elements.namedItem('dateOfBirth');
@@ -376,6 +423,8 @@ const initialize = async () => {
                 client ||= await getClient();
                 const { error } = await client.auth.updateUser({ password });
                 if (error) throw error;
+                const { error: signOutError } = await client.auth.signOut({ scope: 'others' });
+                if (signOutError) throw signOutError;
                 activeForm.reset();
                 setStatus(status, content.updatePassword.success, 'success');
             } catch {
@@ -395,7 +444,25 @@ const initialize = async () => {
         const email = make('p', 'auth-account-detail');
         email.append(make('strong', '', `${content.account.emailLabel}: `), document.createTextNode(session?.user?.email || ''));
         const onboarding = make('p', 'auth-account-detail', content.account.onboarding);
-        view.replaceChildren(title, verified, email, onboarding);
+        const deletionStatus = make('p', 'auth-status');
+        deletionStatus.setAttribute('role', 'status');
+        deletionStatus.setAttribute('aria-live', 'polite');
+        const requestDeletion = make('button', 'auth-text-button', content.account.deleteRequest);
+        requestDeletion.type = 'button';
+        requestDeletion.addEventListener('click', async () => {
+            if (!window.confirm(content.account.deleteConfirm)) return;
+            requestDeletion.disabled = true;
+            try {
+                client ||= await getClient();
+                const { error } = await client.rpc('request_account_deletion');
+                if (error) throw error;
+                setStatus(deletionStatus, content.account.deleteRequested, 'success');
+            } catch (error) {
+                setServiceError(deletionStatus, error);
+                requestDeletion.disabled = false;
+            }
+        });
+        view.replaceChildren(title, verified, email, onboarding, requestDeletion, deletionStatus);
     };
 
     const renderLogin = () => {
@@ -463,7 +530,7 @@ const initialize = async () => {
                     logout.disabled = true;
                     try {
                         client ||= await getClient();
-                        await client.auth.signOut({ scope: 'local' });
+                        await client.auth.signOut({ scope: 'global' });
                     } finally {
                         logout.disabled = false;
                     }

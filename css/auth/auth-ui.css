@@ -75,6 +75,7 @@
 
 .auth-dialog::backdrop {
     background: radial-gradient(circle at center, rgba(34, 9, 58, .32), rgba(0, 0, 0, .9));
+    -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
 }
 
@@ -261,6 +262,24 @@
 
 .auth-status[data-state="success"] {
     color: #a9e9bd;
+}
+
+.auth-legal-consent {
+    align-items: flex-start;
+    display: flex;
+    gap: .65rem;
+    font-size: .8rem;
+    line-height: 1.45;
+}
+
+.auth-legal-consent input {
+    flex: 0 0 auto;
+    margin-top: .25rem;
+}
+
+.auth-legal-consent a {
+    color: inherit;
+    text-decoration: underline;
 }
 
 body.auth-dialog-open {

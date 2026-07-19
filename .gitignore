@@ -12,3 +12,6 @@ config/*.local.js
 .supabase/
 supabase/.branches/
 supabase/.temp/
+
+# Private local project control notes (never publish or deploy)
+.mathbhoot-private/
