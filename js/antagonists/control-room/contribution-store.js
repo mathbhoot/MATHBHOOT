@@ -21,16 +21,16 @@
 
     const saveDraft = (input) => {
         const draft = cleanDraft(input);
-        localStorage.setItem(storageKey, JSON.stringify(draft));
+        sessionStorage.setItem(storageKey, JSON.stringify(draft));
         return draft;
     };
 
     const loadDraft = () => {
-        const stored = JSON.parse(localStorage.getItem(storageKey) || 'null');
+        const stored = JSON.parse(sessionStorage.getItem(storageKey) || 'null');
         return stored && typeof stored === 'object' ? cleanDraft(stored) : null;
     };
 
-    const clearDraft = () => localStorage.removeItem(storageKey);
+    const clearDraft = () => sessionStorage.removeItem(storageKey);
 
     window.MathbhootContributionStore = Object.freeze({
         mode: 'local-draft',

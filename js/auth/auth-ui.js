@@ -423,6 +423,8 @@ const initialize = async () => {
                 client ||= await getClient();
                 const { error } = await client.auth.updateUser({ password });
                 if (error) throw error;
+                const { error: signOutError } = await client.auth.signOut({ scope: 'others' });
+                if (signOutError) throw signOutError;
                 activeForm.reset();
                 setStatus(status, content.updatePassword.success, 'success');
             } catch {
@@ -528,7 +530,7 @@ const initialize = async () => {
                     logout.disabled = true;
                     try {
                         client ||= await getClient();
-                        await client.auth.signOut({ scope: 'local' });
+                        await client.auth.signOut({ scope: 'global' });
                     } finally {
                         logout.disabled = false;
                     }

@@ -1,11 +1,6 @@
-const analyticsScript = document.createElement('script');
-analyticsScript.src = '/js/analytics/google-analytics.js';
-analyticsScript.async = true;
-analyticsScript.dataset.mathbhootAnalyticsLoader = 'true';
-
-if (document.head && !document.querySelector('[data-mathbhoot-analytics-loader]')) {
-    document.head.appendChild(analyticsScript);
-}
+import('./analytics/analytics-consent.js').catch(() => {
+    console.warn('[MATHBHOOT] Analytics consent controls are unavailable. Analytics remains disabled.');
+});
 
 import('./auth/auth-ui.js').catch(() => {
     console.warn('[MATHBHOOT] Account controls are temporarily unavailable.');
