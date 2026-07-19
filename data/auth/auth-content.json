@@ -20,7 +20,14 @@
       { "id": "signupPassword", "name": "password", "label": "Set password", "type": "password", "autocomplete": "new-password", "minlength": 12, "maxlength": 72, "required": true },
       { "id": "signupPasswordConfirm", "name": "passwordConfirm", "label": "Confirm password", "type": "password", "autocomplete": "new-password", "minlength": 12, "maxlength": 72, "required": true }
     ],
+    "minimumAge": 18,
+    "ageRequirement": "Account creation is currently available only to people aged 18 or older. A guardian-consent flow will be designed before accounts for minors are enabled.",
     "privacyNotice": "Your name, date of birth and email are private account information. They will not be displayed publicly.",
+    "policyVersion": "2026-07-19",
+    "termsUrl": "/docs/TERMS.md",
+    "privacyUrl": "/docs/PRIVACY.md",
+    "termsLabel": "Terms of Use",
+    "privacyLabel": "Privacy Policy",
     "success": "Account created. Check your email and follow the verification link before logging in.",
     "passwordMismatch": "The two passwords do not match.",
     "passwordRule": "Use at least 12 characters, including uppercase, lowercase, a number and a symbol."
@@ -52,7 +59,10 @@
     "title": "Your account",
     "verified": "Email verified",
     "onboarding": "Username and public profile creation will be added in Feature 2.",
-    "emailLabel": "Account email"
+    "emailLabel": "Account email",
+    "deleteRequest": "Request account deletion",
+    "deleteConfirm": "Request deletion of your MATHBHOOT account and associated private account data? You will receive confirmation before permanent deletion is completed.",
+    "deleteRequested": "Your deletion request has been recorded. MATHBHOOT will review and complete it according to the Privacy Policy."
   },
   "messages": {
     "working": "Please wait…",
@@ -65,6 +75,8 @@
     "serviceErrorCode": "The request could not be completed safely (service code: {code}). Please try again shortly.",
     "loginFailed": "The email or password is incorrect, or the email has not been verified.",
     "loggedOut": "You have been logged out safely.",
-    "sessionExpired": "Your session has expired. Please log in again."
+    "sessionExpired": "Your session has expired. Please log in again.",
+    "minimumAge": "You must be at least 18 years old to create an account at this stage.",
+    "legalConsentRequired": "You must accept the Terms of Use and acknowledge the Privacy Policy."
   }
 }

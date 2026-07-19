@@ -263,6 +263,24 @@
     color: #a9e9bd;
 }
 
+.auth-legal-consent {
+    align-items: flex-start;
+    display: flex;
+    gap: .65rem;
+    font-size: .8rem;
+    line-height: 1.45;
+}
+
+.auth-legal-consent input {
+    flex: 0 0 auto;
+    margin-top: .25rem;
+}
+
+.auth-legal-consent a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 body.auth-dialog-open {
     overflow: hidden;
 }
