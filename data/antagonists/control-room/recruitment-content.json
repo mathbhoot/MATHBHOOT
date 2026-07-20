@@ -52,7 +52,10 @@
   "closing": {
     "lead": "Your mind is the weapon.",
     "accent": "Let mathematics be the trap.",
-    "linkLabel": "Return to the Control Room Story",
-    "linkHref": "../more_antagonists.html"
+    "links": [
+      { "label": "Return to Antagonists", "href": "../antagonists.html" },
+      { "label": "Access the Dossier", "href": "../dossier.html" },
+      { "label": "Villa Story", "href": "../story_antagonist.html" }
+    ]
   }
 }

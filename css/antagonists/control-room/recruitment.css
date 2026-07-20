@@ -170,6 +170,8 @@
 .recruitment-closing { display: grid; justify-items: center; padding: clamp(2rem, 6vw, 4rem); border-block: 1px solid var(--recruit-line); background: radial-gradient(circle, rgba(116, 12, 22, .18), transparent 62%); text-align: center; text-transform: uppercase; }
 .recruitment-closing strong { font-size: clamp(1.5rem, 3vw, 2.6rem); font-weight: 400; }
 .recruitment-closing > span { margin: .3rem 0 1.2rem; color: var(--recruit-red-bright); font-size: clamp(1.1rem, 2vw, 1.7rem); }
+.recruitment-closing-nav { display: grid; width: min(100%, 60rem); grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .85rem; }
+.recruitment-closing-nav .recruitment-action { width: 100%; justify-content: center; text-align: center; }
 .recruitment-action-secondary { background: rgba(8, 4, 5, .78); }
 
 @media (max-width: 1100px) {
@@ -203,6 +205,7 @@
     .application-submit,
     .draft-status { grid-column: 1; }
     .process-list { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .recruitment-closing-nav { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

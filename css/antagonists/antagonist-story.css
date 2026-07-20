@@ -108,10 +108,19 @@
 
 .story-body {
     display: grid;
+    width: 100%;
+    max-width: 100%;
     grid-template-columns: minmax(0, 1fr);
     min-width: 0;
     gap: 1.25rem;
     padding: clamp(1.5rem, 5vw, 4rem);
+    overflow: hidden;
+}
+
+.story-body > * {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
 }
 
 .story-lead {
@@ -130,6 +139,7 @@
 .story-body p {
     max-width: 100%;
     overflow-wrap: anywhere;
+    white-space: normal;
 }
 
 .story-actions {

@@ -1,0 +1,21 @@
+{
+  "kicker": "Inside the Villa Story",
+  "title": "The Order That Began to Break",
+  "image": {
+    "src": "../../assets/antagonists/workspace.jpeg",
+    "alt": "A red and black MathVilla workshop where masked antagonists design mathematical traps",
+    "width": 1536,
+    "height": 1024
+  },
+  "paragraphs": [
+    "MathVilla was never meant to be escaped. The Architect shaped it as a living system of equations, locked chambers, and calculated fears—an empire where every path would return to his control.",
+    "Then Ansh entered the Villa, the Purple Orb awakened, and Ganith carried a mystery the system could not classify. One unexpected variable became many, and the Architect's flawless design began recording impossible results.",
+    "Now prisoners are breaking free, protective spells are collapsing, and forgotten histories are surfacing through the cracks. Each solved puzzle moves the intruders closer to the truth while forcing the Architect deeper into the shadows of his own creation.",
+    "This is the central story of MATHBHOOT from the other side: not the tale of those trying to escape, but of the mind watching its perfect mathematical kingdom fall out of order."
+  ],
+  "links": [
+    { "label": "Return to Antagonists", "href": "antagonists.html" },
+    { "label": "Access the Dossier", "href": "dossier.html" },
+    { "label": "Enter Control Room", "href": "control-room/" }
+  ]
+}

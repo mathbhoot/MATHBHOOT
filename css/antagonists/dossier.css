@@ -110,7 +110,7 @@
 .archive-warning strong { color: var(--archive-red-bright); letter-spacing: .12em; text-transform: uppercase; }
 .archive-warning p { margin: 0; color: #b9a7aa; font-size: .8rem; letter-spacing: .05em; text-transform: uppercase; }
 .archive-return { display: inline-flex; width: fit-content; min-height: 44px; align-items: center; padding: .75rem 1rem; border-bottom: 1px solid var(--archive-line); color: var(--archive-red-bright); font-size: .8rem; letter-spacing: .12em; text-decoration: none; text-transform: uppercase; }
-.archive-navigation { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.archive-navigation { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .archive-navigation .archive-return { width: 100%; justify-content: center; border: 1px solid var(--archive-line); background: rgba(25, 5, 9, .48); text-align: center; }
 .archive-navigation .archive-return:hover,
 .archive-navigation .archive-return:focus-visible { border-color: var(--archive-red-bright); color: #fff; background: rgba(124, 16, 26, .28); }

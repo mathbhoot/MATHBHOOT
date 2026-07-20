@@ -232,11 +232,17 @@
 
     const renderClosing = (closing) => {
         const section = make('section', 'recruitment-closing');
-        section.append(
-            make('strong', '', closing.lead),
-            make('span', '', closing.accent),
-            makeLink(closing.linkLabel, closing.linkHref, 'recruitment-action recruitment-action-secondary')
-        );
+        section.append(make('strong', '', closing.lead), make('span', '', closing.accent));
+
+        const navigation = make('nav', 'recruitment-closing-nav');
+        navigation.setAttribute('aria-label', 'Antagonist destination navigation');
+        if (Array.isArray(closing.links)) {
+            closing.links.forEach((item) => {
+                if (!item?.label || !item?.href) return;
+                navigation.append(makeLink(item.label, item.href, 'recruitment-action recruitment-action-secondary'));
+            });
+        }
+        section.append(navigation);
         return section;
     };
 
@@ -254,7 +260,7 @@
     };
 
     const render = (data) => {
-        const valid = data?.hero && Array.isArray(data.missions) && data.application && Array.isArray(data.ranks) && Array.isArray(data.process) && data.closing;
+        const valid = data?.hero && Array.isArray(data.missions) && data.application && Array.isArray(data.ranks) && Array.isArray(data.process) && Array.isArray(data.closing?.links);
         if (!valid) return false;
         const workspace = make('div', 'recruitment-workspace');
         const joinGrid = make('div', 'join-grid');

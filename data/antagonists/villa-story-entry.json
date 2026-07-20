@@ -1,0 +1,13 @@
+{
+  "kicker": "Inside the Villa Story",
+  "title": "Every perfect system has a breaking point.",
+  "paragraph": "The Architect built MathVilla to make every equation obey, every prisoner remain hidden, and every ending follow his design. But when Ansh, Ganith, and the Purple Orb introduce variables he cannot control, the Villa's main story begins to unfold from inside the mind determined to stop them.",
+  "image": {
+    "src": "../../assets/antagonists/behind_story.jpeg",
+    "alt": "The Architect confronting the young intruders as MathVilla's system begins to fail",
+    "width": 1536,
+    "height": 1024
+  },
+  "actionLabel": "VILLA STORY",
+  "actionHref": "story_antagonist.html"
+}

@@ -14,7 +14,8 @@
     "The system lag is not random. It is proof that courage, collaboration, and curiosity can introduce variables no perfect plan can control."
   ],
   "links": [
-    { "label": "Return to Antagonists", "href": "antagonists.html" },
-    { "label": "Enter the Workspace", "href": "more_antagonists.html" }
+    { "label": "Access the Dossier", "href": "dossier.html" },
+    { "label": "Enter Control Room", "href": "control-room/" },
+    { "label": "Villa Story", "href": "story_antagonist.html" }
   ]
 }
