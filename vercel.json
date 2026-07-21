@@ -1,5 +1,28 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.mathbhoot.com" }],
+      "destination": "https://mathbhoot.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/html/antagonists/control-room/index.html",
+      "destination": "/html/antagonists/control-room/",
+      "permanent": true
+    },
+    {
+      "source": "/html/antagonists/control-room",
+      "destination": "/html/antagonists/control-room/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

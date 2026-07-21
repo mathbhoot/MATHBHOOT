@@ -1,0 +1,22 @@
+.antagonist-story-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .75rem;
+}
+
+.antagonist-story-navigation .profile-button {
+    min-height: 46px;
+}
+
+@media (max-width: 620px) {
+    .antagonist-story-navigation {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .antagonist-story-navigation .profile-button {
+        width: 100%;
+        text-align: center;
+    }
+}
