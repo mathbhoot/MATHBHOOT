@@ -34,6 +34,7 @@ body {
 
 .part-two-main {
     width: min(100% - 40px, 1180px);
+    min-height: calc(100vh - 150px);
     min-height: calc(100svh - 150px);
     margin: 0 auto;
     padding: clamp(2rem, 6vw, 5rem) 0;
@@ -126,6 +127,7 @@ body {
 @media (min-width: 769px) {
     .part-two-main {
         display: flex;
+        height: calc(100vh - var(--global-header-height) - var(--global-footer-height));
         height: calc(100svh - var(--global-header-height) - var(--global-footer-height));
         min-height: 0;
         margin-top: var(--global-header-height);
@@ -181,6 +183,7 @@ body {
     }
 
     .part-two-cover img {
+        max-height: calc(100vh - var(--global-header-height) - var(--global-footer-height) - 2rem);
         max-height: calc(100svh - var(--global-header-height) - var(--global-footer-height) - 2rem);
     }
 }

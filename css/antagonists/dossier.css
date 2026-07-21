@@ -12,6 +12,7 @@
     --global-nav-background: #050203;
     --global-footer-background: #070304;
     min-width: 320px;
+    min-height: 100vh;
     min-height: 100svh;
     padding-bottom: var(--global-footer-height);
     color: var(--archive-text);
@@ -33,6 +34,7 @@
 
 .dossier-interface {
     width: min(100% - (2 * var(--global-page-gutter)), 1240px);
+    min-height: calc(100vh - var(--global-footer-height));
     min-height: calc(100svh - var(--global-footer-height));
     margin-inline: auto;
     padding-block: calc(var(--global-header-height) + clamp(1.5rem, 4vw, 3.5rem)) clamp(4rem, 8vw, 7rem);
@@ -117,7 +119,7 @@
 .archive-navigation .archive-return-primary { background: linear-gradient(135deg, rgba(159, 22, 33, .48), rgba(65, 7, 14, .62)); }
 
 .dossier-viewer { width: min(94vw, 1000px); max-height: 92svh; padding: 0; border: 1px solid var(--archive-red-bright); color: var(--archive-text); background: #050304; box-shadow: 0 0 70px rgba(208, 32, 44, .28); }
-.dossier-viewer::backdrop { background: rgba(0, 0, 0, .88); backdrop-filter: blur(5px); }
+.dossier-viewer::backdrop { background: rgba(0, 0, 0, .88); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); }
 .viewer-frame { max-height: 90svh; overflow: auto; }
 .viewer-header { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; padding: .8rem 1rem; border-bottom: 1px solid var(--archive-line); background: rgba(7, 3, 4, .96); }
 .viewer-header h2 { margin: .15rem 0 0; font-size: 1.1rem; font-weight: 400; letter-spacing: .08em; text-transform: uppercase; }

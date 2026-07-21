@@ -72,6 +72,7 @@ body{
 .ansh-description p{
     text-align:justify;
     text-align-last:left;
+    -webkit-hyphens:auto;
     hyphens:auto;
 }
 
