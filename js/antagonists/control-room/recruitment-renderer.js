@@ -268,6 +268,7 @@
         workspace.append(renderHero(data.hero), renderMissions(data), joinGrid, renderClosing(data.closing));
         app.replaceChildren(workspace);
         bindMissionSelection(workspace);
+        document.dispatchEvent(new CustomEvent('mathbhoot:recruitment-rendered', { detail: { workspace } }));
         return true;
     };
 

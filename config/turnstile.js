@@ -1,10 +1,10 @@
 /**
- * Public Cloudflare Turnstile configuration.
+ * Dormant public Cloudflare Turnstile configuration.
  *
- * This public site key is restricted to the production Mathbhoot hostname.
- * Never place the Turnstile secret key in this file or any browser code.
+ * Restore a hostname-restricted site key only when account forms are approved
+ * for reactivation. Never place the Turnstile secret key in browser code.
  */
 export const turnstileConfig = Object.freeze({
-    siteKey: '0x4AAAAAAD4CyJHFc0TkWt_Z',
-    mode: 'production'
+    siteKey: 'TURNSTILE_SITE_KEY_REPLACE_BEFORE_ENABLE',
+    mode: 'disabled'
 });
