@@ -2,6 +2,10 @@
   "footerText": "©2026 MATHBHOOT. All rights reserved.",
   "progress": 48,
   "progressCaption": "12 of 25 archive entries decoded",
+  "androidNavigation": {
+    "status": "Current session",
+    "announcement": "Current session opened"
+  },
   "filters": ["All", "Stories", "Mathematics", "Dossiers", "Missions"],
   "sessionLabels": {
     "browse": "Browse the archive",

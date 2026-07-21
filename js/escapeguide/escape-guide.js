@@ -114,7 +114,14 @@ if (root) {
     renderCollections();
     renderModule();
     renderSidebar();
-    if (shouldScroll) document.querySelector('.module-deck')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (shouldScroll) {
+      const navigationRequest = new CustomEvent('escape-guide:session-selected', {
+        cancelable: true,
+        detail: { title: getSelection()?.item?.title || '' }
+      });
+      const handled = !root.dispatchEvent(navigationRequest);
+      if (!handled) document.querySelector('.module-deck')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   const initialize = async () => {
