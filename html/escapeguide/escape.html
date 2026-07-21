@@ -34,12 +34,15 @@
             <h1 id="archiveTitle">Escape Guide</h1>
             <p class="hero-subtitle">Knowledge Archives</p>
             <p class="hero-copy">Knowledge is the only key that unlocks every prison.</p>
-            <form class="archive-search" role="search">
-                <label class="sr-only" for="archiveSearch">Search the knowledge archives</label>
-                <input id="archiveSearch" type="search" placeholder="Search clues, chapters, classes…" autocomplete="off">
-                <button type="submit" aria-label="Search">⌕</button>
-            </form>
-            <div class="archive-filters" aria-label="Archive filters" id="archiveFilters"></div>
+            <div class="archive-controls">
+                <p class="archive-controls-label" id="archiveControlsLabel"></p>
+                <form class="archive-search" role="search">
+                    <label class="sr-only" for="archiveSearch">Search the knowledge archives</label>
+                    <input id="archiveSearch" type="search" placeholder="Search clues, chapters, classes…" autocomplete="off">
+                    <button type="submit" aria-label="Search">⌕</button>
+                </form>
+                <div class="archive-filters" aria-label="Archive filters" id="archiveFilters"></div>
+            </div>
         </section>
 
         <section class="progress-strip" aria-label="Archive progress">
@@ -52,25 +55,25 @@
 
         <section class="module-deck" aria-labelledby="modulePreviewTitle">
             <aside class="module-menu">
-                <p class="panel-label">Module preview</p>
-                <div id="moduleTabs" role="tablist" aria-label="Module sections"></div>
+                <p class="panel-label" id="moduleMenuLabel"></p>
+                <nav id="moduleTabs" aria-label="Related topics"></nav>
             </aside>
             <article class="module-preview" id="modulePreview">
                 <div class="module-heading">
-                    <div><p class="eyebrow">Current lesson</p><h2 id="modulePreviewTitle">Loading archive…</h2></div>
+                    <div><p class="eyebrow" id="currentSessionLabel"></p><h2 id="modulePreviewTitle">Loading archive…</h2></div>
                     <div class="module-stats"><span id="moduleDifficulty"></span><span id="moduleTime"></span></div>
                 </div>
                 <div id="moduleContent"></div>
             </article>
             <aside class="archive-sidebar">
-                <section><p class="panel-label">Recently viewed</p><ul id="recentList"></ul></section>
-                <section><p class="panel-label">Unlocked seals</p><div class="badge-row" id="badgeRow"></div></section>
+                <section><p class="panel-label" id="relatedTopicsLabel"></p><ul id="recentList"></ul></section>
+                <section><p class="panel-label" id="sessionSealsLabel"></p><div class="badge-row" id="badgeRow"></div></section>
                 <blockquote id="archiveQuote"></blockquote>
             </aside>
         </section>
     </main>
 
-    <footer class="archive-footer"><span aria-hidden="true">⚠</span> Complete modules. Unlock knowledge. Escape MathVilla.</footer>
+    <footer class="site-footer archive-footer"><p id="escapeFooterText"></p></footer>
     <script src="../../js/main.js"></script>
     <script type="module" src="../../js/escapeguide/escape-guide.js"></script>
 </body>

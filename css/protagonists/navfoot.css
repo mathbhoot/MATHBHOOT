@@ -86,7 +86,8 @@ body{
         linear-gradient(90deg, rgba(5, 11, 9, 0.98), rgba(8, 19, 16, 0.98));
     border-top: 1px solid rgba(126, 245, 216, 0.22);
     color: var(--mb-muted);
-    padding: 8px 12px;
+    min-height: 38px;
+    padding: 4px 12px;
     text-align: center;
     margin-top: auto; /* Ensures it stays at bottom if page is short */
     z-index: 1000;
@@ -100,6 +101,7 @@ body{
     color: inherit;
     font-size: 0.9rem;
     letter-spacing: 0.02em;
+    white-space: nowrap;
 }
 
 /* =========================

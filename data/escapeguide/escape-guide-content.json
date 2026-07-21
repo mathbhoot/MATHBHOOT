@@ -1,15 +1,100 @@
 {
+  "footerText": "©2026 MATHBHOOT. All rights reserved.",
   "progress": 48,
   "progressCaption": "12 of 25 archive entries decoded",
   "filters": ["All", "Stories", "Mathematics", "Dossiers", "Missions"],
+  "sessionLabels": {
+    "browse": "Browse the archive",
+    "menu": "Related topics",
+    "current": "Current session",
+    "context": "Source context",
+    "concept": "Mathematics behind it",
+    "activity": "What to explore",
+    "related": "Related in this index",
+    "seals": "Session seals",
+    "level": "Level",
+    "time": "Reading time"
+  },
   "collections": [
-    {"number":"01","type":"Stories","tone":"green","title":"Story Plot","subtitle":"Ansh's Side","description":"Trace Ansh's journey and uncover the mathematics hidden inside every clue.","symbol":"△","items":[{"title":"The Invitation","meta":"Coordinate Geometry"},{"title":"The First Clue","meta":"Integers & Number System"},{"title":"The Hidden Door","meta":"Polynomials"},{"title":"The Broken Code","meta":"Linear Equations"}],"action":"View all chapters"},
-    {"number":"02","type":"Dossiers","tone":"red","title":"Enemy Records","subtitle":"Antagonist Side","description":"Understand the enemy's plans, symbols, and the logic concealed behind them.","symbol":"◇","items":[{"title":"The Architect","meta":"Graph Theory"},{"title":"The Calculation","meta":"Sequences & Series"},{"title":"The Trap","meta":"Probability"},{"title":"The Purple Orb","meta":"Complex Numbers"}],"action":"View all dossiers"},
-    {"number":"03","type":"Mathematics","tone":"blue","title":"Classwise Knowledge","subtitle":"Lessons & Methods","description":"Master mathematics modules by class, syllabus, and the puzzles they unlock.","symbol":"□","items":[{"title":"Class 6 Modules","meta":"12 topics"},{"title":"Class 7 Modules","meta":"15 topics"},{"title":"Class 8 Modules","meta":"18 topics"},{"title":"Class 9 Modules","meta":"20 topics"}],"action":"Explore all classes"},
-    {"number":"04","type":"Missions","tone":"purple","title":"Mission Database","subtitle":"Rooms & Trials","description":"Prepare, enter, and escape each room by using the knowledge you recover.","symbol":"⌘","items":[{"title":"The Grid Chamber","meta":"★ ★ ☆"},{"title":"The Angle Maze","meta":"★ ★ ★"},{"title":"The Equation Lock","meta":"★ ★ ★"},{"title":"The Probability Gate","meta":"★ ★ ★ ★"}],"action":"Enter missions"}
+    {
+      "number": "01",
+      "type": "Stories",
+      "tone": "green",
+      "title": "Story Plot",
+      "subtitle": "Ansh's Side",
+      "description": "Use the story index to uncover the mathematics behind each chapter, clue, and event.",
+      "symbol": "△",
+      "action": "Part-1",
+      "actionHref": "../protagonists/mathbhoot_nm/mathbhoot_nightmare.html",
+      "actionDisabled": false,
+      "parts": [
+        {
+          "id": "part-1",
+          "label": "Part 1",
+          "items": [
+            {"title":"The Calm Before the Chaos","meta":"Chapter 1","level":"Part 1 · Chapter 1","time":"Preview","summary":"Meet Ansh before the nightmare begins and revisit the story moments that can later be connected to mathematical ideas.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 1 in Part 1, then return here for its future mathematical topic map."},
+            {"title":"Enter at Your Own Risk","meta":"Chapter 2","level":"Part 1 · Chapter 2","time":"Preview","summary":"Follow the forbidden entry point and collect the decisions, positions, patterns, and clues that shape the chapter.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 2 in Part 1 and note the story elements that may become mathematical investigations."},
+            {"title":"The Light Should Not Be Followed","meta":"Chapter 3","level":"Part 1 · Chapter 3","time":"Preview","summary":"Trace the chapter's movement, direction, and changing visual clues as material for later mathematical interpretation.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 3 in Part 1 and identify any repeated direction, distance, or pattern clues."},
+            {"title":"When Beautiful Things Devour You","meta":"Chapter 4","level":"Part 1 · Chapter 4","time":"Preview","summary":"Review the structures and transformations introduced in this chapter before their mathematical breakdown is published.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 4 in Part 1 and collect the shapes, changes, or rules that influence the event."},
+            {"title":"The Tongue of Stone","meta":"Chapter 5","level":"Part 1 · Chapter 5","time":"Preview","summary":"Examine the stone language, symbols, and encoded relationships that can support future mathematical analysis.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 5 in Part 1 and list the symbols or relationships that appear to follow a rule."},
+            {"title":"The Smallest Spark","meta":"Chapter 6","level":"Part 1 · Chapter 6","time":"Preview","summary":"Complete the Part 1 index with the chapter's final signals, changes, and consequences ready for later study.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 6 in Part 1 and record the final clues that should connect to the next analysis."}
+          ]
+        }
+      ]
+    },
+    {
+      "number": "02",
+      "type": "Dossiers",
+      "tone": "red",
+      "title": "Enemy Records",
+      "subtitle": "Antagonist Side",
+      "description": "Inspect antagonist systems, tasks, traps, and technology through their underlying mathematics.",
+      "symbol": "◇",
+      "action": "Coming soon",
+      "actionDisabled": true,
+      "items": [
+        {"title":"The Architect","meta":"Graph Theory","level":"Intermediate","time":"12 min","summary":"The Architect controls connected rooms and systems as a network of nodes and routes.","concept":"Represent locations as vertices, connections as edges, and inspect paths, cycles, and network reachability.","activity":"Sketch the control network and find a route that avoids a monitored node."},
+        {"title":"The Calculation","meta":"Sequences & Series","level":"Intermediate","time":"10 min","summary":"A repeating antagonist calculation grows according to a detectable numerical pattern.","concept":"Recognize arithmetic or geometric change, determine a general term, and estimate accumulated values with a series.","activity":"Continue the system sequence and identify the stage at which its value crosses the warning limit."},
+        {"title":"The Trap","meta":"Probability","level":"Intermediate","time":"9 min","summary":"The trap selects outcomes under uncertainty, but its possible results can still be measured.","concept":"List the sample space, distinguish favourable outcomes, and calculate theoretical probability.","activity":"Compare the available escape choices and select the path with the strongest probability of success."},
+        {"title":"The Purple Orb","meta":"Complex Numbers","level":"Advanced","time":"13 min","summary":"The orb models a system whose calculation requires both real and imaginary components.","concept":"Write values in a + bi form and interpret addition, multiplication, and position on the complex plane.","activity":"Combine the orb signals and map the resulting complex number to its plane location."}
+      ]
+    },
+    {
+      "number": "03",
+      "type": "Mathematics",
+      "tone": "blue",
+      "title": "Classwise Knowledge",
+      "subtitle": "Boards & Grades",
+      "description": "Preview classwise and gradewise mathematics before the complete curriculum library is released.",
+      "symbol": "□",
+      "action": "Coming soon",
+      "actionDisabled": true,
+      "items": [
+        {"title":"Class 6 Preview","meta":"CBSE · ICSE · MP Board · International","level":"Grade 6","time":"7 min","summary":"A classwise preview of number systems, fractions, basic algebra, geometry, mensuration, and data handling.","concept":"See how common Grade 6 foundations align across CBSE, ICSE, MP Board, and selected international pathways.","activity":"Choose a foundation topic and compare the vocabulary and expected skill across boards."},
+        {"title":"Class 7 Preview","meta":"CBSE · ICSE · MP Board · International","level":"Grade 7","time":"7 min","summary":"A classwise preview of rational numbers, equations, ratios, geometry, exponents, and data interpretation.","concept":"Connect shared Grade 7 outcomes while keeping board-specific sequencing and depth visible.","activity":"Select a topic and identify which prerequisite skill should be revised first."},
+        {"title":"Class 8 Preview","meta":"CBSE · ICSE · MP Board · International","level":"Grade 8","time":"8 min","summary":"A classwise preview of linear equations, factorisation, graphs, mensuration, probability, and advanced number work.","concept":"Compare Grade 8 topic progression across Indian boards and international grade-level expectations.","activity":"Open a topic preview and map it to its earlier foundation and later application."},
+        {"title":"Class 9 Preview","meta":"CBSE · ICSE · MP Board · International","level":"Grade 9","time":"9 min","summary":"A classwise preview of polynomials, coordinate geometry, Euclidean geometry, statistics, and probability.","concept":"Understand how Grade 9 concepts are grouped and assessed across boards without connecting this library to Ganith lore.","activity":"Choose a chapter and inspect its concept map, prerequisite knowledge, and expected outcomes."}
+      ]
+    },
+    {
+      "number": "04",
+      "type": "Missions",
+      "tone": "purple",
+      "title": "Game Database",
+      "subtitle": "Rooms & Trials",
+      "description": "Use the game index to understand the mathematics behind rooms, rules, puzzles, and trials.",
+      "symbol": "⌘",
+      "action": "Coming soon",
+      "actionDisabled": true,
+      "items": [
+        {"title":"The Grid Chamber","meta":"Coordinates & Transformations","level":"Mission 1","time":"8 min","summary":"The chamber turns movement into positions, directions, and transformations on a grid.","concept":"Apply coordinates, translation, reflection, and distance reasoning to navigate the room.","activity":"Trace a valid grid route while preserving the transformation rule at every checkpoint."},
+        {"title":"The Angle Maze","meta":"Angles & Geometric Reasoning","level":"Mission 2","time":"9 min","summary":"The maze responds to turns and intersections whose angle relationships reveal the correct route.","concept":"Use complementary, supplementary, vertically opposite, and parallel-line angle relationships.","activity":"Calculate the missing turn angles and reject paths that break the maze rule."},
+        {"title":"The Equation Lock","meta":"Algebraic Equations","level":"Mission 3","time":"10 min","summary":"Each lock segment contributes a condition that must be satisfied by the same unknown value.","concept":"Translate the lock rules into equations and verify a solution in every original condition.","activity":"Solve the linked equations and test the result against all lock segments."},
+        {"title":"The Probability Gate","meta":"Probability & Strategy","level":"Mission 4","time":"11 min","summary":"The gate changes among possible states, making strategy dependent on likelihood rather than certainty.","concept":"Compare simple and conditional outcomes, then distinguish expected advantage from a guaranteed result.","activity":"Calculate each gate option and choose the strategy with the best justified chance of opening."}
+      ]
+    }
   ],
-  "module": {"title":"Coordinate Plane","difficulty":"★ ★ ☆","time":"15 min","tabs":["Overview","Story Context","Mathematical Concept","Visual Explanation","Real Life Applications","Practice Questions","Unlock Test"],"sections":[{"heading":"Story Context","body":"Ansh finds a mysterious map marked with strange coordinates. The first clue to escape MathVilla lies in plotting the right path."},{"heading":"Mathematical Concept","body":"The coordinate plane is formed by two number lines—the x-axis and y-axis—intersecting at the origin (0, 0)."},{"heading":"Try It Yourself","body":"Plot A (2, 3), B (-1, 4), C (-4, -2), and D (3, -3). What hidden shape appears?"}]},
-  "recent":[{"title":"Polynomials (Class 9)","time":"2h ago"},{"title":"The Grid Chamber","time":"Yesterday"},{"title":"The Architect","time":"2 days ago"}],
-  "badges":["⌬","✦","△","⌘"],
-  "quote":"The more you know, the more doors you unlock. — Ganith"
+  "defaultSession": {"collection":0,"item":0},
+  "badges": ["⌬", "✦", "△", "⌘"],
+  "quote": "The more you know, the more doors you unlock. — Ganith"
 }

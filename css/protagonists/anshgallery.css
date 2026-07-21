@@ -1,6 +1,6 @@
 .banner{
     width: 100%;
-    min-height: 520px;
+    min-height: 340px;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -52,7 +52,7 @@
 /* Disable 3D transforms on mobile devices */
 @media (max-width: 700px){
     .banner{
-        min-height: 360px;
+        min-height: 180px;
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;

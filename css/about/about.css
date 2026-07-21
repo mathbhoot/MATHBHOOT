@@ -172,8 +172,8 @@ main { overflow: hidden; }
 .quote-section::before { content: "✦  ◆  ✦"; display: block; margin-bottom: 27px; color: var(--gold); letter-spacing: .48em; text-shadow: 0 0 12px var(--gold); }
 .quote-section blockquote { max-width: 920px; margin: auto; color: var(--gold-light); font-size: clamp(1.4rem, 2.7vw, 2.15rem); font-style: italic; line-height: 1.5; }
 
-.site-footer { position: fixed; right: 0; bottom: 0; left: 0; z-index: 1000; min-height: var(--footer); padding: 8px 14px; border-top: 1px solid rgba(170, 85, 255, .3); color: var(--muted); background: rgba(3, 1, 5, .95); text-align: center;@supports(backdrop-filter: blur(10px)){.section-heading h2{backdrop-filter: blur(10px);}} }
-.site-footer p { margin: 0; font-size: .82rem; line-height: 1.35; }
+.site-footer { position: fixed; right: 0; bottom: 0; left: 0; z-index: 1000; min-height: 38px; padding: 4px 14px; border-top: 1px solid rgba(170, 85, 255, .3); color: var(--muted); background: rgba(3, 1, 5, .95); text-align: center;@supports(backdrop-filter: blur(10px)){.section-heading h2{backdrop-filter: blur(10px);}} }
+.site-footer p { margin: 0; font-size: .82rem; line-height: 1.2; white-space: nowrap; }
 
 @keyframes star-drift { to { background-position: 149px 149px, -165px 283px; } }
 @keyframes gold-flow { to { background-position: 200% center; } }

@@ -105,8 +105,8 @@
     display:grid;
 
     grid-template-columns:
-    280px
-    1fr;
+    minmax(0, 2fr)
+    minmax(0, 3fr);
 
     gap:3rem;
 
@@ -139,7 +139,8 @@
 
 .book-cover img{
 
-    width:240px;
+    width:100%;
+    height:auto;
 
     border-radius:10px;
 

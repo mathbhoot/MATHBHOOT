@@ -218,7 +218,8 @@ body.theme-ganith .placeholder-panel {
     bottom: 0;
     left: 0;
     z-index: 1000;
-    padding: 8px 12px;
+    min-height: 38px;
+    padding: 4px 12px;
     border-top: 1px solid var(--static-line);
     background:
         linear-gradient(90deg, var(--static-bg), var(--static-panel));
@@ -234,6 +235,7 @@ body.theme-ganith .placeholder-panel {
     font-size: 0.9rem;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {

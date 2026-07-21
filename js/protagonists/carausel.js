@@ -18,10 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getVisibleCount = () => {
         if (window.matchMedia('(min-width: 1024px)').matches) {
+            return 5;
+        }
+
+        if (window.matchMedia('(min-width: 760px)').matches) {
             return 3;
         }
 
-        if (window.matchMedia('(min-width: 640px)').matches) {
+        if (window.matchMedia('(min-width: 520px)').matches) {
             return 2;
         }
 
@@ -30,12 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const renderCarousel = () => {
         const visibleCount = Math.min(getVisibleCount(), slides.length);
+        const gap = window.getComputedStyle(wrapper).columnGap || '0px';
         wrapper.innerHTML = '';
 
         for (let offset = 0; offset < visibleCount; offset += 1) {
             const slideIndex = (activeIndex + offset) % slides.length;
             const slide = slides[slideIndex].cloneNode(true);
-            slide.style.width = `${100 / visibleCount}%`;
+            slide.style.width = `calc((100% - (${gap} * ${visibleCount - 1})) / ${visibleCount})`;
             wrapper.appendChild(slide);
         }
     };
