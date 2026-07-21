@@ -3,53 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EscapeGuide | MATHBHOOT</title>
-    <meta name="description" content="EscapeGuide for the MATHBHOOT universe. This section is being prepared.">
-    <meta name="robots" content="noindex, follow">
+    <title>Escape Guide | MATHBHOOT Knowledge Archives</title>
+    <meta name="description" content="Explore MATHBHOOT stories, mathematics modules, antagonist dossiers, and mission guides inside the Knowledge Archives.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://mathbhoot.com/html/escapeguide/escape.html">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="MATHBHOOT">
-    <meta property="og:title" content="EscapeGuide | MATHBHOOT">
-    <meta property="og:description" content="EscapeGuide for the MATHBHOOT universe. This section is being prepared.">
-    <meta property="og:url" content="https://mathbhoot.com/html/escapeguide/escape.html">
-    <meta property="og:image" content="https://mathbhoot.com/assets/logo.png">
-    <meta property="og:image:secure_url" content="https://mathbhoot.com/assets/logo.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="90">
-    <meta property="og:image:height" content="76">
-    <meta property="og:image:alt" content="MATHBHOOT logo">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="EscapeGuide | MATHBHOOT">
-    <meta name="twitter:description" content="EscapeGuide for the MATHBHOOT universe. This section is being prepared.">
-    <meta name="twitter:image" content="https://mathbhoot.com/assets/logo.png">
-    <meta name="twitter:image:alt" content="MATHBHOOT logo">
-    <link rel="icon" href="../../assets/logo.png" type="image/png" sizes="1024x1024">
-    <link rel="stylesheet" href="../../css/static-page.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "EscapeGuide | MATHBHOOT",
-      "url": "https://mathbhoot.com/html/escapeguide/escape.html",
-      "description": "EscapeGuide for the MATHBHOOT universe. This section is being prepared.",
-      "image": "https://mathbhoot.com/assets/logo.png",
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "MATHBHOOT",
-        "url": "https://mathbhoot.com/"
-      }
-    }
-    </script>
+    <link rel="icon" href="../../assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="../../css/global-layout.css">
+    <link rel="stylesheet" href="../../css/escapeguide/escape-guide.css">
+    <link rel="stylesheet" href="../../css/escapeguide/android-session-navigation.css">
 </head>
-<body class="theme-escapeguide">
+<body class="escape-page">
     <header class="site-header">
         <nav class="navbar" aria-label="Main navigation">
-            <div class="logo-container">
-                <a href="../../index.html" aria-label="Go to MATHBHOOT home"><img src="../../assets/logo.png" alt="MATHBHOOT Logo" class="nav-logo"></a>
-            </div>
+            <div class="logo-container"><a href="/" aria-label="Go to MATHBHOOT home"><img src="../../assets/logo.png" alt="MATHBHOOT Logo" class="nav-logo"></a></div>
             <button class="nav-toggle" type="button" aria-label="Open main navigation" aria-controls="primaryNavigation" aria-expanded="false">&#9776;</button>
             <ul class="nav-links" id="primaryNavigation">
-                <li><a href="../../index.html">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="../protagonists/protagonists.html">Protagonists</a></li>
                 <li><a href="../antagonists/antagonists.html">Antagonists</a></li>
                 <li><a href="../ganith/ganith.html">Ganith</a></li>
@@ -58,14 +27,56 @@
             </ul>
         </nav>
     </header>
-    <main class="placeholder-main">
-        <section class="placeholder-panel">
-            <h1>EscapeGuide</h1>
-            <p>The guidebook for surviving MathVilla is being prepared. It will collect clues, puzzle logic, and strategies for readers entering the mystery.</p>
-            <a href="../../index.html">Return Home</a>
+
+    <main class="archive-shell">
+        <section class="archive-hero" aria-labelledby="archiveTitle">
+            <span class="hero-sigil" aria-hidden="true">⌖</span>
+            <p class="eyebrow">Restricted access granted</p>
+            <h1 id="archiveTitle">Escape Guide</h1>
+            <p class="hero-subtitle">Knowledge Archives</p>
+            <p class="hero-copy">Knowledge is the only key that unlocks every prison.</p>
+            <div class="archive-controls">
+                <p class="archive-controls-label" id="archiveControlsLabel"></p>
+                <form class="archive-search" role="search">
+                    <label class="sr-only" for="archiveSearch">Search the knowledge archives</label>
+                    <input id="archiveSearch" type="search" placeholder="Search clues, chapters, classes…" autocomplete="off">
+                    <button type="submit" aria-label="Search">⌕</button>
+                </form>
+                <div class="archive-filters" aria-label="Archive filters" id="archiveFilters"></div>
+            </div>
+        </section>
+
+        <section class="progress-strip" aria-label="Archive progress">
+            <div><span>Your progress</span><strong id="progressValue">0%</strong></div>
+            <div class="progress-track"><span id="progressBar"></span></div>
+            <small id="progressCaption"></small>
+        </section>
+
+        <section class="archive-grid" id="archiveGrid" aria-label="Knowledge archive collections"></section>
+
+        <section class="module-deck" aria-labelledby="modulePreviewTitle">
+            <aside class="module-menu">
+                <p class="panel-label" id="moduleMenuLabel"></p>
+                <nav id="moduleTabs" aria-label="Related topics"></nav>
+            </aside>
+            <article class="module-preview" id="modulePreview">
+                <div class="module-heading">
+                    <div><p class="eyebrow" id="currentSessionLabel"></p><h2 id="modulePreviewTitle">Loading archive…</h2></div>
+                    <div class="module-stats"><span id="moduleDifficulty"></span><span id="moduleTime"></span></div>
+                </div>
+                <div id="moduleContent"></div>
+            </article>
+            <aside class="archive-sidebar">
+                <section><p class="panel-label" id="relatedTopicsLabel"></p><ul id="recentList"></ul></section>
+                <section><p class="panel-label" id="sessionSealsLabel"></p><div class="badge-row" id="badgeRow"></div></section>
+                <blockquote id="archiveQuote"></blockquote>
+            </aside>
         </section>
     </main>
-    <footer class="site-footer"><p>&copy;2026 MATHBHOOT. All rights reserved.</p></footer>
+
+    <footer class="site-footer archive-footer"><p id="escapeFooterText"></p></footer>
     <script src="../../js/main.js"></script>
+    <script type="module" src="../../js/escapeguide/escape-guide.js"></script>
+    <script type="module" src="../../js/escapeguide/android-session-navigation.js"></script>
 </body>
 </html>

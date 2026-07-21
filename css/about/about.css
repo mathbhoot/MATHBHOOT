@@ -65,6 +65,7 @@ main { overflow: hidden; }
 .hero {
     position: relative;
     display: grid;
+    min-height: 100vh;
     min-height: 100svh;
     place-items: center;
     padding: calc(var(--header) + clamp(3rem, 6vw, 5rem)) 32px clamp(4rem, 7vw, 6rem);
@@ -83,7 +84,7 @@ main { overflow: hidden; }
 }
 
 .hero-overlay { position: absolute; inset: 0; z-index: -2; background: radial-gradient(ellipse at center, transparent 15%, rgba(3, 1, 5, .72) 84%); }
-.hero-content { display: grid; grid-template-columns: minmax(300px, .94fr) minmax(0, 1.06fr); align-items: center; gap: clamp(46px, 7vw, 96px); width: min(1180px, 100%); }
+.hero-content { display: grid; min-width: 0; grid-template-columns: minmax(300px, .94fr) minmax(0, 1.06fr); align-items: center; gap: clamp(46px, 7vw, 96px); width: min(1180px, 100%); }
 
 .profile-card { position: relative; filter: drop-shadow(0 28px 48px rgba(0, 0, 0, .55)); }
 .profile-card::after { content: ""; position: absolute; inset: 3%; z-index: -1; border-radius: 50%; background: rgba(95, 31, 177, .28); box-shadow: 0 0 55px rgba(170, 85, 255, .46), 0 0 90px rgba(232, 184, 77, .15); }
@@ -92,12 +93,12 @@ main { overflow: hidden; }
 .creator-content { min-width: 0; }
 .small-heading { display: inline-flex; align-items: center; gap: 11px; color: var(--gold); font: 700 .76rem Arial, sans-serif; letter-spacing: .22em; text-transform: uppercase; }
 .small-heading::before { content: "◆"; color: var(--purple-glow); font-size: .7rem; text-shadow: 0 0 10px var(--purple-glow); }
-.creator-content h1 { max-width: 700px; margin: 14px 0 24px; color: var(--ivory); font-size: clamp(3rem, 6vw, 5.8rem); line-height: .92; letter-spacing: -.045em; @supports(text-wrap: balance){.creator-content-h1 {text-wrap:balance;}}; text-shadow: 0 2px 0 #270745, 0 0 28px rgba(170, 85, 255, .28); }
+.creator-content h1 { max-width: 700px; margin: 14px 0 24px; color: var(--ivory); font-size: clamp(3rem, 6vw, 5.8rem); line-height: .92; letter-spacing: -.045em; text-shadow: 0 2px 0 #270745, 0 0 28px rgba(170, 85, 255, .28); }
 .gold-divider { position: relative; width: min(250px, 60%); height: 2px; margin-bottom: 28px; background: linear-gradient(90deg, var(--gold), var(--purple-glow), transparent); box-shadow: 0 0 12px rgba(232, 184, 77, .45); }
 .creator-copy { max-width: 700px; }
-.creator-copy p { margin-bottom: 14px; }
-.creator-copy p:first-child { color: var(--ivory); font-size: 1.08rem; }
-.creator-copy h3 { margin-top: 26px; color: var(--gold-light); font-size: 1.28rem; font-style: italic; }
+.creator-copy p { margin-bottom: 14px; overflow-wrap: anywhere; font-size: 1.06em; }
+.creator-copy p:first-child { color: var(--ivory); font-size: 1.145rem; }
+.creator-copy h3 { margin-top: 26px; color: var(--gold-light); font-size: 1.357rem; font-style: italic; }
 
 .journey,
 .writer-desk,
@@ -107,7 +108,7 @@ main { overflow: hidden; }
 
 .journey { border-block: 1px solid rgba(170, 85, 255, .18); background: linear-gradient(180deg, rgba(34, 8, 63, .48), rgba(3, 1, 5, .45)); }
 .journey h2,
-.section-heading h2 { color: var(--ivory); font-size: clamp(2.2rem, 4.2vw, 3.7rem); line-height: 1.05; @supports(text-wrap: balance){.section-heading h2{text-wrap:balance;}} }
+.section-heading h2 { color: var(--ivory); font-size: clamp(2.2rem, 4.2vw, 3.7rem); line-height: 1.05; }
 .journey h2 { margin-bottom: 64px; text-align: center; }
 .timeline { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); width: min(1140px, 100%); margin: auto; }
 .timeline::before { content: ""; position: absolute; top: 11px; right: 8%; left: 8%; height: 1px; background: linear-gradient(90deg, transparent, var(--purple-glow), var(--gold), var(--purple-glow), transparent); box-shadow: 0 0 11px rgba(170, 85, 255, .7); }
@@ -172,16 +173,112 @@ main { overflow: hidden; }
 .quote-section::before { content: "✦  ◆  ✦"; display: block; margin-bottom: 27px; color: var(--gold); letter-spacing: .48em; text-shadow: 0 0 12px var(--gold); }
 .quote-section blockquote { max-width: 920px; margin: auto; color: var(--gold-light); font-size: clamp(1.4rem, 2.7vw, 2.15rem); font-style: italic; line-height: 1.5; }
 
-.site-footer { position: fixed; right: 0; bottom: 0; left: 0; z-index: 1000; min-height: var(--footer); padding: 8px 14px; border-top: 1px solid rgba(170, 85, 255, .3); color: var(--muted); background: rgba(3, 1, 5, .95); text-align: center;@supports(backdrop-filter: blur(10px)){.section-heading h2{backdrop-filter: blur(10px);}} }
-.site-footer p { margin: 0; font-size: .82rem; line-height: 1.35; }
+.site-footer { position: fixed; right: 0; bottom: 0; left: 0; z-index: 1000; min-height: 38px; padding: 4px 14px; border-top: 1px solid rgba(170, 85, 255, .3); color: var(--muted); background: rgba(3, 1, 5, .95); text-align: center; }
+.site-footer p { margin: 0; font-size: .82rem; line-height: 1.2; white-space: nowrap; }
 
 @keyframes star-drift { to { background-position: 149px 149px, -165px 283px; } }
 @keyframes gold-flow { to { background-position: 200% center; } }
 
+@supports (text-wrap: balance) {
+    .creator-content h1,
+    .journey h2,
+    .section-heading h2 { text-wrap: balance; }
+}
+
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+    .site-footer {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media (min-width: 901px) {
+    .hero {
+        height: calc(100vh - var(--header) - var(--footer));
+        height: calc(100svh - var(--header) - var(--footer));
+        min-height: 0;
+        margin-top: var(--header);
+        padding: 0 32px;
+        overflow: hidden;
+    }
+
+    .hero::before {
+        inset: 1.5% 3%;
+    }
+
+    .hero-content {
+        height: auto;
+        max-height: 100%;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+        gap: clamp(1.5rem, 4vw, 4rem);
+        align-items: stretch;
+    }
+
+    .profile-card {
+        display: flex;
+        width: min(100%, calc(100vh - var(--header) - var(--footer) - 1rem));
+        width: min(100%, calc(100svh - var(--header) - var(--footer) - 1rem));
+        min-height: 0;
+        aspect-ratio: 1;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .profile-card img {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .creator-content {
+        display: flex;
+        height: auto;
+        min-height: 0;
+        align-self: stretch;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-block: clamp(.2rem, .6vh, .45rem);
+    }
+
+    .creator-copy {
+        display: flex;
+        min-height: 0;
+        flex: 1 1 auto;
+        flex-direction: column;
+    }
+
+    .creator-content h1 {
+        margin: clamp(.45rem, 1.2vh, .8rem) 0 clamp(.65rem, 1.7vh, 1.1rem);
+        font-size: clamp(2.2rem, min(4.8vw, 7vh), 4.8rem);
+    }
+
+    .gold-divider {
+        margin-bottom: clamp(.65rem, 1.8vh, 1.2rem);
+    }
+
+    .creator-copy p {
+        margin-bottom: clamp(.4rem, 1vh, .7rem);
+        font-size: clamp(.954rem, min(1.219vw, 2.014vh), 1.113rem);
+        line-height: 1.5;
+    }
+
+    .creator-copy p:first-child {
+        font-size: clamp(1.007rem, min(1.325vw, 2.226vh), 1.187rem);
+    }
+
+    .creator-copy h3 {
+        margin-top: auto;
+        padding-top: clamp(.6rem, 1.5vh, 1rem);
+        font-size: clamp(1.06rem, min(1.484vw, 2.438vh), 1.325rem);
+    }
+}
+
 @media (max-width: 900px) {
     .hero-content { grid-template-columns: 1fr; }
     .profile-card { width: min(560px, 92%); margin: auto; }
-    .creator-content { max-width: 750px; margin: auto; text-align: center; }
+    .creator-content { width: 100%; max-width: 750px; margin: auto; text-align: center; }
     .gold-divider { margin-right: auto; margin-left: auto; }
     .small-heading { justify-content: center; }
     .timeline { grid-template-columns: 1fr; max-width: 650px; }
@@ -203,7 +300,7 @@ main { overflow: hidden; }
     .quote-section { padding-right: 20px; padding-left: 20px; }
     .hero::before { inset: 8% 10px; }
     .profile-card { width: 100%; }
-    .creator-content h1 { font-size: clamp(2.7rem, 15vw, 4rem); }
+    .creator-content h1 { max-width: 100%; font-size: clamp(2.25rem, 12vw, 3.35rem); overflow-wrap: anywhere; }
     .lore-room { width: calc(100% - 40px); }
     .desk-item,
     .manuscript-pages article,

@@ -22,20 +22,26 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://mathbhoot.com/html/escapeguide/escape.html</loc>
+        <lastmod>2026-07-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://mathbhoot.com/html/antagonists/antagonists.html</loc>
-        <lastmod>2026-07-13</lastmod>
+        <lastmod>2026-07-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://mathbhoot.com/html/antagonists/behind_story.html</loc>
-        <lastmod>2026-07-13</lastmod>
+        <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://mathbhoot.com/html/antagonists/more_antagonists.html</loc>
-        <lastmod>2026-07-13</lastmod>
+        <loc>https://mathbhoot.com/html/antagonists/story_antagonist.html</loc>
+        <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -47,7 +53,7 @@
     </url>
     <url>
         <loc>https://mathbhoot.com/html/antagonists/control-room/</loc>
-        <lastmod>2026-07-15</lastmod>
+        <lastmod>2026-07-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <image:image><image:loc>https://mathbhoot.com/assets/antagonists/control_room_workspace/page_character.jpg</image:loc></image:image>
@@ -61,45 +67,45 @@
         <image:image><image:loc>https://mathbhoot.com/assets/sakshi-soni-mathbhoot-author-4x3.png</image:loc></image:image>
         <image:image><image:loc>https://mathbhoot.com/assets/sakshi-soni-mathbhoot-author-16x9.png</image:loc></image:image>
     </url>
-     <url>
+    <url>
         <loc>https://mathbhoot.com/html/ganith/ganith.html</loc>
-        <lastmod>2026-06-26</lastmod>
+        <lastmod>2026-07-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://mathbhoot.com/html/ganith/archive/lore-entries.html</loc>
-        <lastmod>2026-07-10</lastmod>
+        <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mathbhoot.com/html/ganith/archive/symbols.html</loc>
-        <lastmod>2026-07-10</lastmod>
+        <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mathbhoot.com/html/ganith/archive/manuscript.html</loc>
-        <lastmod>2026-07-10</lastmod>
+        <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mathbhoot.com/html/ganith/archive/timeline.html</loc>
-        <lastmod>2026-07-10</lastmod>
+        <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mathbhoot.com/html/ganith/archive/locations.html</loc>
-        <lastmod>2026-07-10</lastmod>
+        <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://mathbhoot.com/html/ganith/archive/purple-orb.html</loc>
-        <lastmod>2026-07-10</lastmod>
+        <lastmod>2026-07-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>

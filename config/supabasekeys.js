@@ -1,10 +1,11 @@
 /**
- * Public Supabase browser configuration.
+ * Dormant public Supabase browser configuration.
  *
- * The publishable key is intentionally safe for browser use. Never place a
- * Supabase secret key or service_role key in this file.
+ * Recruitment and account features are paused. Restore a hostname-restricted
+ * publishable key only as part of an approved feature reactivation audit.
+ * Never place a secret key or service_role key in browser code.
  */
 export const supabaseConfig = Object.freeze({
-    url: 'https://iolqxnabcvcpqmrcgypd.supabase.co',
-    publishableKey: 'sb_publishable_DW0Gm1DJBCZ35ABfG7t4zg_TazMAKYI'
+    url: 'https://YOUR_PROJECT_REF.supabase.co',
+    publishableKey: 'sb_publishable_REPLACE_BEFORE_ENABLE'
 });

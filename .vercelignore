@@ -1,0 +1,14 @@
+# Dormant backend and browser-cloud configuration must not ship while recruitment is paused.
+supabase/
+config/supabase.js
+config/supabasekeys.js
+config/turnstile.js
+js/auth/
+js/antagonists/control-room/submission-service.js
+js/antagonists/control-room/contribution-store.js
+css/auth/
+data/auth/
+
+# Development-only material.
+.edge-*/
+.mathbhoot-private/

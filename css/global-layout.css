@@ -7,7 +7,7 @@
     --global-content-width: 1200px;
     --global-reading-width: 72ch;
     --global-header-height: 58px;
-    --global-footer-height: 52px;
+    --global-footer-height: 38px;
     --global-page-gutter: clamp(1rem, 3vw, 2rem);
     --global-section-space: clamp(2.5rem, 6vw, 5rem);
     --global-nav-gap: clamp(1rem, 2vw, 1.6rem);
@@ -31,6 +31,7 @@ html {
     min-width: 320px;
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -166,19 +167,19 @@ body {
     min-height: var(--global-footer-height);
     align-items: center;
     justify-content: center;
-    padding: 0.5rem var(--global-page-gutter);
+    padding: 0.25rem var(--global-page-gutter);
     background: var(--global-footer-background);
     color: var(--global-footer-color);
     text-align: center;
 }
 
 :where(.site-footer p) {
-    display: grid;
+    display: block;
     width: 100%;
     max-width: none;
     margin: 0;
     justify-items: center;
-    gap: 0.08rem;
+    white-space: nowrap;
     font-size: clamp(0.75rem, 0.72rem + 0.15vw, 0.9rem);
     line-height: 1.2;
     text-align: center;
@@ -233,6 +234,7 @@ body {
         display: none;
         width: 100%;
         max-width: 100vw;
+        max-height: calc(100vh - var(--global-header-height));
         max-height: calc(100svh - var(--global-header-height));
         overflow-y: auto;
         flex-direction: column;

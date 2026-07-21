@@ -12,6 +12,7 @@ body.theme-ganith.archive-body {
 }
 
 .archive-page {
+    min-height: calc(100vh - var(--global-header-height, 58px) - var(--global-footer-height, 34px));
     min-height: calc(100svh - var(--global-header-height, 58px) - var(--global-footer-height, 34px));
 }
 
@@ -22,6 +23,7 @@ body.theme-ganith.archive-body {
 
 .archive-detail-hero {
     display: grid;
+    min-height: min(620px, calc(100vh - var(--global-header-height, 58px)));
     min-height: min(620px, calc(100svh - var(--global-header-height, 58px)));
     align-items: center;
     padding-block: clamp(4rem, 8vw, 7rem);

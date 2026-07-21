@@ -119,7 +119,7 @@
         navigation.setAttribute('aria-label', 'Restricted archive navigation');
         data.navigation.forEach((item, index) => {
             if (!item?.label || !item?.href) return;
-            const link = make('a', `archive-return${index === 1 ? ' archive-return-primary' : ''}`, `${index === 0 ? '← ' : ''}${item.label}${index === 1 ? ' →' : ''}`);
+            const link = make('a', `archive-return${index > 0 ? ' archive-return-primary' : ''}`, `${index === 0 ? '← ' : ''}${item.label}${index > 0 ? ' →' : ''}`);
             link.href = item.href;
             navigation.append(link);
         });

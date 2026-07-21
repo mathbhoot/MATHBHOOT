@@ -2,10 +2,6 @@ import('./analytics/analytics-consent.js').catch(() => {
     console.warn('[MATHBHOOT] Analytics consent controls are unavailable. Analytics remains disabled.');
 });
 
-import('./auth/auth-ui.js').catch(() => {
-    console.warn('[MATHBHOOT] Account controls are temporarily unavailable.');
-});
-
 const navToggles = document.querySelectorAll('.nav-toggle');
 
 navToggles.forEach((navToggle) => {
