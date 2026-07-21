@@ -88,6 +88,22 @@
         linear-gradient(180deg, rgba(30, 15, 52, .95), rgba(12, 7, 21, .96));
 }
 
+.archive-link[aria-disabled="true"] {
+    border-color: rgba(167, 112, 255, .18);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, .28);
+    cursor: not-allowed;
+    filter: grayscale(.3) saturate(.65);
+    opacity: .62;
+}
+
+.archive-link[aria-disabled="true"]:hover,
+.archive-link[aria-disabled="true"]:focus {
+    border-color: rgba(167, 112, 255, .18);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, .28);
+    transform: none;
+    outline: none;
+}
+
 .archive-image {
     aspect-ratio: 4 / 3;
     overflow: hidden;
