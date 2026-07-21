@@ -95,9 +95,9 @@ main { overflow: hidden; }
 .creator-content h1 { max-width: 700px; margin: 14px 0 24px; color: var(--ivory); font-size: clamp(3rem, 6vw, 5.8rem); line-height: .92; letter-spacing: -.045em; @supports(text-wrap: balance){.creator-content-h1 {text-wrap:balance;}}; text-shadow: 0 2px 0 #270745, 0 0 28px rgba(170, 85, 255, .28); }
 .gold-divider { position: relative; width: min(250px, 60%); height: 2px; margin-bottom: 28px; background: linear-gradient(90deg, var(--gold), var(--purple-glow), transparent); box-shadow: 0 0 12px rgba(232, 184, 77, .45); }
 .creator-copy { max-width: 700px; }
-.creator-copy p { margin-bottom: 14px; }
-.creator-copy p:first-child { color: var(--ivory); font-size: 1.08rem; }
-.creator-copy h3 { margin-top: 26px; color: var(--gold-light); font-size: 1.28rem; font-style: italic; }
+.creator-copy p { margin-bottom: 14px; font-size: 1.06em; }
+.creator-copy p:first-child { color: var(--ivory); font-size: 1.145rem; }
+.creator-copy h3 { margin-top: 26px; color: var(--gold-light); font-size: 1.357rem; font-style: italic; }
 
 .journey,
 .writer-desk,
@@ -177,6 +177,87 @@ main { overflow: hidden; }
 
 @keyframes star-drift { to { background-position: 149px 149px, -165px 283px; } }
 @keyframes gold-flow { to { background-position: 200% center; } }
+
+@media (min-width: 901px) {
+    .hero {
+        height: calc(100svh - var(--header) - var(--footer));
+        min-height: 0;
+        margin-top: var(--header);
+        padding: 0 32px;
+        overflow: hidden;
+    }
+
+    .hero::before {
+        inset: 1.5% 3%;
+    }
+
+    .hero-content {
+        height: auto;
+        max-height: 100%;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+        gap: clamp(1.5rem, 4vw, 4rem);
+        align-items: stretch;
+    }
+
+    .profile-card {
+        display: flex;
+        width: min(100%, calc(100svh - var(--header) - var(--footer) - 1rem));
+        min-height: 0;
+        aspect-ratio: 1;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .profile-card img {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .creator-content {
+        display: flex;
+        height: auto;
+        min-height: 0;
+        align-self: stretch;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-block: clamp(.2rem, .6vh, .45rem);
+    }
+
+    .creator-copy {
+        display: flex;
+        min-height: 0;
+        flex: 1 1 auto;
+        flex-direction: column;
+    }
+
+    .creator-content h1 {
+        margin: clamp(.45rem, 1.2vh, .8rem) 0 clamp(.65rem, 1.7vh, 1.1rem);
+        font-size: clamp(2.2rem, min(4.8vw, 7vh), 4.8rem);
+    }
+
+    .gold-divider {
+        margin-bottom: clamp(.65rem, 1.8vh, 1.2rem);
+    }
+
+    .creator-copy p {
+        margin-bottom: clamp(.4rem, 1vh, .7rem);
+        font-size: clamp(.954rem, min(1.219vw, 2.014vh), 1.113rem);
+        line-height: 1.5;
+    }
+
+    .creator-copy p:first-child {
+        font-size: clamp(1.007rem, min(1.325vw, 2.226vh), 1.187rem);
+    }
+
+    .creator-copy h3 {
+        margin-top: auto;
+        padding-top: clamp(.6rem, 1.5vh, 1rem);
+        font-size: clamp(1.06rem, min(1.484vw, 2.438vh), 1.325rem);
+    }
+}
 
 @media (max-width: 900px) {
     .hero-content { grid-template-columns: 1fr; }
