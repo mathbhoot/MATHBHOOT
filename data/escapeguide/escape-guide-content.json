@@ -1,0 +1,15 @@
+{
+  "progress": 48,
+  "progressCaption": "12 of 25 archive entries decoded",
+  "filters": ["All", "Stories", "Mathematics", "Dossiers", "Missions"],
+  "collections": [
+    {"number":"01","type":"Stories","tone":"green","title":"Story Plot","subtitle":"Ansh's Side","description":"Trace Ansh's journey and uncover the mathematics hidden inside every clue.","symbol":"△","items":[{"title":"The Invitation","meta":"Coordinate Geometry"},{"title":"The First Clue","meta":"Integers & Number System"},{"title":"The Hidden Door","meta":"Polynomials"},{"title":"The Broken Code","meta":"Linear Equations"}],"action":"View all chapters"},
+    {"number":"02","type":"Dossiers","tone":"red","title":"Enemy Records","subtitle":"Antagonist Side","description":"Understand the enemy's plans, symbols, and the logic concealed behind them.","symbol":"◇","items":[{"title":"The Architect","meta":"Graph Theory"},{"title":"The Calculation","meta":"Sequences & Series"},{"title":"The Trap","meta":"Probability"},{"title":"The Purple Orb","meta":"Complex Numbers"}],"action":"View all dossiers"},
+    {"number":"03","type":"Mathematics","tone":"blue","title":"Classwise Knowledge","subtitle":"Lessons & Methods","description":"Master mathematics modules by class, syllabus, and the puzzles they unlock.","symbol":"□","items":[{"title":"Class 6 Modules","meta":"12 topics"},{"title":"Class 7 Modules","meta":"15 topics"},{"title":"Class 8 Modules","meta":"18 topics"},{"title":"Class 9 Modules","meta":"20 topics"}],"action":"Explore all classes"},
+    {"number":"04","type":"Missions","tone":"purple","title":"Mission Database","subtitle":"Rooms & Trials","description":"Prepare, enter, and escape each room by using the knowledge you recover.","symbol":"⌘","items":[{"title":"The Grid Chamber","meta":"★ ★ ☆"},{"title":"The Angle Maze","meta":"★ ★ ★"},{"title":"The Equation Lock","meta":"★ ★ ★"},{"title":"The Probability Gate","meta":"★ ★ ★ ★"}],"action":"Enter missions"}
+  ],
+  "module": {"title":"Coordinate Plane","difficulty":"★ ★ ☆","time":"15 min","tabs":["Overview","Story Context","Mathematical Concept","Visual Explanation","Real Life Applications","Practice Questions","Unlock Test"],"sections":[{"heading":"Story Context","body":"Ansh finds a mysterious map marked with strange coordinates. The first clue to escape MathVilla lies in plotting the right path."},{"heading":"Mathematical Concept","body":"The coordinate plane is formed by two number lines—the x-axis and y-axis—intersecting at the origin (0, 0)."},{"heading":"Try It Yourself","body":"Plot A (2, 3), B (-1, 4), C (-4, -2), and D (3, -3). What hidden shape appears?"}]},
+  "recent":[{"title":"Polynomials (Class 9)","time":"2h ago"},{"title":"The Grid Chamber","time":"Yesterday"},{"title":"The Architect","time":"2 days ago"}],
+  "badges":["⌬","✦","△","⌘"],
+  "quote":"The more you know, the more doors you unlock. — Ganith"
+}
