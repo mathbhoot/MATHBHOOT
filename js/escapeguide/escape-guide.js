@@ -97,31 +97,26 @@ if (root) {
     host.innerHTML = cards.length
       ? cards
         .map(({ card, collectionIndex }) => {
-          const activePartIndex =
-            collectionIndex === state.collectionIndex ? state.partIndex : 0;
-          const visibleItems = getCollectionItems(card, activePartIndex);
           const isSelected = collectionIndex === state.collectionIndex;
-          const partDrawer = card.parts
-            ? `<details class="part-drawer" open><summary>${escape(card.parts[activePartIndex]?.label || "Select Part")}</summary><div class="part-drawer-menu">${card.parts.map((part, partIndex) => {
-                const isPartActive = partIndex === activePartIndex;
-                if (part.disabled) {
-                  return `<button type="button" disabled aria-disabled="true" class="part-btn-disabled">${escape(part.label)}</button>`;
-                }
-                return `<button type="button" data-collection-index="${collectionIndex}" data-part-index="${partIndex}" class="${isPartActive ? "active is-active" : ""}" aria-pressed="${isPartActive}">${escape(part.label)}</button>`;
-              }).join("")}</div></details>`
-            : "";
           const action = card.actionDisabled
             ? `<button type="button" class="card-action" disabled aria-disabled="true">${escape(card.action)}</button>`
             : `<a class="card-action" href="${escape(card.actionHref)}">${escape(card.action)}</a>`;
-          return `<article class="archive-card tone-${escape(card.tone)}${isSelected ? " session-card active is-active" : ""}" data-collection-index="${collectionIndex}">
+          const imageSrc = card.image ? escape(card.image) : "";
+          const imageElement = imageSrc
+            ? `<img src="${imageSrc}" alt="${escape(card.title)} artwork" class="card-photo" loading="lazy" />`
+            : `<div class="card-emblem-icon">${escape(card.symbol)}</div>`;
+
+          return `<article class="archive-card tone-${escape(card.tone)}${isSelected ? " session-card active is-active" : ""}" data-collection-index="${collectionIndex}" role="button" tabindex="0" aria-label="Open ${escape(card.title)} in Current Session">
       <div class="card-number">${escape(card.number)}</div><p class="card-type">${escape(card.type)}</p>
-      <h2>${escape(card.title)}<span>${escape(card.subtitle)}</span></h2><p class="card-description">${escape(card.description)}</p>
-      <div class="card-emblem" aria-hidden="true">${escape(card.symbol)}</div>
-      ${partDrawer}<ul class="archive-card-index">${visibleItems.map((item, itemIndex) => {
-            const isActive = collectionIndex === state.collectionIndex && activePartIndex === state.partIndex && itemIndex === state.itemIndex;
-            return `<li><button type="button" class="archive-item-button${isActive ? " active is-active" : ""}" data-collection-index="${collectionIndex}" data-part-index="${activePartIndex}" data-item-index="${itemIndex}" aria-selected="${isActive}" aria-pressed="${isActive}"><span>${escape(item.title)}<small>${escape(item.meta)}</small></span><b aria-hidden="true">›</b></button></li>`;
-          }).join("")}</ul>
-      ${action}</article>`;
+      <h2>${escape(card.title)}<span>${escape(card.subtitle)}</span></h2>
+      <p class="card-description">${escape(card.description)}</p>
+      <div class="card-image-frame" aria-hidden="true">
+        ${imageElement}
+      </div>
+      <div class="card-footer-action">
+        ${action}
+      </div>
+      </article>`;
         })
         .join("")
       : '<p class="empty-state">No archive entries match your search.</p>';
@@ -447,31 +442,24 @@ if (root) {
     const cardAction = event.target.closest(".card-action");
     if (cardAction) return;
 
-    const partBtn = event.target.closest("button[data-part-index]");
-    if (partBtn) {
-      if (partBtn.disabled) return;
-      selectSession(
-        Number(partBtn.dataset.collectionIndex),
-        0,
-        false,
-        Number(partBtn.dataset.partIndex),
-      );
-      return;
-    }
-    const itemBtn = event.target.closest(".archive-item-button");
-    if (itemBtn) {
-      selectSession(
-        Number(itemBtn.dataset.collectionIndex),
-        Number(itemBtn.dataset.itemIndex),
-        true,
-        Number(itemBtn.dataset.partIndex || 0),
-      );
-      return;
-    }
     const card = event.target.closest(".archive-card");
     if (card) {
       const clickedCollection = Number(card.dataset.collectionIndex);
       selectSession(clickedCollection, 0, true, 0);
+    }
+  });
+
+  document.querySelector("#archiveGrid")?.addEventListener("keydown", (event) => {
+    if (!(event.target instanceof Element)) return;
+    if (event.key === "Enter" || event.key === " ") {
+      const cardAction = event.target.closest(".card-action");
+      if (cardAction) return;
+      const card = event.target.closest(".archive-card");
+      if (card) {
+        event.preventDefault();
+        const clickedCollection = Number(card.dataset.collectionIndex);
+        selectSession(clickedCollection, 0, true, 0);
+      }
     }
   });
 
