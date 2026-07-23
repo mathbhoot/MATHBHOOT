@@ -36,12 +36,60 @@
           "id": "part-1",
           "label": "Part 1",
           "items": [
-            {"title":"The Calm Before the Chaos","meta":"Chapter 1","level":"Part 1 · Chapter 1","time":"Preview","summary":"Meet Ansh before the nightmare begins and revisit the story moments that can later be connected to mathematical ideas.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 1 in Part 1, then return here for its future mathematical topic map."},
-            {"title":"Enter at Your Own Risk","meta":"Chapter 2","level":"Part 1 · Chapter 2","time":"Preview","summary":"Follow the forbidden entry point and collect the decisions, positions, patterns, and clues that shape the chapter.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 2 in Part 1 and note the story elements that may become mathematical investigations."},
-            {"title":"The Light Should Not Be Followed","meta":"Chapter 3","level":"Part 1 · Chapter 3","time":"Preview","summary":"Trace the chapter's movement, direction, and changing visual clues as material for later mathematical interpretation.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 3 in Part 1 and identify any repeated direction, distance, or pattern clues."},
-            {"title":"When Beautiful Things Devour You","meta":"Chapter 4","level":"Part 1 · Chapter 4","time":"Preview","summary":"Review the structures and transformations introduced in this chapter before their mathematical breakdown is published.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 4 in Part 1 and collect the shapes, changes, or rules that influence the event."},
-            {"title":"The Tongue of Stone","meta":"Chapter 5","level":"Part 1 · Chapter 5","time":"Preview","summary":"Examine the stone language, symbols, and encoded relationships that can support future mathematical analysis.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 5 in Part 1 and list the symbols or relationships that appear to follow a rule."},
-            {"title":"The Smallest Spark","meta":"Chapter 6","level":"Part 1 · Chapter 6","time":"Preview","summary":"Complete the Part 1 index with the chapter's final signals, changes, and consequences ready for later study.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 6 in Part 1 and record the final clues that should connect to the next analysis."}
+            {
+              "title": "The Calm Before the Chaos",
+              "meta": "Chapter 1",
+              "level": "Part 1 · Chapter 1",
+              "time": "Preview",
+              "summary": "Meet Ansh before the nightmare begins and revisit the story moments that can later be connected to mathematical ideas.",
+              "concept": "The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.",
+              "activity": "Read Chapter 1 in Part 1, then return here for its future mathematical topic map."
+            },
+            {
+              "title": "Enter at Your Own Risk",
+              "meta": "Chapter 2",
+              "level": "Part 1 · Chapter 2",
+              "time": "Preview",
+              "summary": "Follow the forbidden entry point and collect the decisions, positions, patterns, and clues that shape the chapter.",
+              "concept": "The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.",
+              "activity": "Read Chapter 2 in Part 1 and note the story elements that may become mathematical investigations."
+            },
+            {
+              "title": "The Light Should Not Be Followed",
+              "meta": "Chapter 3",
+              "level": "Part 1 · Chapter 3",
+              "time": "Preview",
+              "summary": "Trace the chapter's movement, direction, and changing visual clues as material for later mathematical interpretation.",
+              "concept": "The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.",
+              "activity": "Read Chapter 3 in Part 1 and identify any repeated direction, distance, or pattern clues."
+            },
+            {
+              "title": "When Beautiful Things Devour You",
+              "meta": "Chapter 4",
+              "level": "Part 1 · Chapter 4",
+              "time": "Preview",
+              "summary": "Review the structures and transformations introduced in this chapter before their mathematical breakdown is published.",
+              "concept": "The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.",
+              "activity": "Read Chapter 4 in Part 1 and collect the shapes, changes, or rules that influence the event."
+            },
+            {
+              "title": "The Tongue of Stone",
+              "meta": "Chapter 5",
+              "level": "Part 1 · Chapter 5",
+              "time": "Preview",
+              "summary": "Examine the stone language, symbols, and encoded relationships that can support future mathematical analysis.",
+              "concept": "The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.",
+              "activity": "Read Chapter 5 in Part 1 and list the symbols or relationships that appear to follow a rule."
+            },
+            {
+              "title": "The Smallest Spark",
+              "meta": "Chapter 6",
+              "level": "Part 1 · Chapter 6",
+              "time": "Preview",
+              "summary": "Complete the Part 1 index with the chapter's final signals, changes, and consequences ready for later study.",
+              "concept": "The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.",
+              "activity": "Read Chapter 6 in Part 1 and record the final clues that should connect to the next analysis."
+            }
           ]
         }
       ]
@@ -57,10 +105,42 @@
       "action": "Coming soon",
       "actionDisabled": true,
       "items": [
-        {"title":"The Architect","meta":"Graph Theory","level":"Intermediate","time":"12 min","summary":"The Architect controls connected rooms and systems as a network of nodes and routes.","concept":"Represent locations as vertices, connections as edges, and inspect paths, cycles, and network reachability.","activity":"Sketch the control network and find a route that avoids a monitored node."},
-        {"title":"The Calculation","meta":"Sequences & Series","level":"Intermediate","time":"10 min","summary":"A repeating antagonist calculation grows according to a detectable numerical pattern.","concept":"Recognize arithmetic or geometric change, determine a general term, and estimate accumulated values with a series.","activity":"Continue the system sequence and identify the stage at which its value crosses the warning limit."},
-        {"title":"The Trap","meta":"Probability","level":"Intermediate","time":"9 min","summary":"The trap selects outcomes under uncertainty, but its possible results can still be measured.","concept":"List the sample space, distinguish favourable outcomes, and calculate theoretical probability.","activity":"Compare the available escape choices and select the path with the strongest probability of success."},
-        {"title":"The Purple Orb","meta":"Complex Numbers","level":"Advanced","time":"13 min","summary":"The orb models a system whose calculation requires both real and imaginary components.","concept":"Write values in a + bi form and interpret addition, multiplication, and position on the complex plane.","activity":"Combine the orb signals and map the resulting complex number to its plane location."}
+        {
+          "title": "The Architect",
+          "meta": "Graph Theory",
+          "level": "Intermediate",
+          "time": "12 min",
+          "summary": "The Architect controls connected rooms and systems as a network of nodes and routes.",
+          "concept": "Represent locations as vertices, connections as edges, and inspect paths, cycles, and network reachability.",
+          "activity": "Sketch the control network and find a route that avoids a monitored node."
+        },
+        {
+          "title": "The Calculation",
+          "meta": "Sequences & Series",
+          "level": "Intermediate",
+          "time": "10 min",
+          "summary": "A repeating antagonist calculation grows according to a detectable numerical pattern.",
+          "concept": "Recognize arithmetic or geometric change, determine a general term, and estimate accumulated values with a series.",
+          "activity": "Continue the system sequence and identify the stage at which its value crosses the warning limit."
+        },
+        {
+          "title": "The Trap",
+          "meta": "Probability",
+          "level": "Intermediate",
+          "time": "9 min",
+          "summary": "The trap selects outcomes under uncertainty, but its possible results can still be measured.",
+          "concept": "List the sample space, distinguish favourable outcomes, and calculate theoretical probability.",
+          "activity": "Compare the available escape choices and select the path with the strongest probability of success."
+        },
+        {
+          "title": "The Purple Orb",
+          "meta": "Complex Numbers",
+          "level": "Advanced",
+          "time": "13 min",
+          "summary": "The orb models a system whose calculation requires both real and imaginary components.",
+          "concept": "Write values in a + bi form and interpret addition, multiplication, and position on the complex plane.",
+          "activity": "Combine the orb signals and map the resulting complex number to its plane location."
+        }
       ]
     },
     {
@@ -74,10 +154,42 @@
       "action": "Coming soon",
       "actionDisabled": true,
       "items": [
-        {"title":"Class 6 Preview","meta":"CBSE · ICSE · MP Board · International","level":"Grade 6","time":"7 min","summary":"A classwise preview of number systems, fractions, basic algebra, geometry, mensuration, and data handling.","concept":"See how common Grade 6 foundations align across CBSE, ICSE, MP Board, and selected international pathways.","activity":"Choose a foundation topic and compare the vocabulary and expected skill across boards."},
-        {"title":"Class 7 Preview","meta":"CBSE · ICSE · MP Board · International","level":"Grade 7","time":"7 min","summary":"A classwise preview of rational numbers, equations, ratios, geometry, exponents, and data interpretation.","concept":"Connect shared Grade 7 outcomes while keeping board-specific sequencing and depth visible.","activity":"Select a topic and identify which prerequisite skill should be revised first."},
-        {"title":"Class 8 Preview","meta":"CBSE · ICSE · MP Board · International","level":"Grade 8","time":"8 min","summary":"A classwise preview of linear equations, factorisation, graphs, mensuration, probability, and advanced number work.","concept":"Compare Grade 8 topic progression across Indian boards and international grade-level expectations.","activity":"Open a topic preview and map it to its earlier foundation and later application."},
-        {"title":"Class 9 Preview","meta":"CBSE · ICSE · MP Board · International","level":"Grade 9","time":"9 min","summary":"A classwise preview of polynomials, coordinate geometry, Euclidean geometry, statistics, and probability.","concept":"Understand how Grade 9 concepts are grouped and assessed across boards without connecting this library to Ganith lore.","activity":"Choose a chapter and inspect its concept map, prerequisite knowledge, and expected outcomes."}
+        {
+          "title": "Class 6 Preview",
+          "meta": "CBSE · ICSE · MP Board · International",
+          "level": "Grade 6",
+          "time": "7 min",
+          "summary": "A classwise preview of number systems, fractions, basic algebra, geometry, mensuration, and data handling.",
+          "concept": "See how common Grade 6 foundations align across CBSE, ICSE, MP Board, and selected international pathways.",
+          "activity": "Choose a foundation topic and compare the vocabulary and expected skill across boards."
+        },
+        {
+          "title": "Class 7 Preview",
+          "meta": "CBSE · ICSE · MP Board · International",
+          "level": "Grade 7",
+          "time": "7 min",
+          "summary": "A classwise preview of rational numbers, equations, ratios, geometry, exponents, and data interpretation.",
+          "concept": "Connect shared Grade 7 outcomes while keeping board-specific sequencing and depth visible.",
+          "activity": "Select a topic and identify which prerequisite skill should be revised first."
+        },
+        {
+          "title": "Class 8 Preview",
+          "meta": "CBSE · ICSE · MP Board · International",
+          "level": "Grade 8",
+          "time": "8 min",
+          "summary": "A classwise preview of linear equations, factorisation, graphs, mensuration, probability, and advanced number work.",
+          "concept": "Compare Grade 8 topic progression across Indian boards and international grade-level expectations.",
+          "activity": "Open a topic preview and map it to its earlier foundation and later application."
+        },
+        {
+          "title": "Class 9 Preview",
+          "meta": "CBSE · ICSE · MP Board · International",
+          "level": "Grade 9",
+          "time": "9 min",
+          "summary": "A classwise preview of polynomials, coordinate geometry, Euclidean geometry, statistics, and probability.",
+          "concept": "Understand how Grade 9 concepts are grouped and assessed across boards without connecting this library to Ganith lore.",
+          "activity": "Choose a chapter and inspect its concept map, prerequisite knowledge, and expected outcomes."
+        }
       ]
     },
     {
@@ -91,14 +203,46 @@
       "action": "Coming soon",
       "actionDisabled": true,
       "items": [
-        {"title":"The Grid Chamber","meta":"Coordinates & Transformations","level":"Mission 1","time":"8 min","summary":"The chamber turns movement into positions, directions, and transformations on a grid.","concept":"Apply coordinates, translation, reflection, and distance reasoning to navigate the room.","activity":"Trace a valid grid route while preserving the transformation rule at every checkpoint."},
-        {"title":"The Angle Maze","meta":"Angles & Geometric Reasoning","level":"Mission 2","time":"9 min","summary":"The maze responds to turns and intersections whose angle relationships reveal the correct route.","concept":"Use complementary, supplementary, vertically opposite, and parallel-line angle relationships.","activity":"Calculate the missing turn angles and reject paths that break the maze rule."},
-        {"title":"The Equation Lock","meta":"Algebraic Equations","level":"Mission 3","time":"10 min","summary":"Each lock segment contributes a condition that must be satisfied by the same unknown value.","concept":"Translate the lock rules into equations and verify a solution in every original condition.","activity":"Solve the linked equations and test the result against all lock segments."},
-        {"title":"The Probability Gate","meta":"Probability & Strategy","level":"Mission 4","time":"11 min","summary":"The gate changes among possible states, making strategy dependent on likelihood rather than certainty.","concept":"Compare simple and conditional outcomes, then distinguish expected advantage from a guaranteed result.","activity":"Calculate each gate option and choose the strategy with the best justified chance of opening."}
+        {
+          "title": "The Grid Chamber",
+          "meta": "Coordinates & Transformations",
+          "level": "Mission 1",
+          "time": "8 min",
+          "summary": "The chamber turns movement into positions, directions, and transformations on a grid.",
+          "concept": "Apply coordinates, translation, reflection, and distance reasoning to navigate the room.",
+          "activity": "Trace a valid grid route while preserving the transformation rule at every checkpoint."
+        },
+        {
+          "title": "The Angle Maze",
+          "meta": "Angles & Geometric Reasoning",
+          "level": "Mission 2",
+          "time": "9 min",
+          "summary": "The maze responds to turns and intersections whose angle relationships reveal the correct route.",
+          "concept": "Use complementary, supplementary, vertically opposite, and parallel-line angle relationships.",
+          "activity": "Calculate the missing turn angles and reject paths that break the maze rule."
+        },
+        {
+          "title": "The Equation Lock",
+          "meta": "Algebraic Equations",
+          "level": "Mission 3",
+          "time": "10 min",
+          "summary": "Each lock segment contributes a condition that must be satisfied by the same unknown value.",
+          "concept": "Translate the lock rules into equations and verify a solution in every original condition.",
+          "activity": "Solve the linked equations and test the result against all lock segments."
+        },
+        {
+          "title": "The Probability Gate",
+          "meta": "Probability & Strategy",
+          "level": "Mission 4",
+          "time": "11 min",
+          "summary": "The gate changes among possible states, making strategy dependent on likelihood rather than certainty.",
+          "concept": "Compare simple and conditional outcomes, then distinguish expected advantage from a guaranteed result.",
+          "activity": "Calculate each gate option and choose the strategy with the best justified chance of opening."
+        }
       ]
     }
   ],
-  "defaultSession": {"collection":0,"item":0},
+  "defaultSession": { "collection": 0, "item": 0 },
   "badges": ["⌬", "✦", "△", "⌘"],
   "quote": "The more you know, the more doors you unlock. — Ganith"
 }
