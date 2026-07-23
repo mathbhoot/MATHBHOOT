@@ -87,7 +87,7 @@ main { overflow: hidden; }
 .hero-content { display: grid; min-width: 0; grid-template-columns: minmax(300px, .94fr) minmax(0, 1.06fr); align-items: center; gap: clamp(46px, 7vw, 96px); width: min(1180px, 100%); }
 
 .profile-card { position: relative; filter: drop-shadow(0 28px 48px rgba(0, 0, 0, .55)); }
-.profile-card::after { content: ""; position: absolute; inset: 3%; z-index: -1; border-radius: 50%; background: rgba(95, 31, 177, .28); box-shadow: 0 0 55px rgba(170, 85, 255, .46), 0 0 90px rgba(232, 184, 77, .15); }
+.profile-card::after { content: ""; position: absolute; inset: 14%; z-index: -1; border-radius: 50%; background: radial-gradient(circle, rgba(95, 31, 177, .28) 0 42%, rgba(95, 31, 177, .14) 68%, transparent 100%); box-shadow: 0 0 38px rgba(170, 85, 255, .4), 0 0 62px rgba(232, 184, 77, .12); }
 .profile-card img { display: block; width: 100%; height: auto; }
 
 .creator-content { min-width: 0; }
