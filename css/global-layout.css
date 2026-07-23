@@ -40,6 +40,7 @@ body {
     min-height: 100vh;
     min-height: 100svh;
     margin: 0;
+    padding-bottom: var(--global-footer-height, 38px);
     overflow-x: hidden;
     font-size: var(--global-body-size);
     line-height: var(--global-body-line-height);

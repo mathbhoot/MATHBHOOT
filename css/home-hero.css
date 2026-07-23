@@ -80,7 +80,7 @@
     .homepage-hero .hero-content {
         top: calc(var(--global-header-height, 58px) + 1rem);
         left: 50%;
-        width: min(68vw, 300px);
+        width: min(88vw, 340px);
         transform: translateX(-50%);
         text-align: center;
     }

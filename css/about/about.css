@@ -90,8 +90,8 @@ main {
   min-height: 100vh;
   min-height: 100svh;
   place-items: center;
-  padding: calc(var(--header) + clamp(3rem, 6vw, 5rem)) 32px
-    clamp(4rem, 7vw, 6rem);
+  padding: calc(var(--header) + clamp(2rem, 5vw, 4rem))
+    var(--site-page-gutter, 1rem) clamp(3rem, 6vw, 5rem);
   isolation: isolate;
 }
 
