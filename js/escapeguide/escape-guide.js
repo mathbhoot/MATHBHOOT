@@ -156,12 +156,14 @@ if (root) {
   };
 
   document.querySelector('#archiveFilters')?.addEventListener('click', event => {
+    if (!(event.target instanceof Element)) return;
     const button = event.target.closest('button[data-filter]');
     if (!button) return;
     state.filter = button.dataset.filter || 'All';
     renderFilters(); renderCollections();
   });
   document.querySelector('#archiveGrid')?.addEventListener('click', event => {
+    if (!(event.target instanceof Element)) return;
     const partButton = event.target.closest('button[data-part-index]');
     if (partButton) {
       selectSession(Number(partButton.dataset.collectionIndex), 0, false, Number(partButton.dataset.partIndex));
@@ -172,6 +174,7 @@ if (root) {
     selectSession(Number(button.dataset.collectionIndex), Number(button.dataset.itemIndex), true, Number(button.dataset.partIndex || 0));
   });
   document.querySelector('#moduleTabs')?.addEventListener('click', event => {
+    if (!(event.target instanceof Element)) return;
     const button = event.target.closest('button[data-related-item]');
     if (!button) return;
     selectSession(state.collectionIndex, Number(button.dataset.relatedItem), false, state.partIndex);

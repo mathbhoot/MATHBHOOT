@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const renderCarousel = () => {
         const visibleCount = Math.min(getVisibleCount(), slides.length);
         const gap = window.getComputedStyle(wrapper).columnGap || '0px';
-        wrapper.innerHTML = '';
+        wrapper.replaceChildren();
 
         for (let offset = 0; offset < visibleCount; offset += 1) {
             const slideIndex = (activeIndex + offset) % slides.length;

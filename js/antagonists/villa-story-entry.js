@@ -52,10 +52,10 @@
             return response.json();
         })
         .then((content) => {
-            renderEntry(content);
+            if (renderEntry(content)) return;
 
             const observer = new MutationObserver(() => {
-                renderEntry(content);
+                if (renderEntry(content)) observer.disconnect();
             });
             observer.observe(antagonistApp, { childList: true, subtree: true });
         })

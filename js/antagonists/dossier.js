@@ -104,6 +104,7 @@
         });
 
         filters.addEventListener('click', (event) => {
+            if (!(event.target instanceof Element)) return;
             const button = event.target.closest('.archive-filter');
             if (!button || !filters.contains(button)) return;
             filters.querySelectorAll('.archive-filter').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
