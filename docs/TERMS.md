@@ -2,11 +2,11 @@
 
 Effective and last updated: 19 July 2026
 
-These Terms govern access to MATHBHOOT. By creating an account, you agree to these Terms and acknowledge the Privacy Policy. If you do not agree, do not create or use an account.
+These Terms govern access to MATHBHOOT. By using the website, you agree to these Terms and acknowledge the Privacy Policy.
 
-## Eligibility and accounts
+## Eligibility and access
 
-Account registration is currently available only to people aged 18 or older. You must provide accurate account information, protect your credentials, and promptly report suspected unauthorized access. You may not impersonate another person, automate abusive registrations, or attempt to bypass access controls.
+MATHBHOOT does not currently offer user accounts. You may not attempt to bypass access controls, disrupt the website, or impersonate another person.
 
 ## Acceptable use
 
@@ -24,7 +24,7 @@ Public creator profiles and posting—including text, images, video/reels, anima
 
 ## Enforcement and availability
 
-MATHBHOOT may restrict an account or remove material reasonably believed to violate these Terms, threaten users or systems, or create legal risk. Features may change, be suspended, or be discontinued, and uninterrupted availability is not guaranteed.
+MATHBHOOT may restrict access or remove material reasonably believed to violate these Terms, threaten users or systems, or create legal risk. Features may change, be suspended, or be discontinued, and uninterrupted availability is not guaranteed.
 
 ## Disclaimers and liability
 

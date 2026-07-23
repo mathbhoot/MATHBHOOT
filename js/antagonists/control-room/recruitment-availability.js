@@ -52,7 +52,7 @@ if (recruitmentPage && applicationHost) {
       closeRecruitment(applicationHost.querySelector('.recruitment-workspace'));
     })
     .catch(() => {
-      availability = { enabled: false, eyebrow: 'Recruitment channel secured', heading: 'Applications are temporarily closed', description: 'MATHBHOOT is not accepting account registrations or submissions at this time.', notice: 'No information can be submitted from this page.', actionLabel: 'Applications Paused' };
+      availability = { enabled: false, eyebrow: 'Recruitment channel secured', heading: 'Applications are temporarily closed', description: 'MATHBHOOT is not accepting submissions at this time.', notice: 'No information can be submitted from this page.', actionLabel: 'Applications Paused' };
       closeRecruitment(applicationHost.querySelector('.recruitment-workspace'));
     });
 }

@@ -26,11 +26,11 @@
     "description": "Fill the dossier below and prepare your first contribution to the Antagonist Program.",
     "fields": [
       { "id": "username", "label": "Choose a unique username", "type": "text", "autocomplete": "username", "placeholder": "Example: shadow_solver", "required": true, "minlength": 3, "maxlength": 30, "pattern": "[A-Za-z0-9_]+", "title": "Use 3–30 letters, numbers, or underscores only." },
-      { "id": "email", "label": "Account email address", "type": "email", "autocomplete": "email", "placeholder": "Enter the email for your account", "required": true, "maxlength": 254 },
+      { "id": "email", "label": "Email address", "type": "email", "autocomplete": "email", "placeholder": "Enter your email address", "required": true, "maxlength": 254 },
       { "id": "mission", "label": "Choose your mission", "type": "select", "placeholder": "Select a mission", "required": true, "options": ["Mathematical Trap", "NPC or Character", "Ancient Artifact", "MathVilla Room", "Mathematical Rule", "Other"] },
       { "id": "ideaDescription", "label": "Idea description", "type": "textarea", "placeholder": "Describe the idea, how the player experiences it, the mathematics involved, and the intended outcome.", "required": true, "minlength": 40, "maxlength": 3000 }
     ],
-    "consentLabel": "I confirm this is my original idea and agree that MATHBHOOT may securely store my account email and submission for review.",
+    "consentLabel": "I confirm this is my original idea and agree that MATHBHOOT may store my email and submission for review.",
     "saveLabel": "Confirm and Submit",
     "draftNotice": "Your first confirmation sends an email verification link. The submission reaches MATHBHOOT only after you verify that email and confirm again."
   },
