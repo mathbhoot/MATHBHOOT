@@ -486,22 +486,35 @@
   max-width: 44ch;
   margin-top: 1.6rem;
   color: #dfd2d4;
-  line-height: 1.65;
+  line-height: 1.45;
 }
-.intruder-narrative p,
-.intruder-narrative ul {
-  margin-bottom: 1rem;
+
+.intruder-narrative p {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  line-height: 1.45;
 }
 
 .intruder-narrative ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   padding-left: 1.2rem;
+}
+
+.intruder-narrative li {
+  margin-bottom: 0.25rem;
+  line-height: 1.45;
 }
 
 .intruder-narrative li::marker {
   color: var(--antagonist-red-bright);
 }
+
 .intruder-narrative .intruder-vow {
+  margin-top: 0.85rem;
+  margin-bottom: 0;
   color: var(--antagonist-red-bright);
+  font-weight: 600;
 }
 
 .intruder-visual {
