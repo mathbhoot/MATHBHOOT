@@ -1,0 +1,70 @@
+/*
+ * MATHBHOOT — 3D Interactive Card Depth & Glare System
+ * Provides GPU-accelerated perspective tilt and dynamic lighting overlay for collection cards.
+ */
+
+.archive-grid {
+    perspective: 1000px;
+}
+
+.archive-card {
+    transform-style: preserve-3d;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s ease, border-color 0.3s ease;
+    will-change: transform;
+}
+
+.archive-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+        circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        color-mix(in srgb, var(--tone) 25%, rgba(255, 255, 255, 0.14)) 0%,
+        transparent 65%
+    );
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+}
+
+.archive-card:hover::after,
+.archive-card:focus-within::after {
+    opacity: 1;
+}
+
+/* 3D Depth Layering on Card Internal Components */
+.archive-card .card-image-frame {
+    transform: translateZ(16px);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.archive-card .card-action {
+    transform: translateZ(12px);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.archive-card h2 {
+    transform: translateZ(8px);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Accessibility & Motion Safety */
+@media (prefers-reduced-motion: reduce) {
+    .archive-grid {
+        perspective: none;
+    }
+    .archive-card {
+        transform: none !important;
+        transform-style: flat;
+    }
+    .archive-card::after {
+        display: none;
+    }
+    .archive-card .card-image-frame,
+    .archive-card .card-action,
+    .archive-card h2 {
+        transform: none !important;
+    }
+}
