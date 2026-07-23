@@ -1,7 +1,3 @@
-import('/js/analytics/analytics-consent.js').catch(() => {
-    console.warn('[MATHBHOOT] Analytics consent controls are unavailable. Analytics remains disabled.');
-});
-
 const navToggles = document.querySelectorAll('.nav-toggle');
 
 navToggles.forEach((navToggle) => {
