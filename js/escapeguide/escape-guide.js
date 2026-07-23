@@ -270,7 +270,6 @@ if (root) {
     const labels = state.data.sessionLabels;
     const title = document.querySelector("#modulePreviewTitle");
     const difficulty = document.querySelector("#moduleDifficulty");
-    const time = document.querySelector("#moduleTime");
     const tabs = document.querySelector("#moduleTabs");
     const content = document.querySelector("#moduleContent");
     const menuLabel = document.querySelector("#moduleMenuLabel");
@@ -282,7 +281,6 @@ if (root) {
     if (currentLabel) currentLabel.textContent = labels.current;
     if (title) title.textContent = item.title;
     if (difficulty) difficulty.textContent = `${labels.level} ${item.level}`;
-    if (time) time.textContent = `${labels.time} ${item.time}`;
 
     subnavBtns.forEach(btn => {
       const isSubnavActive = btn.dataset.subnav === state.activeSubnav;
