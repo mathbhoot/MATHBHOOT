@@ -21,6 +21,10 @@
         .protagonist-intro p,
         .protagonist-intro .intro-description {
             color: var(--mb-muted);
+            font-size: 1rem;
+            line-height: 1.65;
+            text-align: justify;
+            text-align-last: left;
         }
 
         .protagonist-intro h2 {
@@ -339,7 +343,8 @@
 
             .protagonist-intro p,
             .protagonist-intro .intro-description {
-                text-align: left;
+                font-size: 1rem;
+                text-align: justify;
                 text-align-last: left;
                 line-height: 1.65;
             }
