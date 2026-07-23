@@ -1,0 +1,81 @@
+/* Shared geometry and typography for the site header and footer.
+   Page-specific colors and visual themes remain in their existing stylesheets. */
+
+:root {
+    --site-page-gutter: clamp(1rem, 3vw, 2rem);
+    --site-header-height: 58px;
+    --site-footer-height: 38px;
+    --site-logo-size: 58px;
+    --site-nav-font-size: 1rem;
+    --site-footer-font-size: 0.82rem;
+
+    /* Keep older page layouts aligned with the shared measurements. */
+    --global-page-gutter: var(--site-page-gutter);
+    --global-header-height: var(--site-header-height);
+    --global-footer-height: var(--site-footer-height);
+}
+
+.site-header {
+    width: 100%;
+    margin: 0;
+}
+
+.site-header .navbar {
+    width: 100%;
+    min-height: var(--site-header-height);
+    margin: 0;
+    padding: 0 var(--site-page-gutter);
+}
+
+.site-header .nav-logo {
+    width: var(--site-logo-size);
+    height: auto;
+    margin: 0;
+}
+
+.site-header .nav-links {
+    gap: clamp(1rem, 2vw, 1.6rem);
+    margin: 0;
+    padding: 0;
+}
+
+.site-header .nav-links a {
+    min-height: 44px;
+    font-size: var(--site-nav-font-size);
+    line-height: 1.2;
+}
+
+body .site-footer {
+    width: 100%;
+    min-height: var(--site-footer-height);
+    margin: 0;
+    padding: 0.25rem var(--site-page-gutter);
+}
+
+body .site-footer p {
+    margin: 0;
+    padding: 0;
+    font-size: var(--site-footer-font-size);
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --site-page-gutter: clamp(0.875rem, 4vw, 1.25rem);
+        --site-logo-size: 50px;
+        --site-footer-font-size: 0.75rem;
+    }
+
+    .site-header .nav-links {
+        gap: 0.25rem;
+        padding: 0.75rem var(--site-page-gutter) 1rem;
+    }
+
+    .site-header .nav-links a {
+        font-size: var(--site-nav-font-size);
+    }
+
+    body .site-footer {
+        padding: 0.25rem 0.5rem;
+    }
+}
