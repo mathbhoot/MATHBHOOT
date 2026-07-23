@@ -1,7 +1,7 @@
 .villa-story-feature {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(440px, 1.2fr) minmax(300px, 0.8fr);
+  grid-template-columns: minmax(280px, 1.2fr) minmax(260px, 0.8fr);
   min-height: 560px;
   border-top: 1px solid var(--antagonist-line);
   background: linear-gradient(

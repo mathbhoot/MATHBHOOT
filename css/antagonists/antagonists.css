@@ -115,7 +115,7 @@
 .profile-hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(390px, 0.94fr) minmax(420px, 1.06fr);
+  grid-template-columns: minmax(280px, 0.94fr) minmax(280px, 1.06fr);
   min-height: clamp(650px, 62vw, 780px);
 }
 
@@ -729,8 +729,27 @@
   }
 }
 
+@keyframes threat-pulse {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(255, 102, 112, 0.6));
+  }
+  50% {
+    opacity: 0.65;
+    filter: drop-shadow(0 0 2px rgba(255, 102, 112, 0.2));
+  }
+}
+
+.alert-icon,
+.anomaly-signal {
+  animation: threat-pulse 3.2s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .profile-button {
+  .profile-button,
+  .alert-icon,
+  .anomaly-signal {
     transition: none;
+    animation: none;
   }
 }
