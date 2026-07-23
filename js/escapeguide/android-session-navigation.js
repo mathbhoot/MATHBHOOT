@@ -1,7 +1,6 @@
 const escapePage = document.querySelector(".escape-page");
-const isAndroidDevice = /Android/i.test(navigator.userAgent);
 
-if (escapePage && isAndroidDevice) {
+if (escapePage) {
   const sessionDeck = document.querySelector(".module-deck");
   const sessionPreview = document.querySelector("#modulePreview");
   let navigationCopy = {

@@ -1,5 +1,6 @@
-.android-session-navigation .module-deck {
-    scroll-margin-top: calc(var(--global-header-height, 72px) + 1rem);
+.android-session-navigation .module-deck,
+.module-deck {
+    scroll-margin-top: calc(var(--global-header-height, 58px) + 1.25rem);
 }
 
 .android-session-navigation .module-preview.session-arrival {
