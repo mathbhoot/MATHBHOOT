@@ -228,6 +228,10 @@ body {
         line-height: 1;
     }
 
+    .navbar > .nav-toggle[aria-expanded="true"]::before {
+        content: "\2715";
+    }
+
     :where(.nav-links) {
         position: absolute;
         top: 100%;
