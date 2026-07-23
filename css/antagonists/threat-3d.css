@@ -1,0 +1,78 @@
+/*
+ * MATHBHOOT — Antagonist Threat 3D Depth & Tactical Hologram Scan System
+ * Adds subtle GPU-accelerated 3D perspective tilt and red tactical glare overlays.
+ */
+
+.antagonist-grid,
+.dossier-grid,
+.architect-hero {
+    perspective: 1000px;
+}
+
+.antagonist-card,
+.dossier-card {
+    transform-style: preserve-3d;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s ease, border-color 0.3s ease;
+    will-change: transform;
+    position: relative;
+}
+
+.antagonist-card::after,
+.dossier-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+        circle at var(--threat-mouse-x, 50%) var(--threat-mouse-y, 50%),
+        rgba(227, 59, 71, 0.22) 0%,
+        transparent 70%
+    );
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+    z-index: 4;
+}
+
+.antagonist-card:hover::after,
+.dossier-card:hover::after {
+    opacity: 1;
+}
+
+/* 3D Depth Layers */
+.antagonist-card img,
+.dossier-card img,
+.antagonist-card .card-media {
+    transform: translateZ(14px);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.antagonist-card .btn,
+.dossier-card .btn,
+.antagonist-card a.action-link {
+    transform: translateZ(10px);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .antagonist-grid,
+    .dossier-grid,
+    .architect-hero {
+        perspective: none;
+    }
+    .antagonist-card,
+    .dossier-card {
+        transform: none !important;
+        transform-style: flat;
+    }
+    .antagonist-card::after,
+    .dossier-card::after {
+        display: none;
+    }
+    .antagonist-card img,
+    .dossier-card img,
+    .antagonist-card .btn,
+    .dossier-card .btn {
+        transform: none !important;
+    }
+}

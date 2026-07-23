@@ -1,100 +1,110 @@
 .villa-story-feature {
-    position: relative;
-    display: grid;
-    grid-template-columns: minmax(440px, 1.2fr) minmax(300px, .8fr);
-    min-height: 560px;
-    border-top: 1px solid var(--antagonist-line);
-    background: linear-gradient(135deg, rgba(4, 3, 4, .99), rgba(26, 7, 12, .97));
-    overflow: hidden;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(280px, 1.2fr) minmax(260px, 0.8fr);
+  min-height: 560px;
+  border-top: 1px solid var(--antagonist-line);
+  background: linear-gradient(
+    135deg,
+    rgba(4, 3, 4, 0.99),
+    rgba(26, 7, 12, 0.97)
+  );
+  overflow: hidden;
 }
 
 .villa-story-feature__visual {
-    position: relative;
-    min-height: 560px;
-    overflow: hidden;
-    background: #090406 url("../../assets/antagonists/behind_story.jpeg") center / cover no-repeat;
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  background: #090406 url("../../assets/antagonists/behind_story.jpeg") center /
+    cover no-repeat;
 }
 
 .villa-story-feature__visual::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, transparent 55%, rgba(6, 3, 4, .92)), linear-gradient(0deg, rgba(3, 2, 3, .72), transparent 45%);
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, transparent 55%, rgba(6, 3, 4, 0.92)),
+    linear-gradient(0deg, rgba(3, 2, 3, 0.72), transparent 45%);
+  pointer-events: none;
 }
 
 .villa-story-feature__visual img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: saturate(.86) contrast(1.12) brightness(.72);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.86) contrast(1.12) brightness(0.72);
 }
 
 .villa-story-feature__copy {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: clamp(2rem, 5vw, 4.5rem);
-    background: linear-gradient(90deg, rgba(7, 3, 5, .74), #080405 18%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  background: linear-gradient(90deg, rgba(7, 3, 5, 0.74), #080405 18%);
 }
 
 .villa-story-feature__kicker {
-    margin: 0 0 .55rem;
-    color: var(--antagonist-red-bright);
-    font-size: .7rem;
-    font-weight: 700;
-    letter-spacing: .14em;
-    text-transform: uppercase;
+  margin: 0 0 0.55rem;
+  color: var(--antagonist-red-bright);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .villa-story-feature__title {
-    margin: 0;
-    color: #fff4f5;
-    font: 400 clamp(2rem, 4vw, 4rem)/1.02 Georgia, "Times New Roman", serif;
-    text-transform: uppercase;
+  margin: 0;
+  color: #fff4f5;
+  font:
+    400 clamp(2rem, 4vw, 4rem)/1.02 Georgia,
+    "Times New Roman",
+    serif;
+  text-transform: uppercase;
 }
 
 .villa-story-feature__text {
-    margin: 1.25rem 0 0;
-    color: #dfd2d4;
-    line-height: 1.65;
+  margin: 1.25rem 0 0;
+  color: #dfd2d4;
+  line-height: 1.65;
 }
 
 .villa-story-feature__action {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 @media (max-width: 940px) {
-    .villa-story-feature {
-        grid-template-columns: 1fr;
-    }
+  .villa-story-feature {
+    grid-template-columns: 1fr;
+  }
 
-    .villa-story-feature__visual {
-        min-height: 0;
-        height: min(66vw, 560px);
-    }
+  .villa-story-feature__visual {
+    min-height: 0;
+    height: min(66vw, 560px);
+  }
 
-    .villa-story-feature__visual::after {
-        background: linear-gradient(0deg, #070405 0, transparent 42%);
-    }
+  .villa-story-feature__visual::after {
+    background: linear-gradient(0deg, #070405 0, transparent 42%);
+  }
 
-    .villa-story-feature__copy {
-        background: #080405;
-    }
+  .villa-story-feature__copy {
+    background: #080405;
+  }
 }
 
 @media (max-width: 620px) {
-    .villa-story-feature {
-        min-height: 0;
-    }
+  .villa-story-feature {
+    min-height: 0;
+  }
 
-    .villa-story-feature__visual {
-        height: 72vw;
-        min-height: 280px;
-    }
+  .villa-story-feature__visual {
+    height: 72vw;
+    min-height: 280px;
+  }
 
-    .villa-story-feature__copy {
-        padding: 2rem 1.25rem 2.5rem;
-    }
+  .villa-story-feature__copy {
+    padding: 2rem 1.25rem 2.5rem;
+  }
 }

@@ -4,13 +4,31 @@
   "title": "MATHBHOOT Antagonist Contribution Record",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "userId", "username", "email", "mission", "ideaDescription", "status", "createdAt"],
+  "required": [
+    "id",
+    "userId",
+    "username",
+    "email",
+    "mission",
+    "ideaDescription",
+    "status",
+    "createdAt"
+  ],
   "properties": {
     "id": { "type": "string", "format": "uuid" },
     "userId": { "type": "string", "format": "uuid" },
     "username": { "type": "string", "pattern": "^[A-Za-z0-9_]{3,30}$" },
     "email": { "type": "string", "format": "email", "maxLength": 254 },
-    "mission": { "enum": ["Mathematical Trap", "NPC or Character", "Ancient Artifact", "MathVilla Room", "Mathematical Rule", "Other"] },
+    "mission": {
+      "enum": [
+        "Mathematical Trap",
+        "NPC or Character",
+        "Ancient Artifact",
+        "MathVilla Room",
+        "Mathematical Rule",
+        "Other"
+      ]
+    },
     "ideaDescription": { "type": "string", "minLength": 40, "maxLength": 3000 },
     "status": { "enum": ["submitted", "under_review", "approved", "rejected"] },
     "createdAt": { "type": "string", "format": "date-time" },

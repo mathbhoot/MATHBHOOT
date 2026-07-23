@@ -1,5 +1,5 @@
 {
-  "footerText": "©2026 MATHBHOOT. All rights reserved.",
+  "footerText": "©2026 MATHBHOOT. All rights reserved. Where Mathematics Meets Mystery.",
   "progress": 48,
   "progressCaption": "12 of 25 archive entries decoded",
   "androidNavigation": {
@@ -9,7 +9,7 @@
   "filters": ["All", "Stories", "Mathematics", "Dossiers", "Missions"],
   "sessionLabels": {
     "browse": "Browse the archive",
-    "menu": "Related topics",
+    "menu": "Chapter Table of Contents",
     "current": "Current session",
     "context": "Source context",
     "concept": "Mathematics behind it",
@@ -28,6 +28,7 @@
       "subtitle": "Ansh's Side",
       "description": "Use the story index to uncover the mathematics behind each chapter, clue, and event.",
       "symbol": "△",
+      "image": "../../assets/protagonists/ansh.jpg",
       "action": "Part-1",
       "actionHref": "../protagonists/mathbhoot_nm/mathbhoot_nightmare.html",
       "actionDisabled": false,
@@ -36,13 +37,139 @@
           "id": "part-1",
           "label": "Part 1",
           "items": [
-            {"title":"The Calm Before the Chaos","meta":"Chapter 1","level":"Part 1 · Chapter 1","time":"Preview","summary":"Meet Ansh before the nightmare begins and revisit the story moments that can later be connected to mathematical ideas.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 1 in Part 1, then return here for its future mathematical topic map."},
-            {"title":"Enter at Your Own Risk","meta":"Chapter 2","level":"Part 1 · Chapter 2","time":"Preview","summary":"Follow the forbidden entry point and collect the decisions, positions, patterns, and clues that shape the chapter.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 2 in Part 1 and note the story elements that may become mathematical investigations."},
-            {"title":"The Light Should Not Be Followed","meta":"Chapter 3","level":"Part 1 · Chapter 3","time":"Preview","summary":"Trace the chapter's movement, direction, and changing visual clues as material for later mathematical interpretation.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 3 in Part 1 and identify any repeated direction, distance, or pattern clues."},
-            {"title":"When Beautiful Things Devour You","meta":"Chapter 4","level":"Part 1 · Chapter 4","time":"Preview","summary":"Review the structures and transformations introduced in this chapter before their mathematical breakdown is published.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 4 in Part 1 and collect the shapes, changes, or rules that influence the event."},
-            {"title":"The Tongue of Stone","meta":"Chapter 5","level":"Part 1 · Chapter 5","time":"Preview","summary":"Examine the stone language, symbols, and encoded relationships that can support future mathematical analysis.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 5 in Part 1 and list the symbols or relationships that appear to follow a rule."},
-            {"title":"The Smallest Spark","meta":"Chapter 6","level":"Part 1 · Chapter 6","time":"Preview","summary":"Complete the Part 1 index with the chapter's final signals, changes, and consequences ready for later study.","concept":"The detailed mathematics behind this chapter will be added here as the chapter analysis is developed.","activity":"Read Chapter 6 in Part 1 and record the final clues that should connect to the next analysis."}
+            {
+              "title": "The Calm Before the Chaos",
+              "meta": "Chapter 1 · Patterns & Symmetries",
+              "level": "Part 1 · Chapter 1",
+              "time": "8 min",
+              "summary": "Meet Ansh before the nightmare begins and revisit the story moments that can later be connected to mathematical ideas.",
+              "concept": "Rotational symmetry and repeating linear patterns govern the structural design of the haunted villa's central hall.",
+              "activity": "Analyze the floor tile pattern and calculate the order of rotational symmetry before entering the next corridor.",
+              "history": "Symmetry and tessellation studies date back to 300 BCE in Islamic geometry and ancient Indian mandala mathematics, formalized later by Kepler and Hermann Weyl.",
+              "graphType": "symmetry-grid",
+              "graphTitle": "Symmetry & Tessellation Radar",
+              "graphDesc": "Live interactive rotational transformation matrix showing tile reflection angles across axes.",
+              "videoTitle": "The Geometry of Architectural Mystery",
+              "videoDuration": "4:12",
+              "videoSummary": "Visual breakdown of how symmetrical spatial patterns create atmospheric tension in haunted villa design.",
+              "futureApps": [
+                { "title": "Crystallography & Materials", "desc": "Mapping molecular crystal lattices for next-generation superconductors." },
+                { "title": "Computer Graphics", "desc": "Procedural texture generation in ray-traced virtual environments." },
+                { "title": "Robotic Navigation", "desc": "Spatial mapping algorithms using SLAM and rotational invariance." }
+              ]
+            },
+            {
+              "title": "Enter at Your Own Risk",
+              "meta": "Chapter 2 · Vector Directions",
+              "level": "Part 1 · Chapter 2",
+              "time": "10 min",
+              "summary": "Follow the forbidden entry point and collect the decisions, positions, patterns, and clues that shape the chapter.",
+              "concept": "Vector displacement models Ansh's path through multi-level corridors with magnitude and directional heading.",
+              "activity": "Plot the vector sum of Ansh's movement through the entry halls to find his net displacement.",
+              "history": "Vector analysis was pioneered by William Rowan Hamilton in 1843 through quaternions and later refined by Josiah Willard Gibbs for physical mechanics.",
+              "graphType": "vector-plane",
+              "graphTitle": "Vector Displacement Canvas",
+              "graphDesc": "Interactive 2D Cartesian plane rendering real-time vector addition and magnitude calculation.",
+              "videoTitle": "Vectors in Dark Corridors",
+              "videoDuration": "5:05",
+              "videoSummary": "Watch how displacement vectors determine optimal escape routes when visibility drops to zero.",
+              "futureApps": [
+                { "title": "Autonomous Drones", "desc": "Real-time 3D flight trajectory calculation and obstacle avoidance." },
+                { "title": "Game Physics Engines", "desc": "Simulating realistic collision dynamics and force fields." },
+                { "title": "Satellite Trajectories", "desc": "Orbital mechanics calculation for planetary exploration." }
+              ]
+            },
+            {
+              "title": "The Light Should Not Be Followed",
+              "meta": "Chapter 3 · Light Intensity & Inverse Square Law",
+              "level": "Part 1 · Chapter 3",
+              "time": "9 min",
+              "summary": "Trace the chapter's movement, direction, and changing visual clues as material for later mathematical interpretation.",
+              "concept": "Light intensity diminishes proportionally to the square of distance (I ∝ 1/r²), creating deceptive optic shadows.",
+              "activity": "Calculate the light intensity at 3 meters versus 9 meters from the phantom lantern.",
+              "history": "Formulated by Alhazen in 1021 and mathematically proven by Johannes Kepler in 1604, establishing modern optics.",
+              "graphType": "inverse-square",
+              "graphTitle": "Inverse-Square Light Decay Curve",
+              "graphDesc": "Dynamic curve graph showing light decay as distance increases from the source.",
+              "videoTitle": "Photometrics & Shadow Mathematics",
+              "videoDuration": "3:48",
+              "videoSummary": "Demonstrating how light attenuation deceives human distance perception in enclosed structures.",
+              "futureApps": [
+                { "title": "Fiber Optics & Telecom", "desc": "Signal attenuation management in transoceanic data cables." },
+                { "title": "Astrophysics", "desc": "Measuring star distance via standard candles and luminosity." },
+                { "title": "LiDAR Sensing", "desc": "Autonomous vehicle perception under low-visibility conditions." }
+              ]
+            },
+            {
+              "title": "When Beautiful Things Devour You",
+              "meta": "Chapter 4 · Fractals & Recursion",
+              "level": "Part 1 · Chapter 4",
+              "time": "11 min",
+              "summary": "Review the structures and transformations introduced in this chapter before their mathematical breakdown is published.",
+              "concept": "Self-similar fractal geometry describes complex repeating organic and illusionary structures inside the villa.",
+              "activity": "Compute the fractal dimension of a self-repeating branching pattern across 4 recursion steps.",
+              "history": "Coined by Benoît Mandelbrot in 1975, revolutionizing geometry by describing non-Euclidean natural structures.",
+              "graphType": "fractal-tree",
+              "graphTitle": "Recursive Branching Simulator",
+              "graphDesc": "Interactive recursive tree visualizer adjusting depth, angle, and ratio dynamically.",
+              "videoTitle": "The Infinite Beauty of Fractals",
+              "videoDuration": "6:15",
+              "videoSummary": "An exploration of recursive self-similarity from Mandelbrot sets to haunted villa illusions.",
+              "futureApps": [
+                { "title": "Antenna Design", "desc": "Miniaturized wideband fractal antennas for 6G communication." },
+                { "title": "Financial Modeling", "desc": "Fractal market analysis predicting multi-scale volatility." },
+                { "title": "Medical Imaging", "desc": "Mapping bronchial trees and vascular networks in organ synthesis." }
+              ]
+            },
+            {
+              "title": "The Tongue of Stone",
+              "meta": "Chapter 5 · Cryptographic Modular Arithmetic",
+              "level": "Part 1 · Chapter 5",
+              "time": "10 min",
+              "summary": "Examine the stone language, symbols, and encoded relationships that can support future mathematical analysis.",
+              "concept": "Modular arithmetic clock logic (a ≡ b mod n) decodes ancient inscribed stone runic ciphers.",
+              "activity": "Decrypt a 5-letter rune sequence using a modular shift key of k ≡ 7 mod 26.",
+              "history": "Developed by Carl Friedrich Gauss in Disquisitiones Arithmeticae (1801), founding modern number theory.",
+              "graphType": "modular-clock",
+              "graphTitle": "Modular Clock Cipher Wheel",
+              "graphDesc": "Interactive rotating modular wheel illustrating remainder congruence and encryption keys.",
+              "videoTitle": "Decoding Stone Ciphers",
+              "videoDuration": "4:50",
+              "videoSummary": "Step-by-step cryptographic decoding of ancient carved inscriptions using modular math.",
+              "futureApps": [
+                { "title": "RSA Cryptography", "desc": "Securing global internet transactions and digital signatures." },
+                { "title": "Blockchain & Web3", "desc": "Zero-knowledge proof verification and cryptographic hashing." },
+                { "title": "Error-Correcting Codes", "desc": "Reed-Solomon data restoration in deep space transmissions." }
+              ]
+            },
+            {
+              "title": "The Smallest Spark",
+              "meta": "Chapter 6 · Exponential Growth & Reaction",
+              "level": "Part 1 · Chapter 6",
+              "time": "12 min",
+              "summary": "Complete the Part 1 index with the chapter's final signals, changes, and consequences ready for later study.",
+              "concept": "Exponential functions (f(x) = a · e^{kx}) govern chain reactions and energy ignition cascades.",
+              "activity": "Calculate the doubling time of energy spark propagation when the growth constant k = 0.4.",
+              "history": "Discovered by Jacob Bernoulli in 1683 while studying compound interest, leading Euler to define e.",
+              "graphType": "exponential-curve",
+              "graphTitle": "Exponential Spark Ignition Curve",
+              "graphDesc": "Real-time dynamic curve illustrating rapid exponential acceleration over time.",
+              "videoTitle": "Sparks to Firestorm: Exponential Math",
+              "videoDuration": "5:30",
+              "videoSummary": "Visualizing how micro-sparks cascade exponentially into critical system reactions.",
+              "futureApps": [
+                { "title": "Epidemiology", "desc": "Predictive outbreak modeling and viral propagation control." },
+                { "title": "Nuclear Physics", "desc": "Subatomic chain reaction control in clean fusion energy reactors." },
+                { "title": "AI Model Training", "desc": "Gradient acceleration in deep neural network optimization." }
+              ]
+            }
           ]
+        },
+        {
+          "id": "part-2",
+          "label": "Part 2 (Coming Soon)",
+          "disabled": true,
+          "items": []
         }
       ]
     },
@@ -53,14 +180,96 @@
       "title": "Enemy Records",
       "subtitle": "Antagonist Side",
       "description": "Inspect antagonist systems, tasks, traps, and technology through their underlying mathematics.",
-      "symbol": "◇",
-      "action": "Coming soon",
-      "actionDisabled": true,
+      "symbol": "☠",
+      "image": "../../assets/antagonists/img_1.png",
+      "action": "Inspect Dossiers",
+      "actionHref": "../antagonists/antagonists.html",
+      "actionDisabled": false,
       "items": [
-        {"title":"The Architect","meta":"Graph Theory","level":"Intermediate","time":"12 min","summary":"The Architect controls connected rooms and systems as a network of nodes and routes.","concept":"Represent locations as vertices, connections as edges, and inspect paths, cycles, and network reachability.","activity":"Sketch the control network and find a route that avoids a monitored node."},
-        {"title":"The Calculation","meta":"Sequences & Series","level":"Intermediate","time":"10 min","summary":"A repeating antagonist calculation grows according to a detectable numerical pattern.","concept":"Recognize arithmetic or geometric change, determine a general term, and estimate accumulated values with a series.","activity":"Continue the system sequence and identify the stage at which its value crosses the warning limit."},
-        {"title":"The Trap","meta":"Probability","level":"Intermediate","time":"9 min","summary":"The trap selects outcomes under uncertainty, but its possible results can still be measured.","concept":"List the sample space, distinguish favourable outcomes, and calculate theoretical probability.","activity":"Compare the available escape choices and select the path with the strongest probability of success."},
-        {"title":"The Purple Orb","meta":"Complex Numbers","level":"Advanced","time":"13 min","summary":"The orb models a system whose calculation requires both real and imaginary components.","concept":"Write values in a + bi form and interpret addition, multiplication, and position on the complex plane.","activity":"Combine the orb signals and map the resulting complex number to its plane location."}
+        {
+          "title": "The Architect",
+          "meta": "Graph Theory & Control Nodes",
+          "level": "Intermediate",
+          "time": "12 min",
+          "summary": "The Architect controls connected rooms and systems as a network of nodes and routes.",
+          "concept": "Represent locations as vertices, connections as edges, and inspect paths, cycles, and network reachability.",
+          "activity": "Sketch the control network and find a route that avoids a monitored node.",
+          "history": "Leonhard Euler solved the Seven Bridges of Königsberg problem in 1736, giving birth to graph theory.",
+          "graphType": "node-network",
+          "graphTitle": "Control Node Network Topology",
+          "graphDesc": "Interactive pulsing node network showing active connections, shortest paths, and offline nodes.",
+          "videoTitle": "Inside The Architect's Network",
+          "videoDuration": "5:45",
+          "videoSummary": "Tracing how antagonist node networks monitor villa rooms and how to exploit topology gaps.",
+          "futureApps": [
+            { "title": "Internet Routing", "desc": "BGP protocol routing optimization across global fiber backbones." },
+            { "title": "Social Network AI", "desc": "Community detection algorithms and influence propagation graphs." },
+            { "title": "Power Grid Resiliency", "desc": "Preventing cascading blackouts in smart electrical grids." }
+          ]
+        },
+        {
+          "title": "The Calculation",
+          "meta": "Sequences & Series",
+          "level": "Intermediate",
+          "time": "10 min",
+          "summary": "A repeating antagonist calculation grows according to a detectable numerical pattern.",
+          "concept": "Recognize arithmetic or geometric change, determine a general term, and estimate accumulated values with a series.",
+          "activity": "Continue the system sequence and identify the stage at which its value crosses the warning limit.",
+          "history": "Ancient Babylonian tablets recorded geometric sequences, formalized by Carl Friedrich Gauss at age 9.",
+          "graphType": "sequence-curve",
+          "graphTitle": "Numerical Sequence Generator",
+          "graphDesc": "Interactive step bar chart comparing linear growth versus exponential sequence accumulation.",
+          "videoTitle": "Cracking Antagonist Numerical Series",
+          "videoDuration": "4:20",
+          "videoSummary": "Detecting hidden algebraic formulas inside automated adversary calculation loops.",
+          "futureApps": [
+            { "title": "Algorithmic Trading", "desc": "High-frequency time-series forecasting in global stock exchanges." },
+            { "title": "Audio Signal Processing", "desc": "Fourier series decomposition for noise cancellation headphones." },
+            { "title": "Quantum Computing", "desc": "Shor's algorithm for period finding in integer factorization." }
+          ]
+        },
+        {
+          "title": "The Trap",
+          "meta": "Probability & Decision Trees",
+          "level": "Intermediate",
+          "time": "9 min",
+          "summary": "The trap selects outcomes under uncertainty, but its possible results can still be measured.",
+          "concept": "List the sample space, distinguish favourable outcomes, and calculate theoretical probability.",
+          "activity": "Compare the available escape choices and select the path with the strongest probability of success.",
+          "history": "Correspondence between Blaise Pascal and Pierre de Fermat in 1654 established mathematical probability.",
+          "graphType": "probability-radar",
+          "graphTitle": "Probability Decision Tree Radar",
+          "graphDesc": "Dynamic pie chart & decision tree calculating success probability across 3 escape paths.",
+          "videoTitle": "Outsmarting Probabilistic Traps",
+          "videoDuration": "4:15",
+          "videoSummary": "Using expected value and Bayes' theorem to survive high-risk choices.",
+          "futureApps": [
+            { "title": "Risk Assessment AI", "desc": "Automated insurance and medical diagnosis risk prediction models." },
+            { "title": "Game AI & Monte Carlo", "desc": "Monte Carlo Tree Search powering AlphaGo and chess engines." },
+            { "title": "Cyber Threat Detection", "desc": "Anomaly detection screening network packets for malicious traffic." }
+          ]
+        },
+        {
+          "title": "The Purple Orb",
+          "meta": "Complex Numbers & Argand Plane",
+          "level": "Advanced",
+          "time": "13 min",
+          "summary": "The orb models a system whose calculation requires both real and imaginary components.",
+          "concept": "Write values in a + bi form and interpret addition, multiplication, and position on the complex plane.",
+          "activity": "Combine the orb signals and map the resulting complex number to its plane location.",
+          "history": "Introduced by Gerolamo Cardano in 1545 and geometrically unified on the Argand plane by Jean-Robert Argand in 1806.",
+          "graphType": "complex-plane",
+          "graphTitle": "Argand Complex Vector Plane",
+          "graphDesc": "Interactive complex plane illustrating real vs. imaginary vectors with phase rotation.",
+          "videoTitle": "The Physics of the Purple Orb",
+          "videoDuration": "6:00",
+          "videoSummary": "Visualizing complex numbers in wave interference patterns and orb energy fields.",
+          "futureApps": [
+            { "title": "Quantum Mechanics", "desc": "Schrödinger wave function states governed by complex amplitudes." },
+            { "title": "Electrical Engineering", "desc": "AC circuit impedance and phasor vector analysis." },
+            { "title": "Fluid Dynamics", "desc": "Conformal mapping in aerodynamic aircraft wing design." }
+          ]
+        }
       ]
     },
     {
@@ -71,13 +280,95 @@
       "subtitle": "Boards & Grades",
       "description": "Preview classwise and gradewise mathematics before the complete curriculum library is released.",
       "symbol": "□",
-      "action": "Coming soon",
-      "actionDisabled": true,
+      "image": "../../assets/escapeguide/book.png",
+      "action": "Explore Curriculum",
+      "actionHref": "#modulePreview",
+      "actionDisabled": false,
       "items": [
-        {"title":"Class 6 Preview","meta":"CBSE · ICSE · MP Board · International","level":"Grade 6","time":"7 min","summary":"A classwise preview of number systems, fractions, basic algebra, geometry, mensuration, and data handling.","concept":"See how common Grade 6 foundations align across CBSE, ICSE, MP Board, and selected international pathways.","activity":"Choose a foundation topic and compare the vocabulary and expected skill across boards."},
-        {"title":"Class 7 Preview","meta":"CBSE · ICSE · MP Board · International","level":"Grade 7","time":"7 min","summary":"A classwise preview of rational numbers, equations, ratios, geometry, exponents, and data interpretation.","concept":"Connect shared Grade 7 outcomes while keeping board-specific sequencing and depth visible.","activity":"Select a topic and identify which prerequisite skill should be revised first."},
-        {"title":"Class 8 Preview","meta":"CBSE · ICSE · MP Board · International","level":"Grade 8","time":"8 min","summary":"A classwise preview of linear equations, factorisation, graphs, mensuration, probability, and advanced number work.","concept":"Compare Grade 8 topic progression across Indian boards and international grade-level expectations.","activity":"Open a topic preview and map it to its earlier foundation and later application."},
-        {"title":"Class 9 Preview","meta":"CBSE · ICSE · MP Board · International","level":"Grade 9","time":"9 min","summary":"A classwise preview of polynomials, coordinate geometry, Euclidean geometry, statistics, and probability.","concept":"Understand how Grade 9 concepts are grouped and assessed across boards without connecting this library to Ganith lore.","activity":"Choose a chapter and inspect its concept map, prerequisite knowledge, and expected outcomes."}
+        {
+          "title": "Class 6 Foundation",
+          "meta": "CBSE · ICSE · MP Board · International",
+          "level": "Grade 6",
+          "time": "7 min",
+          "summary": "A classwise preview of number systems, fractions, basic algebra, geometry, mensuration, and data handling.",
+          "concept": "See how common Grade 6 foundations align across CBSE, ICSE, MP Board, and selected international pathways.",
+          "activity": "Choose a foundation topic and compare the vocabulary and expected skill across boards.",
+          "history": "Number systems originated in ancient Indus Valley (zero invention by Aryabhata) and Brahmagupta's rules.",
+          "graphType": "number-line",
+          "graphTitle": "Interactive Integer & Fraction Line",
+          "graphDesc": "Dynamic number line displaying positive, negative, and fractional value placement.",
+          "videoTitle": "Grade 6 Master Class Preview",
+          "videoDuration": "4:45",
+          "videoSummary": "Core foundation breakdown spanning Indian state boards and international IB/IGCSE standards.",
+          "futureApps": [
+            { "title": "Computer Data Types", "desc": "Integer, floating point, and binary representation in software." },
+            { "title": "Financial Literacy", "desc": "Budgeting, percentage calculations, and interest fundamentals." },
+            { "title": "Data Visualization", "desc": "Infographics and statistical chart interpretation." }
+          ]
+        },
+        {
+          "title": "Class 7 Equations",
+          "meta": "CBSE · ICSE · MP Board · International",
+          "level": "Grade 7",
+          "time": "7 min",
+          "summary": "A classwise preview of rational numbers, equations, ratios, geometry, exponents, and data interpretation.",
+          "concept": "Connect shared Grade 7 outcomes while keeping board-specific sequencing and depth visible.",
+          "activity": "Select a topic and identify which prerequisite skill should be revised first.",
+          "history": "Algebraic equations were systematically solved by Al-Khwarizmi in 820 CE in Al-Jabr, giving algebra its name.",
+          "graphType": "balance-scale",
+          "graphTitle": "Linear Equation Balance Beam",
+          "graphDesc": "Interactive algebraic balance scale balancing variable x against constant weights.",
+          "videoTitle": "Mastering Grade 7 Algebraic Equations",
+          "videoDuration": "5:10",
+          "videoSummary": "How to visualize both sides of an equation as a balanced physical scale.",
+          "futureApps": [
+            { "title": "Chemical Balancing", "desc": "Stoichiometry equation balancing in industrial chemistry." },
+            { "title": "Economic Equilibrium", "desc": "Supply and demand balance points in macroeconomics." },
+            { "title": "Control Systems", "desc": "PID feedback loops keeping aircraft and drones stable." }
+          ]
+        },
+        {
+          "title": "Class 8 Factorisation",
+          "meta": "CBSE · ICSE · MP Board · International",
+          "level": "Grade 8",
+          "time": "8 min",
+          "summary": "A classwise preview of linear equations, factorisation, graphs, mensuration, probability, and advanced number work.",
+          "concept": "Compare Grade 8 topic progression across Indian boards and international grade-level expectations.",
+          "activity": "Open a topic preview and map it to its earlier foundation and later application.",
+          "history": "Factorization methods were developed by Pierre de Fermat and refined by Carl Friedrich Gauss for prime distribution.",
+          "graphType": "factor-tree",
+          "graphTitle": "Polynomial Factorization Grid",
+          "graphDesc": "Visual area rectangle decomposition of quadratic algebraic expressions.",
+          "videoTitle": "Grade 8 Factorisation Unlocked",
+          "videoDuration": "5:30",
+          "videoSummary": "Splitting complex algebraic expressions into intuitive geometric area tiles.",
+          "futureApps": [
+            { "title": "Data Compression", "desc": "Matrix factorization algorithms reducing image and video file sizes." },
+            { "title": "Machine Learning", "desc": "Principal Component Analysis (PCA) for dimensionality reduction." },
+            { "title": "Cybersecurity", "desc": "Prime factorization hardness underpinning digital encryption." }
+          ]
+        },
+        {
+          "title": "Class 9 Coordinate Geometry",
+          "meta": "CBSE · ICSE · MP Board · International",
+          "level": "Grade 9",
+          "time": "9 min",
+          "summary": "A classwise preview of polynomials, coordinate geometry, Euclidean geometry, statistics, and probability.",
+          "concept": "Understand how Grade 9 concepts are grouped and assessed across boards without connecting this library to Ganith lore.",
+          "activity": "Choose a chapter and inspect its concept map, prerequisite knowledge, and expected outcomes.",
+          "history": "René Descartes created Cartesian geometry in 1637, bridging algebra and geometry for the first time.",
+          "graphType": "cartesian-grid",
+          "graphTitle": "2D Cartesian Coordinate Grid",
+          "graphDesc": "Interactive 4-quadrant grid mapping points, lines, distance formula, and midpoints.",
+          "videoTitle": "Grade 9 Cartesian Masterclass",
+          "videoDuration": "6:10",
+          "videoSummary": "Navigating the 4 quadrants and applying distance and section formulas to spatial problems.",
+          "futureApps": [
+            { "title": "GPS & Mapping", "desc": "Global satellite positioning using latitude and longitude coordinates." },
+            { "title": "Computer Vision", "desc": "Bounding box coordinates for object detection in self-driving cars." },
+            { "title": "3D CAD & Architecture", "desc": "Computer-aided blueprint modeling for structural engineering." }
+          ]
+        }
       ]
     },
     {
@@ -88,17 +379,99 @@
       "subtitle": "Rooms & Trials",
       "description": "Use the game index to understand the mathematics behind rooms, rules, puzzles, and trials.",
       "symbol": "⌘",
-      "action": "Coming soon",
-      "actionDisabled": true,
+      "image": "../../assets/escapeguide/game.png",
+      "action": "Explore Missions",
+      "actionHref": "#modulePreview",
+      "actionDisabled": false,
       "items": [
-        {"title":"The Grid Chamber","meta":"Coordinates & Transformations","level":"Mission 1","time":"8 min","summary":"The chamber turns movement into positions, directions, and transformations on a grid.","concept":"Apply coordinates, translation, reflection, and distance reasoning to navigate the room.","activity":"Trace a valid grid route while preserving the transformation rule at every checkpoint."},
-        {"title":"The Angle Maze","meta":"Angles & Geometric Reasoning","level":"Mission 2","time":"9 min","summary":"The maze responds to turns and intersections whose angle relationships reveal the correct route.","concept":"Use complementary, supplementary, vertically opposite, and parallel-line angle relationships.","activity":"Calculate the missing turn angles and reject paths that break the maze rule."},
-        {"title":"The Equation Lock","meta":"Algebraic Equations","level":"Mission 3","time":"10 min","summary":"Each lock segment contributes a condition that must be satisfied by the same unknown value.","concept":"Translate the lock rules into equations and verify a solution in every original condition.","activity":"Solve the linked equations and test the result against all lock segments."},
-        {"title":"The Probability Gate","meta":"Probability & Strategy","level":"Mission 4","time":"11 min","summary":"The gate changes among possible states, making strategy dependent on likelihood rather than certainty.","concept":"Compare simple and conditional outcomes, then distinguish expected advantage from a guaranteed result.","activity":"Calculate each gate option and choose the strategy with the best justified chance of opening."}
+        {
+          "title": "The Grid Chamber",
+          "meta": "Coordinates & Transformations",
+          "level": "Mission 1",
+          "time": "8 min",
+          "summary": "The chamber turns movement into positions, directions, and transformations on a grid.",
+          "concept": "Apply coordinates, translation, reflection, and distance reasoning to navigate the room.",
+          "activity": "Trace a valid grid route while preserving the transformation rule at every checkpoint.",
+          "history": "Transformation geometry was systematically organized by Felix Klein in his 1872 Erlangen program.",
+          "graphType": "grid-matrix",
+          "graphTitle": "Chamber Grid Transformation Matrix",
+          "graphDesc": "Interactive grid matrix demonstrating translation, reflection, and rotation vectors.",
+          "videoTitle": "Surviving The Grid Chamber",
+          "videoDuration": "4:40",
+          "videoSummary": "How transformation geometry reveals safe tiles and traps in Mission 1.",
+          "futureApps": [
+            { "title": "Game Development", "desc": "Character skeletal animation and matrix transformations in Unreal Engine." },
+            { "title": "Robotic Arms", "desc": "Inverse kinematics controlling precision assembly line robots." },
+            { "title": "Virtual Reality", "desc": "Head tracking and spatial orientation in VR headsets." }
+          ]
+        },
+        {
+          "title": "The Angle Maze",
+          "meta": "Angles & Geometric Reasoning",
+          "level": "Mission 2",
+          "time": "9 min",
+          "summary": "The maze responds to turns and intersections whose angle relationships reveal the correct route.",
+          "concept": "Use complementary, supplementary, vertically opposite, and parallel-line angle relationships.",
+          "activity": "Calculate the missing turn angles and reject paths that break the maze rule.",
+          "history": "Euclid of Alexandria established axiomatic geometry in his treatise Elements around 300 BCE.",
+          "graphType": "angle-radar",
+          "graphTitle": "Interactive Angle Reflector Radar",
+          "graphDesc": "Dynamic ray-caster displaying incident vs. reflected angles at maze intersections.",
+          "videoTitle": "Geometry of The Angle Maze",
+          "videoDuration": "5:15",
+          "videoSummary": "Calculating turn angles to bypass automated laser gates inside Mission 2.",
+          "futureApps": [
+            { "title": "Radar & Sonar", "desc": "Beam steering and acoustic reflection processing in marine navigation." },
+            { "title": "Optics & Photonics", "desc": "Designing high-efficiency solar concentrators and laser lenses." },
+            { "title": "Architectural Acoustics", "desc": "Designing concert hall walls for perfect sound wave reflection." }
+          ]
+        },
+        {
+          "title": "The Equation Lock",
+          "meta": "Algebraic Equations & Systems",
+          "level": "Mission 3",
+          "time": "10 min",
+          "summary": "Each lock segment contributes a condition that must be satisfied by the same unknown value.",
+          "concept": "Translate the lock rules into equations and verify a solution in every original condition.",
+          "activity": "Solve the linked equations and test the result against all lock segments.",
+          "history": "Systematic elimination method for simultaneous equations was recorded in Nine Chapters on the Mathematical Art (100 BCE).",
+          "graphType": "equation-solver",
+          "graphTitle": "Simultaneous System Intersect Canvas",
+          "graphDesc": "Interactive graph finding the exact intersection point (x, y) of linear lock conditions.",
+          "videoTitle": "Cracking The Equation Lock",
+          "videoDuration": "5:50",
+          "videoSummary": "Step-by-step graphical solution of simultaneous equations securing Mission 3.",
+          "futureApps": [
+            { "title": "Circuit Analysis", "desc": "Kirchhoff's current laws solving complex multi-loop electronic circuits." },
+            { "title": "Network Flow AI", "desc": "Linear programming optimizing logistics and global shipping routes." },
+            { "title": "Structural Engineering", "desc": "Truss stress analysis ensuring bridge and skyscraper stability." }
+          ]
+        },
+        {
+          "title": "The Probability Gate",
+          "meta": "Probability & Strategy",
+          "level": "Mission 4",
+          "time": "11 min",
+          "summary": "The gate changes among possible states, making strategy dependent on likelihood rather than certainty.",
+          "concept": "Compare simple and conditional outcomes, then distinguish expected advantage from a guaranteed result.",
+          "activity": "Calculate each gate option and choose the strategy with the best justified chance of opening.",
+          "history": "Andrey Kolmogorov formalized probability theory using measure theory in 1933, creating modern stochastics.",
+          "graphType": "stochastic-tree",
+          "graphTitle": "Stochastic Gate Outcome Tree",
+          "graphDesc": "Dynamic Markov chain generator calculating probability distributions across gate states.",
+          "videoTitle": "Hacking The Probability Gate",
+          "videoDuration": "6:20",
+          "videoSummary": "Using conditional probability and expected value strategy to conquer Mission 4.",
+          "futureApps": [
+            { "title": "Quantum Encryption", "desc": "True random number generation from subatomic particle spin states." },
+            { "title": "Weather Forecasting", "desc": "Ensemble supercomputer probability modeling for hurricane paths." },
+            { "title": "Automated Trading", "desc": "Black-Scholes option pricing model managing investment portfolios." }
+          ]
+        }
       ]
     }
   ],
-  "defaultSession": {"collection":0,"item":0},
+  "defaultSession": { "collection": 0, "item": 0 },
   "badges": ["⌬", "✦", "△", "⌘"],
   "quote": "The more you know, the more doors you unlock. — Ganith"
 }

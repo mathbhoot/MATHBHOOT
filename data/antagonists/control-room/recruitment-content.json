@@ -15,22 +15,98 @@
   "missionsHeading": "Your Missions",
   "missionActionLabel": "Create Now",
   "missions": [
-    { "number": "01", "symbol": "△", "title": "Create a Mathematical Trap", "description": "Design a trap that uses mathematics to confuse, challenge, and test the protagonist.", "category": "trap", "contributionType": "Mathematical Trap" },
-    { "number": "02", "symbol": "♟", "title": "Build an NPC", "description": "Create students, teachers, ghosts, guides, or ancient mathematicians who exist in MathVilla.", "category": "npc", "contributionType": "NPC or Character" },
-    { "number": "03", "symbol": "◇", "title": "Design an Ancient Artifact", "description": "Invent a powerful mathematical artifact that can help or challenge the protagonist.", "category": "artifact", "contributionType": "Ancient Artifact" },
-    { "number": "04", "symbol": "⌂", "title": "Create a Room of MathVilla", "description": "Design a mysterious room filled with puzzles, clues, rules, and experiential dangers.", "category": "room", "contributionType": "MathVilla Room" },
-    { "number": "05", "symbol": "▤", "title": "Design a New Rule", "description": "Create a mathematical law that controls part of the world of MathVilla.", "category": "rule", "contributionType": "Mathematical Rule" }
+    {
+      "number": "01",
+      "symbol": "△",
+      "title": "Create a Mathematical Trap",
+      "description": "Design a trap that uses mathematics to confuse, challenge, and test the protagonist.",
+      "category": "trap",
+      "contributionType": "Mathematical Trap"
+    },
+    {
+      "number": "02",
+      "symbol": "♟",
+      "title": "Build an NPC",
+      "description": "Create students, teachers, ghosts, guides, or ancient mathematicians who exist in MathVilla.",
+      "category": "npc",
+      "contributionType": "NPC or Character"
+    },
+    {
+      "number": "03",
+      "symbol": "◇",
+      "title": "Design an Ancient Artifact",
+      "description": "Invent a powerful mathematical artifact that can help or challenge the protagonist.",
+      "category": "artifact",
+      "contributionType": "Ancient Artifact"
+    },
+    {
+      "number": "04",
+      "symbol": "⌂",
+      "title": "Create a Room of MathVilla",
+      "description": "Design a mysterious room filled with puzzles, clues, rules, and experiential dangers.",
+      "category": "room",
+      "contributionType": "MathVilla Room"
+    },
+    {
+      "number": "05",
+      "symbol": "▤",
+      "title": "Design a New Rule",
+      "description": "Create a mathematical law that controls part of the world of MathVilla.",
+      "category": "rule",
+      "contributionType": "Mathematical Rule"
+    }
   ],
   "application": {
     "heading": "Become Part of the Shadow Network",
     "description": "Fill the dossier below and prepare your first contribution to the Antagonist Program.",
     "fields": [
-      { "id": "username", "label": "Choose a unique username", "type": "text", "autocomplete": "username", "placeholder": "Example: shadow_solver", "required": true, "minlength": 3, "maxlength": 30, "pattern": "[A-Za-z0-9_]+", "title": "Use 3–30 letters, numbers, or underscores only." },
-      { "id": "email", "label": "Account email address", "type": "email", "autocomplete": "email", "placeholder": "Enter the email for your account", "required": true, "maxlength": 254 },
-      { "id": "mission", "label": "Choose your mission", "type": "select", "placeholder": "Select a mission", "required": true, "options": ["Mathematical Trap", "NPC or Character", "Ancient Artifact", "MathVilla Room", "Mathematical Rule", "Other"] },
-      { "id": "ideaDescription", "label": "Idea description", "type": "textarea", "placeholder": "Describe the idea, how the player experiences it, the mathematics involved, and the intended outcome.", "required": true, "minlength": 40, "maxlength": 3000 }
+      {
+        "id": "username",
+        "label": "Choose a unique username",
+        "type": "text",
+        "autocomplete": "username",
+        "placeholder": "Example: shadow_solver",
+        "required": true,
+        "minlength": 3,
+        "maxlength": 30,
+        "pattern": "[A-Za-z0-9_]+",
+        "title": "Use 3–30 letters, numbers, or underscores only."
+      },
+      {
+        "id": "email",
+        "label": "Email address",
+        "type": "email",
+        "autocomplete": "email",
+        "placeholder": "Enter your email address",
+        "required": true,
+        "maxlength": 254
+      },
+      {
+        "id": "mission",
+        "label": "Choose your mission",
+        "type": "select",
+        "placeholder": "Select a mission",
+        "required": true,
+        "options": [
+          "Mathematical Trap",
+          "NPC or Character",
+          "Ancient Artifact",
+          "MathVilla Room",
+          "Mathematical Rule",
+          "Other"
+        ]
+      },
+      {
+        "id": "ideaDescription",
+        "label": "Idea description",
+        "type": "textarea",
+        "placeholder": "Describe the idea, how the player experiences it, the mathematics involved, and the intended outcome.",
+        "required": true,
+        "minlength": 40,
+        "maxlength": 3000
+      }
     ],
-    "consentLabel": "I confirm this is my original idea and agree that MATHBHOOT may securely store my account email and submission for review.",
+    "consentLabel": "I confirm this is my original idea and agree that MATHBHOOT may store my email and submission for review.",
     "saveLabel": "Confirm and Submit",
     "draftNotice": "Your first confirmation sends an email verification link. The submission reaches MATHBHOOT only after you verify that email and confirm again."
   },

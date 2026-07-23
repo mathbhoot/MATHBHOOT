@@ -96,22 +96,6 @@ body {
     transform: translateY(0);
 }
 
-.mobile-book-toggle {
-    border-color: #4b922f;
-    color: #172219;
-    background: var(--mb-green);
-    box-shadow: 0 0 0 3px rgba(101, 179, 58, .16), 0 12px 28px rgba(28, 42, 32, .18);
-}
-
-.mobile-book-toggle::before {
-    background: radial-gradient(circle at 25% 20%, rgba(255, 255, 255, .52), transparent 32%);
-}
-
-.mobile-book-toggle:hover,
-.mobile-book-toggle:focus-visible {
-    box-shadow: 0 0 20px rgba(101, 179, 58, .35), 0 14px 30px rgba(28, 42, 32, .18);
-}
-
 .site-footer {
     border-top-color: rgba(101, 179, 58, .3);
     color: #e7eee3;
@@ -125,8 +109,10 @@ body {
 
 #ansh-hero .ansh-description p {
     color: #000;
-    font-size: 1.425rem;
-    line-height: 1.48;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    text-align-last: left;
 }
 
 /* Viewport-fit opening section for laptops and landscape tablets. */
@@ -206,8 +192,8 @@ body {
     }
 
     #ansh-hero .ansh-description p {
-        font-size: clamp(1.924rem, 2.066vw, 2.138rem);
-        line-height: 1.48;
+        font-size: 1rem;
+        line-height: 1.6;
     }
 
     #ansh-hero .ansh-stats {
@@ -253,8 +239,8 @@ body {
     }
 
     #ansh-hero .ansh-description p {
-        font-size: clamp(1.112rem, 1.254vw, 1.283rem);
-        line-height: 1.34;
+        font-size: 1rem;
+        line-height: 1.6;
     }
 
     #ansh-hero .ansh-stats {

@@ -78,7 +78,7 @@ html{
 
 .fixed-quote p{
     color: #ffffff;
-    font-size: 1 rem;
+    font-size: 1rem;
     font-style: italic;
     /*glow*/
     text-shadow:
@@ -87,7 +87,7 @@ html{
     0 0 40px #19013c,
     0 0 80px #000000 ;
     /*animation*/
-    text-shadow: 0.3s;
+    transition: text-shadow 0.3s ease;
     
 }
 

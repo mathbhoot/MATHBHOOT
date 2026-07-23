@@ -1,2 +1,0 @@
--- Intentionally empty.
--- Development fixtures must never contain real member data or production credentials.

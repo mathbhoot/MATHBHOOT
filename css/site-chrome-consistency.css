@@ -1,0 +1,170 @@
+/* Shared geometry and typography for the site header and footer.
+   Page-specific colors and visual themes remain in their existing stylesheets. */
+
+:root {
+    --site-page-gutter: clamp(1rem, 3vw, 2rem);
+    --site-content-width: 1400px;
+    --site-header-height: 58px;
+    --site-footer-height: 38px;
+    --site-logo-size: 58px;
+    --site-nav-font-size: 1rem;
+    --site-footer-font-size: 0.82rem;
+    --site-paragraph-font-size: 1rem;
+    --site-body-line-height: 1.7;
+    --site-h1-font-size: clamp(2.5rem, 5vw, 4.75rem);
+    --site-h2-font-size: clamp(1.75rem, 3vw, 2.5rem);
+    --site-h3-font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+    --site-h4-font-size: 1.05rem;
+    --site-h5-font-size: 1rem;
+    --site-h6-font-size: 0.95rem;
+
+    /* Keep older page layouts aligned with the shared measurements. */
+    --global-page-gutter: var(--site-page-gutter);
+    --global-header-height: var(--site-header-height);
+    --global-footer-height: var(--site-footer-height);
+}
+
+/* One content edge and one typography scale across every page. */
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: var(--site-paragraph-font-size);
+    line-height: var(--site-body-line-height);
+}
+
+body > main {
+    width: min(
+        calc(100% - (2 * var(--site-page-gutter))),
+        var(--site-content-width)
+    );
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body main :where(h1) {
+    font-family: inherit;
+    font-size: var(--site-h1-font-size);
+    line-height: 1.08;
+}
+
+body main :where(h2) {
+    font-family: inherit;
+    font-size: var(--site-h2-font-size);
+    line-height: 1.15;
+}
+
+body main :where(h3) {
+    font-family: inherit;
+    font-size: var(--site-h3-font-size);
+    line-height: 1.3;
+}
+
+body main :where(h4) {
+    font-family: inherit;
+    font-size: var(--site-h4-font-size);
+    line-height: 1.35;
+}
+
+body main :where(h5) {
+    font-family: inherit;
+    font-size: var(--site-h5-font-size);
+    line-height: 1.4;
+}
+
+body main :where(h6) {
+    font-family: inherit;
+    font-size: var(--site-h6-font-size);
+    line-height: 1.4;
+}
+
+body main p {
+    max-width: 100%;
+    font-family: inherit;
+    font-size: var(--site-paragraph-font-size);
+    line-height: var(--site-body-line-height);
+    text-align: left;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+/* Restrict text justification strictly to long-form reading prose blocks */
+body main :is(.reading-content, .creator-copy, .lore-copy, .story-body, .narrative-block) p {
+    text-align: justify;
+    text-align-last: left;
+    text-justify: inter-word;
+}
+
+/* Short labels are interface copy rather than reading paragraphs. */
+body main :is(.stat-card, .card-info, .fixed-quote, .quote, .info-card) p {
+    text-align: center;
+    text-align-last: center;
+}
+
+.site-header {
+    width: 100%;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.site-header .navbar {
+    width: 100%;
+    min-height: var(--site-header-height);
+    margin: 0;
+    padding: 0 var(--site-page-gutter);
+}
+
+.site-header .nav-logo {
+    width: var(--site-logo-size);
+    height: auto;
+    margin: 0;
+}
+
+.site-header .nav-links {
+    gap: clamp(1rem, 2vw, 1.6rem);
+    margin: 0;
+    padding: 0;
+}
+
+.site-header .nav-links a {
+    min-height: 44px;
+    font-size: var(--site-nav-font-size);
+    line-height: 1.2;
+}
+
+body .site-footer {
+    width: 100%;
+    min-height: var(--site-footer-height);
+    margin: 0;
+    padding: 0.25rem var(--site-page-gutter);
+}
+
+body .site-footer p {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: var(--site-footer-font-size) !important;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --site-page-gutter: clamp(0.875rem, 4vw, 1.25rem);
+        --site-logo-size: 50px;
+        --site-h1-font-size: clamp(2.25rem, 11vw, 3.35rem);
+        --site-h2-font-size: clamp(1.6rem, 7vw, 2.2rem);
+        --site-h3-font-size: 1.05rem;
+    }
+
+    .site-header .nav-links {
+        gap: 0.25rem;
+        padding: 0.75rem var(--site-page-gutter) 1rem;
+    }
+
+    .site-header .nav-links a {
+        font-size: var(--site-nav-font-size);
+    }
+
+    body .site-footer {
+        padding: 0.25rem 0.5rem;
+    }
+}
