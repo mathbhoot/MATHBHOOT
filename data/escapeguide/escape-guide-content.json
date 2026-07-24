@@ -1,12 +1,18 @@
 {
-  "footerText": "©2026 MATHBHOOT. All rights reserved. Where Mathematics Meets Mystery.",
+  "footerText": "©2026 MATHBHOOT. All rights reserved.",
   "progress": 48,
   "progressCaption": "12 of 25 archive entries decoded",
   "androidNavigation": {
     "status": "Current session",
     "announcement": "Current session opened"
   },
-  "filters": ["All", "Stories", "Mathematics", "Dossiers", "Missions"],
+  "filters": [
+    "All",
+    "Stories",
+    "Mathematics",
+    "Dossiers",
+    "Missions"
+  ],
   "sessionLabels": {
     "browse": "Browse the archive",
     "menu": "Chapter Table of Contents",
@@ -53,9 +59,18 @@
               "videoDuration": "4:12",
               "videoSummary": "Visual breakdown of how symmetrical spatial patterns create atmospheric tension in haunted villa design.",
               "futureApps": [
-                { "title": "Crystallography & Materials", "desc": "Mapping molecular crystal lattices for next-generation superconductors." },
-                { "title": "Computer Graphics", "desc": "Procedural texture generation in ray-traced virtual environments." },
-                { "title": "Robotic Navigation", "desc": "Spatial mapping algorithms using SLAM and rotational invariance." }
+                {
+                  "title": "Crystallography & Materials",
+                  "desc": "Mapping molecular crystal lattices for next-generation superconductors."
+                },
+                {
+                  "title": "Computer Graphics",
+                  "desc": "Procedural texture generation in ray-traced virtual environments."
+                },
+                {
+                  "title": "Robotic Navigation",
+                  "desc": "Spatial mapping algorithms using SLAM and rotational invariance."
+                }
               ]
             },
             {
@@ -74,9 +89,18 @@
               "videoDuration": "5:05",
               "videoSummary": "Watch how displacement vectors determine optimal escape routes when visibility drops to zero.",
               "futureApps": [
-                { "title": "Autonomous Drones", "desc": "Real-time 3D flight trajectory calculation and obstacle avoidance." },
-                { "title": "Game Physics Engines", "desc": "Simulating realistic collision dynamics and force fields." },
-                { "title": "Satellite Trajectories", "desc": "Orbital mechanics calculation for planetary exploration." }
+                {
+                  "title": "Autonomous Drones",
+                  "desc": "Real-time 3D flight trajectory calculation and obstacle avoidance."
+                },
+                {
+                  "title": "Game Physics Engines",
+                  "desc": "Simulating realistic collision dynamics and force fields."
+                },
+                {
+                  "title": "Satellite Trajectories",
+                  "desc": "Orbital mechanics calculation for planetary exploration."
+                }
               ]
             },
             {
@@ -95,9 +119,18 @@
               "videoDuration": "3:48",
               "videoSummary": "Demonstrating how light attenuation deceives human distance perception in enclosed structures.",
               "futureApps": [
-                { "title": "Fiber Optics & Telecom", "desc": "Signal attenuation management in transoceanic data cables." },
-                { "title": "Astrophysics", "desc": "Measuring star distance via standard candles and luminosity." },
-                { "title": "LiDAR Sensing", "desc": "Autonomous vehicle perception under low-visibility conditions." }
+                {
+                  "title": "Fiber Optics & Telecom",
+                  "desc": "Signal attenuation management in transoceanic data cables."
+                },
+                {
+                  "title": "Astrophysics",
+                  "desc": "Measuring star distance via standard candles and luminosity."
+                },
+                {
+                  "title": "LiDAR Sensing",
+                  "desc": "Autonomous vehicle perception under low-visibility conditions."
+                }
               ]
             },
             {
@@ -116,9 +149,18 @@
               "videoDuration": "6:15",
               "videoSummary": "An exploration of recursive self-similarity from Mandelbrot sets to haunted villa illusions.",
               "futureApps": [
-                { "title": "Antenna Design", "desc": "Miniaturized wideband fractal antennas for 6G communication." },
-                { "title": "Financial Modeling", "desc": "Fractal market analysis predicting multi-scale volatility." },
-                { "title": "Medical Imaging", "desc": "Mapping bronchial trees and vascular networks in organ synthesis." }
+                {
+                  "title": "Antenna Design",
+                  "desc": "Miniaturized wideband fractal antennas for 6G communication."
+                },
+                {
+                  "title": "Financial Modeling",
+                  "desc": "Fractal market analysis predicting multi-scale volatility."
+                },
+                {
+                  "title": "Medical Imaging",
+                  "desc": "Mapping bronchial trees and vascular networks in organ synthesis."
+                }
               ]
             },
             {
@@ -137,9 +179,18 @@
               "videoDuration": "4:50",
               "videoSummary": "Step-by-step cryptographic decoding of ancient carved inscriptions using modular math.",
               "futureApps": [
-                { "title": "RSA Cryptography", "desc": "Securing global internet transactions and digital signatures." },
-                { "title": "Blockchain & Web3", "desc": "Zero-knowledge proof verification and cryptographic hashing." },
-                { "title": "Error-Correcting Codes", "desc": "Reed-Solomon data restoration in deep space transmissions." }
+                {
+                  "title": "RSA Cryptography",
+                  "desc": "Securing global internet transactions and digital signatures."
+                },
+                {
+                  "title": "Blockchain & Web3",
+                  "desc": "Zero-knowledge proof verification and cryptographic hashing."
+                },
+                {
+                  "title": "Error-Correcting Codes",
+                  "desc": "Reed-Solomon data restoration in deep space transmissions."
+                }
               ]
             },
             {
@@ -158,9 +209,18 @@
               "videoDuration": "5:30",
               "videoSummary": "Visualizing how micro-sparks cascade exponentially into critical system reactions.",
               "futureApps": [
-                { "title": "Epidemiology", "desc": "Predictive outbreak modeling and viral propagation control." },
-                { "title": "Nuclear Physics", "desc": "Subatomic chain reaction control in clean fusion energy reactors." },
-                { "title": "AI Model Training", "desc": "Gradient acceleration in deep neural network optimization." }
+                {
+                  "title": "Epidemiology",
+                  "desc": "Predictive outbreak modeling and viral propagation control."
+                },
+                {
+                  "title": "Nuclear Physics",
+                  "desc": "Subatomic chain reaction control in clean fusion energy reactors."
+                },
+                {
+                  "title": "AI Model Training",
+                  "desc": "Gradient acceleration in deep neural network optimization."
+                }
               ]
             }
           ]
@@ -175,105 +235,6 @@
     },
     {
       "number": "02",
-      "type": "Dossiers",
-      "tone": "red",
-      "title": "Enemy Records",
-      "subtitle": "Antagonist Side",
-      "description": "Inspect antagonist systems, tasks, traps, and technology through their underlying mathematics.",
-      "symbol": "☠",
-      "image": "../../assets/antagonists/img_1.png",
-      "action": "Inspect Dossiers",
-      "actionHref": "../antagonists/antagonists.html",
-      "actionDisabled": false,
-      "items": [
-        {
-          "title": "The Architect",
-          "meta": "Graph Theory & Control Nodes",
-          "level": "Intermediate",
-          "time": "12 min",
-          "summary": "The Architect controls connected rooms and systems as a network of nodes and routes.",
-          "concept": "Represent locations as vertices, connections as edges, and inspect paths, cycles, and network reachability.",
-          "activity": "Sketch the control network and find a route that avoids a monitored node.",
-          "history": "Leonhard Euler solved the Seven Bridges of Königsberg problem in 1736, giving birth to graph theory.",
-          "graphType": "node-network",
-          "graphTitle": "Control Node Network Topology",
-          "graphDesc": "Interactive pulsing node network showing active connections, shortest paths, and offline nodes.",
-          "videoTitle": "Inside The Architect's Network",
-          "videoDuration": "5:45",
-          "videoSummary": "Tracing how antagonist node networks monitor villa rooms and how to exploit topology gaps.",
-          "futureApps": [
-            { "title": "Internet Routing", "desc": "BGP protocol routing optimization across global fiber backbones." },
-            { "title": "Social Network AI", "desc": "Community detection algorithms and influence propagation graphs." },
-            { "title": "Power Grid Resiliency", "desc": "Preventing cascading blackouts in smart electrical grids." }
-          ]
-        },
-        {
-          "title": "The Calculation",
-          "meta": "Sequences & Series",
-          "level": "Intermediate",
-          "time": "10 min",
-          "summary": "A repeating antagonist calculation grows according to a detectable numerical pattern.",
-          "concept": "Recognize arithmetic or geometric change, determine a general term, and estimate accumulated values with a series.",
-          "activity": "Continue the system sequence and identify the stage at which its value crosses the warning limit.",
-          "history": "Ancient Babylonian tablets recorded geometric sequences, formalized by Carl Friedrich Gauss at age 9.",
-          "graphType": "sequence-curve",
-          "graphTitle": "Numerical Sequence Generator",
-          "graphDesc": "Interactive step bar chart comparing linear growth versus exponential sequence accumulation.",
-          "videoTitle": "Cracking Antagonist Numerical Series",
-          "videoDuration": "4:20",
-          "videoSummary": "Detecting hidden algebraic formulas inside automated adversary calculation loops.",
-          "futureApps": [
-            { "title": "Algorithmic Trading", "desc": "High-frequency time-series forecasting in global stock exchanges." },
-            { "title": "Audio Signal Processing", "desc": "Fourier series decomposition for noise cancellation headphones." },
-            { "title": "Quantum Computing", "desc": "Shor's algorithm for period finding in integer factorization." }
-          ]
-        },
-        {
-          "title": "The Trap",
-          "meta": "Probability & Decision Trees",
-          "level": "Intermediate",
-          "time": "9 min",
-          "summary": "The trap selects outcomes under uncertainty, but its possible results can still be measured.",
-          "concept": "List the sample space, distinguish favourable outcomes, and calculate theoretical probability.",
-          "activity": "Compare the available escape choices and select the path with the strongest probability of success.",
-          "history": "Correspondence between Blaise Pascal and Pierre de Fermat in 1654 established mathematical probability.",
-          "graphType": "probability-radar",
-          "graphTitle": "Probability Decision Tree Radar",
-          "graphDesc": "Dynamic pie chart & decision tree calculating success probability across 3 escape paths.",
-          "videoTitle": "Outsmarting Probabilistic Traps",
-          "videoDuration": "4:15",
-          "videoSummary": "Using expected value and Bayes' theorem to survive high-risk choices.",
-          "futureApps": [
-            { "title": "Risk Assessment AI", "desc": "Automated insurance and medical diagnosis risk prediction models." },
-            { "title": "Game AI & Monte Carlo", "desc": "Monte Carlo Tree Search powering AlphaGo and chess engines." },
-            { "title": "Cyber Threat Detection", "desc": "Anomaly detection screening network packets for malicious traffic." }
-          ]
-        },
-        {
-          "title": "The Purple Orb",
-          "meta": "Complex Numbers & Argand Plane",
-          "level": "Advanced",
-          "time": "13 min",
-          "summary": "The orb models a system whose calculation requires both real and imaginary components.",
-          "concept": "Write values in a + bi form and interpret addition, multiplication, and position on the complex plane.",
-          "activity": "Combine the orb signals and map the resulting complex number to its plane location.",
-          "history": "Introduced by Gerolamo Cardano in 1545 and geometrically unified on the Argand plane by Jean-Robert Argand in 1806.",
-          "graphType": "complex-plane",
-          "graphTitle": "Argand Complex Vector Plane",
-          "graphDesc": "Interactive complex plane illustrating real vs. imaginary vectors with phase rotation.",
-          "videoTitle": "The Physics of the Purple Orb",
-          "videoDuration": "6:00",
-          "videoSummary": "Visualizing complex numbers in wave interference patterns and orb energy fields.",
-          "futureApps": [
-            { "title": "Quantum Mechanics", "desc": "Schrödinger wave function states governed by complex amplitudes." },
-            { "title": "Electrical Engineering", "desc": "AC circuit impedance and phasor vector analysis." },
-            { "title": "Fluid Dynamics", "desc": "Conformal mapping in aerodynamic aircraft wing design." }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "03",
       "type": "Mathematics",
       "tone": "blue",
       "title": "Classwise Knowledge",
@@ -301,9 +262,18 @@
           "videoDuration": "4:45",
           "videoSummary": "Core foundation breakdown spanning Indian state boards and international IB/IGCSE standards.",
           "futureApps": [
-            { "title": "Computer Data Types", "desc": "Integer, floating point, and binary representation in software." },
-            { "title": "Financial Literacy", "desc": "Budgeting, percentage calculations, and interest fundamentals." },
-            { "title": "Data Visualization", "desc": "Infographics and statistical chart interpretation." }
+            {
+              "title": "Computer Data Types",
+              "desc": "Integer, floating point, and binary representation in software."
+            },
+            {
+              "title": "Financial Literacy",
+              "desc": "Budgeting, percentage calculations, and interest fundamentals."
+            },
+            {
+              "title": "Data Visualization",
+              "desc": "Infographics and statistical chart interpretation."
+            }
           ]
         },
         {
@@ -322,9 +292,18 @@
           "videoDuration": "5:10",
           "videoSummary": "How to visualize both sides of an equation as a balanced physical scale.",
           "futureApps": [
-            { "title": "Chemical Balancing", "desc": "Stoichiometry equation balancing in industrial chemistry." },
-            { "title": "Economic Equilibrium", "desc": "Supply and demand balance points in macroeconomics." },
-            { "title": "Control Systems", "desc": "PID feedback loops keeping aircraft and drones stable." }
+            {
+              "title": "Chemical Balancing",
+              "desc": "Stoichiometry equation balancing in industrial chemistry."
+            },
+            {
+              "title": "Economic Equilibrium",
+              "desc": "Supply and demand balance points in macroeconomics."
+            },
+            {
+              "title": "Control Systems",
+              "desc": "PID feedback loops keeping aircraft and drones stable."
+            }
           ]
         },
         {
@@ -343,9 +322,18 @@
           "videoDuration": "5:30",
           "videoSummary": "Splitting complex algebraic expressions into intuitive geometric area tiles.",
           "futureApps": [
-            { "title": "Data Compression", "desc": "Matrix factorization algorithms reducing image and video file sizes." },
-            { "title": "Machine Learning", "desc": "Principal Component Analysis (PCA) for dimensionality reduction." },
-            { "title": "Cybersecurity", "desc": "Prime factorization hardness underpinning digital encryption." }
+            {
+              "title": "Data Compression",
+              "desc": "Matrix factorization algorithms reducing image and video file sizes."
+            },
+            {
+              "title": "Machine Learning",
+              "desc": "Principal Component Analysis (PCA) for dimensionality reduction."
+            },
+            {
+              "title": "Cybersecurity",
+              "desc": "Prime factorization hardness underpinning digital encryption."
+            }
           ]
         },
         {
@@ -364,9 +352,153 @@
           "videoDuration": "6:10",
           "videoSummary": "Navigating the 4 quadrants and applying distance and section formulas to spatial problems.",
           "futureApps": [
-            { "title": "GPS & Mapping", "desc": "Global satellite positioning using latitude and longitude coordinates." },
-            { "title": "Computer Vision", "desc": "Bounding box coordinates for object detection in self-driving cars." },
-            { "title": "3D CAD & Architecture", "desc": "Computer-aided blueprint modeling for structural engineering." }
+            {
+              "title": "GPS & Mapping",
+              "desc": "Global satellite positioning using latitude and longitude coordinates."
+            },
+            {
+              "title": "Computer Vision",
+              "desc": "Bounding box coordinates for object detection in self-driving cars."
+            },
+            {
+              "title": "3D CAD & Architecture",
+              "desc": "Computer-aided blueprint modeling for structural engineering."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "03",
+      "type": "Dossiers",
+      "tone": "red",
+      "title": "Enemy Records",
+      "subtitle": "Antagonist Side",
+      "description": "Inspect antagonist systems, tasks, traps, and technology through their underlying mathematics.",
+      "symbol": "☠",
+      "image": "../../assets/antagonists/img_1.png",
+      "action": "Inspect Dossiers",
+      "actionHref": "../antagonists/antagonists.html",
+      "actionDisabled": false,
+      "items": [
+        {
+          "title": "The Architect",
+          "meta": "Graph Theory & Control Nodes",
+          "level": "Intermediate",
+          "time": "12 min",
+          "summary": "The Architect controls connected rooms and systems as a network of nodes and routes.",
+          "concept": "Represent locations as vertices, connections as edges, and inspect paths, cycles, and network reachability.",
+          "activity": "Sketch the control network and find a route that avoids a monitored node.",
+          "history": "Leonhard Euler solved the Seven Bridges of Königsberg problem in 1736, giving birth to graph theory.",
+          "graphType": "node-network",
+          "graphTitle": "Control Node Network Topology",
+          "graphDesc": "Interactive pulsing node network showing active connections, shortest paths, and offline nodes.",
+          "videoTitle": "Inside The Architect's Network",
+          "videoDuration": "5:45",
+          "videoSummary": "Tracing how antagonist node networks monitor villa rooms and how to exploit topology gaps.",
+          "futureApps": [
+            {
+              "title": "Internet Routing",
+              "desc": "BGP protocol routing optimization across global fiber backbones."
+            },
+            {
+              "title": "Social Network AI",
+              "desc": "Community detection algorithms and influence propagation graphs."
+            },
+            {
+              "title": "Power Grid Resiliency",
+              "desc": "Preventing cascading blackouts in smart electrical grids."
+            }
+          ]
+        },
+        {
+          "title": "The Calculation",
+          "meta": "Sequences & Series",
+          "level": "Intermediate",
+          "time": "10 min",
+          "summary": "A repeating antagonist calculation grows according to a detectable numerical pattern.",
+          "concept": "Recognize arithmetic or geometric change, determine a general term, and estimate accumulated values with a series.",
+          "activity": "Continue the system sequence and identify the stage at which its value crosses the warning limit.",
+          "history": "Ancient Babylonian tablets recorded geometric sequences, formalized by Carl Friedrich Gauss at age 9.",
+          "graphType": "sequence-curve",
+          "graphTitle": "Numerical Sequence Generator",
+          "graphDesc": "Interactive step bar chart comparing linear growth versus exponential sequence accumulation.",
+          "videoTitle": "Cracking Antagonist Numerical Series",
+          "videoDuration": "4:20",
+          "videoSummary": "Detecting hidden algebraic formulas inside automated adversary calculation loops.",
+          "futureApps": [
+            {
+              "title": "Algorithmic Trading",
+              "desc": "High-frequency time-series forecasting in global stock exchanges."
+            },
+            {
+              "title": "Audio Signal Processing",
+              "desc": "Fourier series decomposition for noise cancellation headphones."
+            },
+            {
+              "title": "Quantum Computing",
+              "desc": "Shor's algorithm for period finding in integer factorization."
+            }
+          ]
+        },
+        {
+          "title": "The Trap",
+          "meta": "Probability & Decision Trees",
+          "level": "Intermediate",
+          "time": "9 min",
+          "summary": "The trap selects outcomes under uncertainty, but its possible results can still be measured.",
+          "concept": "List the sample space, distinguish favourable outcomes, and calculate theoretical probability.",
+          "activity": "Compare the available escape choices and select the path with the strongest probability of success.",
+          "history": "Correspondence between Blaise Pascal and Pierre de Fermat in 1654 established mathematical probability.",
+          "graphType": "probability-radar",
+          "graphTitle": "Probability Decision Tree Radar",
+          "graphDesc": "Dynamic pie chart & decision tree calculating success probability across 3 escape paths.",
+          "videoTitle": "Outsmarting Probabilistic Traps",
+          "videoDuration": "4:15",
+          "videoSummary": "Using expected value and Bayes' theorem to survive high-risk choices.",
+          "futureApps": [
+            {
+              "title": "Risk Assessment AI",
+              "desc": "Automated insurance and medical diagnosis risk prediction models."
+            },
+            {
+              "title": "Game AI & Monte Carlo",
+              "desc": "Monte Carlo Tree Search powering AlphaGo and chess engines."
+            },
+            {
+              "title": "Cyber Threat Detection",
+              "desc": "Anomaly detection screening network packets for malicious traffic."
+            }
+          ]
+        },
+        {
+          "title": "The Purple Orb",
+          "meta": "Complex Numbers & Argand Plane",
+          "level": "Advanced",
+          "time": "13 min",
+          "summary": "The orb models a system whose calculation requires both real and imaginary components.",
+          "concept": "Write values in a + bi form and interpret addition, multiplication, and position on the complex plane.",
+          "activity": "Combine the orb signals and map the resulting complex number to its plane location.",
+          "history": "Introduced by Gerolamo Cardano in 1545 and geometrically unified on the Argand plane by Jean-Robert Argand in 1806.",
+          "graphType": "complex-plane",
+          "graphTitle": "Argand Complex Vector Plane",
+          "graphDesc": "Interactive complex plane illustrating real vs. imaginary vectors with phase rotation.",
+          "videoTitle": "The Physics of the Purple Orb",
+          "videoDuration": "6:00",
+          "videoSummary": "Visualizing complex numbers in wave interference patterns and orb energy fields.",
+          "futureApps": [
+            {
+              "title": "Quantum Mechanics",
+              "desc": "Schrödinger wave function states governed by complex amplitudes."
+            },
+            {
+              "title": "Electrical Engineering",
+              "desc": "AC circuit impedance and phasor vector analysis."
+            },
+            {
+              "title": "Fluid Dynamics",
+              "desc": "Conformal mapping in aerodynamic aircraft wing design."
+            }
           ]
         }
       ]
@@ -400,9 +532,18 @@
           "videoDuration": "4:40",
           "videoSummary": "How transformation geometry reveals safe tiles and traps in Mission 1.",
           "futureApps": [
-            { "title": "Game Development", "desc": "Character skeletal animation and matrix transformations in Unreal Engine." },
-            { "title": "Robotic Arms", "desc": "Inverse kinematics controlling precision assembly line robots." },
-            { "title": "Virtual Reality", "desc": "Head tracking and spatial orientation in VR headsets." }
+            {
+              "title": "Game Development",
+              "desc": "Character skeletal animation and matrix transformations in Unreal Engine."
+            },
+            {
+              "title": "Robotic Arms",
+              "desc": "Inverse kinematics controlling precision assembly line robots."
+            },
+            {
+              "title": "Virtual Reality",
+              "desc": "Head tracking and spatial orientation in VR headsets."
+            }
           ]
         },
         {
@@ -421,9 +562,18 @@
           "videoDuration": "5:15",
           "videoSummary": "Calculating turn angles to bypass automated laser gates inside Mission 2.",
           "futureApps": [
-            { "title": "Radar & Sonar", "desc": "Beam steering and acoustic reflection processing in marine navigation." },
-            { "title": "Optics & Photonics", "desc": "Designing high-efficiency solar concentrators and laser lenses." },
-            { "title": "Architectural Acoustics", "desc": "Designing concert hall walls for perfect sound wave reflection." }
+            {
+              "title": "Radar & Sonar",
+              "desc": "Beam steering and acoustic reflection processing in marine navigation."
+            },
+            {
+              "title": "Optics & Photonics",
+              "desc": "Designing high-efficiency solar concentrators and laser lenses."
+            },
+            {
+              "title": "Architectural Acoustics",
+              "desc": "Designing concert hall walls for perfect sound wave reflection."
+            }
           ]
         },
         {
@@ -442,9 +592,18 @@
           "videoDuration": "5:50",
           "videoSummary": "Step-by-step graphical solution of simultaneous equations securing Mission 3.",
           "futureApps": [
-            { "title": "Circuit Analysis", "desc": "Kirchhoff's current laws solving complex multi-loop electronic circuits." },
-            { "title": "Network Flow AI", "desc": "Linear programming optimizing logistics and global shipping routes." },
-            { "title": "Structural Engineering", "desc": "Truss stress analysis ensuring bridge and skyscraper stability." }
+            {
+              "title": "Circuit Analysis",
+              "desc": "Kirchhoff's current laws solving complex multi-loop electronic circuits."
+            },
+            {
+              "title": "Network Flow AI",
+              "desc": "Linear programming optimizing logistics and global shipping routes."
+            },
+            {
+              "title": "Structural Engineering",
+              "desc": "Truss stress analysis ensuring bridge and skyscraper stability."
+            }
           ]
         },
         {
@@ -463,15 +622,32 @@
           "videoDuration": "6:20",
           "videoSummary": "Using conditional probability and expected value strategy to conquer Mission 4.",
           "futureApps": [
-            { "title": "Quantum Encryption", "desc": "True random number generation from subatomic particle spin states." },
-            { "title": "Weather Forecasting", "desc": "Ensemble supercomputer probability modeling for hurricane paths." },
-            { "title": "Automated Trading", "desc": "Black-Scholes option pricing model managing investment portfolios." }
+            {
+              "title": "Quantum Encryption",
+              "desc": "True random number generation from subatomic particle spin states."
+            },
+            {
+              "title": "Weather Forecasting",
+              "desc": "Ensemble supercomputer probability modeling for hurricane paths."
+            },
+            {
+              "title": "Automated Trading",
+              "desc": "Black-Scholes option pricing model managing investment portfolios."
+            }
           ]
         }
       ]
     }
   ],
-  "defaultSession": { "collection": 0, "item": 0 },
-  "badges": ["⌬", "✦", "△", "⌘"],
+  "defaultSession": {
+    "collection": 0,
+    "item": 0
+  },
+  "badges": [
+    "⌬",
+    "✦",
+    "△",
+    "⌘"
+  ],
   "quote": "The more you know, the more doors you unlock. — Ganith"
 }

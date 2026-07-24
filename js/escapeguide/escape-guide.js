@@ -430,8 +430,26 @@ if (root) {
       if (!(event.target instanceof Element)) return;
       const button = event.target.closest("button[data-filter]");
       if (!button) return;
-      state.filter = button.dataset.filter || "All";
+      const newFilter = button.dataset.filter || "All";
+      state.filter = newFilter;
       renderFilters();
+
+      if (state.data?.collections) {
+        let matchingIndex = -1;
+        if (newFilter !== "All") {
+          matchingIndex = state.data.collections.findIndex(
+            (c) => c.type === newFilter
+          );
+        } else {
+          matchingIndex = 0;
+        }
+
+        if (matchingIndex !== -1) {
+          selectSession(matchingIndex, 0, false, 0);
+          return;
+        }
+      }
+
       renderCollections();
     });
 
