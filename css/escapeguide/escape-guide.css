@@ -216,6 +216,8 @@ body.escape-page::before {
 
 .archive-search {
     position: relative;
+    display: flex;
+    align-items: center;
     width: 100%;
     margin: 0 0 1rem;
 }
@@ -231,6 +233,14 @@ body.escape-page::before {
     background: rgba(255, 253, 247, .96);
     font: inherit;
     font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.archive-search input::-webkit-search-decoration,
+.archive-search input::-webkit-search-cancel-button,
+.archive-search input::-webkit-search-results-button,
+.archive-search input::-webkit-search-results-decoration {
+    -webkit-appearance: none;
 }
 
 .archive-search input::placeholder {
@@ -244,18 +254,24 @@ body.escape-page::before {
 
 .archive-search button {
     position: absolute;
-    top: 4px;
     right: 5px;
-    display: grid;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
-    place-items: center;
+    padding: 0;
+    margin: 0;
     border: 0;
     border-radius: 8px;
     color: #644519;
     background: transparent;
     cursor: pointer;
     font-size: 1.55rem;
+    line-height: 1;
+    z-index: 2;
 }
 
 .archive-search button:hover,
@@ -544,166 +560,6 @@ body.escape-page::before {
 
 .archive-card-index::-webkit-scrollbar {
     width: 7px;
-}
-}
-
-.archive-hero::before {
-    right: -5%;
-    transform: rotate(7deg);
-}
-
-.archive-hero::after {
-    left: -7%;
-    bottom: -30%;
-    top: auto;
-    transform: rotate(-12deg);
-}
-
-.hero-sigil {
-    position: absolute;
-    right: 3.5%;
-    bottom: 1.5rem;
-    color: #9a6f2d;
-    font-size: 4.5rem;
-    opacity: .2;
-}
-
-.eyebrow,
-.panel-label {
-    margin: 0;
-    color: #7e5925;
-    font-weight: 700;
-    letter-spacing: .13em;
-    text-transform: uppercase;
-}
-
-.archive-hero>.eyebrow {
-    grid-area: eyebrow;
-    align-self: end;
-}
-
-.archive-hero h1 {
-    grid-area: title;
-    position: relative;
-    max-width: 680px;
-    margin: .45rem 0 .15rem;
-    color: #31271d;
-    font-size: clamp(3.25rem, 6vw, 5.8rem);
-    line-height: .92;
-    letter-spacing: .025em;
-    text-transform: uppercase;
-}
-
-.hero-subtitle {
-    grid-area: subtitle;
-    max-width: none;
-    margin: .65rem 0 .85rem;
-    color: #855d24;
-    font-size: clamp(1.15rem, 2vw, 1.55rem);
-    font-weight: 700;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-}
-
-.hero-copy {
-    grid-area: copy;
-    align-self: start;
-    max-width: 47ch;
-    margin: 0;
-    color: #51483c;
-    font-size: clamp(1rem, .97rem + .16vw, 1.1rem);
-}
-
-.archive-controls {
-    grid-area: controls;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    padding: clamp(1.25rem, 2.5vw, 2rem);
-    border: 1px solid rgba(126, 89, 37, .28);
-    border-radius: 16px;
-    background: rgba(255, 252, 245, .78);
-    box-shadow: 0 18px 36px rgba(91, 67, 34, .12), inset 0 1px rgba(255, 255, 255, .9);
-}
-
-.archive-controls::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 1.5rem;
-    width: 72px;
-    height: 3px;
-    border-radius: 0 0 5px 5px;
-    background: #b7863c;
-    box-shadow: 0 0 12px rgba(183, 134, 60, .45);
-}
-
-.archive-controls-label {
-    margin: 0 0 .85rem;
-    color: #69481c;
-    font-size: .78rem;
-    font-weight: 700;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-}
-
-.archive-search {
-    position: relative;
-    width: 100%;
-    margin: 0 0 1rem;
-}
-
-.archive-search input {
-    width: 100%;
-    min-height: 52px;
-    padding: .85rem 3.7rem .85rem 1.15rem;
-    border: 1px solid #9d8766;
-    border-radius: 10px;
-    outline: 0;
-    color: var(--escape-ink);
-    background: rgba(255, 253, 247, .96);
-    font: inherit;
-    font-size: 1rem;
-}
-
-.archive-search input::placeholder {
-    color: #776e62;
-}
-
-.archive-search input:focus {
-    border-color: #9a6a25;
-    box-shadow: 0 0 0 3px rgba(200, 155, 75, .24);
-}
-
-.archive-search button {
-    position: absolute;
-    top: 4px;
-    right: 5px;
-    display: grid;
-    width: 44px;
-    height: 44px;
-    place-items: center;
-    border: 0;
-    border-radius: 8px;
-    color: #644519;
-    background: transparent;
-    cursor: pointer;
-    font-size: 1.55rem;
-}
-
-.archive-search button:hover,
-.archive-search button:focus-visible {
-    color: #392814;
-    background: #f1dfbb;
-    box-shadow: 0 0 16px rgba(200, 155, 75, .46);
-    outline: none;
-}
-
-.archive-filters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: .55rem;
 }
 
 .archive-filters button {
