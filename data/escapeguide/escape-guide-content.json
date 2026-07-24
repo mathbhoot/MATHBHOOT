@@ -235,141 +235,6 @@
     },
     {
       "number": "02",
-      "type": "Dossiers",
-      "tone": "red",
-      "title": "Enemy Records",
-      "subtitle": "Antagonist Side",
-      "description": "Inspect antagonist systems, tasks, traps, and technology through their underlying mathematics.",
-      "symbol": "☠",
-      "image": "../../assets/antagonists/img_1.png",
-      "action": "Inspect Dossiers",
-      "actionHref": "../antagonists/antagonists.html",
-      "actionDisabled": false,
-      "items": [
-        {
-          "title": "The Architect",
-          "meta": "Graph Theory & Control Nodes",
-          "level": "Intermediate",
-          "time": "12 min",
-          "summary": "The Architect controls connected rooms and systems as a network of nodes and routes.",
-          "concept": "Represent locations as vertices, connections as edges, and inspect paths, cycles, and network reachability.",
-          "activity": "Sketch the control network and find a route that avoids a monitored node.",
-          "history": "Leonhard Euler solved the Seven Bridges of Königsberg problem in 1736, giving birth to graph theory.",
-          "graphType": "node-network",
-          "graphTitle": "Control Node Network Topology",
-          "graphDesc": "Interactive pulsing node network showing active connections, shortest paths, and offline nodes.",
-          "videoTitle": "Inside The Architect's Network",
-          "videoDuration": "5:45",
-          "videoSummary": "Tracing how antagonist node networks monitor villa rooms and how to exploit topology gaps.",
-          "futureApps": [
-            {
-              "title": "Internet Routing",
-              "desc": "BGP protocol routing optimization across global fiber backbones."
-            },
-            {
-              "title": "Social Network AI",
-              "desc": "Community detection algorithms and influence propagation graphs."
-            },
-            {
-              "title": "Power Grid Resiliency",
-              "desc": "Preventing cascading blackouts in smart electrical grids."
-            }
-          ]
-        },
-        {
-          "title": "The Calculation",
-          "meta": "Sequences & Series",
-          "level": "Intermediate",
-          "time": "10 min",
-          "summary": "A repeating antagonist calculation grows according to a detectable numerical pattern.",
-          "concept": "Recognize arithmetic or geometric change, determine a general term, and estimate accumulated values with a series.",
-          "activity": "Continue the system sequence and identify the stage at which its value crosses the warning limit.",
-          "history": "Ancient Babylonian tablets recorded geometric sequences, formalized by Carl Friedrich Gauss at age 9.",
-          "graphType": "sequence-curve",
-          "graphTitle": "Numerical Sequence Generator",
-          "graphDesc": "Interactive step bar chart comparing linear growth versus exponential sequence accumulation.",
-          "videoTitle": "Cracking Antagonist Numerical Series",
-          "videoDuration": "4:20",
-          "videoSummary": "Detecting hidden algebraic formulas inside automated adversary calculation loops.",
-          "futureApps": [
-            {
-              "title": "Algorithmic Trading",
-              "desc": "High-frequency time-series forecasting in global stock exchanges."
-            },
-            {
-              "title": "Audio Signal Processing",
-              "desc": "Fourier series decomposition for noise cancellation headphones."
-            },
-            {
-              "title": "Quantum Computing",
-              "desc": "Shor's algorithm for period finding in integer factorization."
-            }
-          ]
-        },
-        {
-          "title": "The Trap",
-          "meta": "Probability & Decision Trees",
-          "level": "Intermediate",
-          "time": "9 min",
-          "summary": "The trap selects outcomes under uncertainty, but its possible results can still be measured.",
-          "concept": "List the sample space, distinguish favourable outcomes, and calculate theoretical probability.",
-          "activity": "Compare the available escape choices and select the path with the strongest probability of success.",
-          "history": "Correspondence between Blaise Pascal and Pierre de Fermat in 1654 established mathematical probability.",
-          "graphType": "probability-radar",
-          "graphTitle": "Probability Decision Tree Radar",
-          "graphDesc": "Dynamic pie chart & decision tree calculating success probability across 3 escape paths.",
-          "videoTitle": "Outsmarting Probabilistic Traps",
-          "videoDuration": "4:15",
-          "videoSummary": "Using expected value and Bayes' theorem to survive high-risk choices.",
-          "futureApps": [
-            {
-              "title": "Risk Assessment AI",
-              "desc": "Automated insurance and medical diagnosis risk prediction models."
-            },
-            {
-              "title": "Game AI & Monte Carlo",
-              "desc": "Monte Carlo Tree Search powering AlphaGo and chess engines."
-            },
-            {
-              "title": "Cyber Threat Detection",
-              "desc": "Anomaly detection screening network packets for malicious traffic."
-            }
-          ]
-        },
-        {
-          "title": "The Purple Orb",
-          "meta": "Complex Numbers & Argand Plane",
-          "level": "Advanced",
-          "time": "13 min",
-          "summary": "The orb models a system whose calculation requires both real and imaginary components.",
-          "concept": "Write values in a + bi form and interpret addition, multiplication, and position on the complex plane.",
-          "activity": "Combine the orb signals and map the resulting complex number to its plane location.",
-          "history": "Introduced by Gerolamo Cardano in 1545 and geometrically unified on the Argand plane by Jean-Robert Argand in 1806.",
-          "graphType": "complex-plane",
-          "graphTitle": "Argand Complex Vector Plane",
-          "graphDesc": "Interactive complex plane illustrating real vs. imaginary vectors with phase rotation.",
-          "videoTitle": "The Physics of the Purple Orb",
-          "videoDuration": "6:00",
-          "videoSummary": "Visualizing complex numbers in wave interference patterns and orb energy fields.",
-          "futureApps": [
-            {
-              "title": "Quantum Mechanics",
-              "desc": "Schrödinger wave function states governed by complex amplitudes."
-            },
-            {
-              "title": "Electrical Engineering",
-              "desc": "AC circuit impedance and phasor vector analysis."
-            },
-            {
-              "title": "Fluid Dynamics",
-              "desc": "Conformal mapping in aerodynamic aircraft wing design."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "03",
       "type": "Mathematics",
       "tone": "blue",
       "title": "Classwise Knowledge",
@@ -498,6 +363,141 @@
             {
               "title": "3D CAD & Architecture",
               "desc": "Computer-aided blueprint modeling for structural engineering."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "03",
+      "type": "Dossiers",
+      "tone": "red",
+      "title": "Enemy Records",
+      "subtitle": "Antagonist Side",
+      "description": "Inspect antagonist systems, tasks, traps, and technology through their underlying mathematics.",
+      "symbol": "☠",
+      "image": "../../assets/antagonists/img_1.png",
+      "action": "Inspect Dossiers",
+      "actionHref": "../antagonists/antagonists.html",
+      "actionDisabled": false,
+      "items": [
+        {
+          "title": "The Architect",
+          "meta": "Graph Theory & Control Nodes",
+          "level": "Intermediate",
+          "time": "12 min",
+          "summary": "The Architect controls connected rooms and systems as a network of nodes and routes.",
+          "concept": "Represent locations as vertices, connections as edges, and inspect paths, cycles, and network reachability.",
+          "activity": "Sketch the control network and find a route that avoids a monitored node.",
+          "history": "Leonhard Euler solved the Seven Bridges of Königsberg problem in 1736, giving birth to graph theory.",
+          "graphType": "node-network",
+          "graphTitle": "Control Node Network Topology",
+          "graphDesc": "Interactive pulsing node network showing active connections, shortest paths, and offline nodes.",
+          "videoTitle": "Inside The Architect's Network",
+          "videoDuration": "5:45",
+          "videoSummary": "Tracing how antagonist node networks monitor villa rooms and how to exploit topology gaps.",
+          "futureApps": [
+            {
+              "title": "Internet Routing",
+              "desc": "BGP protocol routing optimization across global fiber backbones."
+            },
+            {
+              "title": "Social Network AI",
+              "desc": "Community detection algorithms and influence propagation graphs."
+            },
+            {
+              "title": "Power Grid Resiliency",
+              "desc": "Preventing cascading blackouts in smart electrical grids."
+            }
+          ]
+        },
+        {
+          "title": "The Calculation",
+          "meta": "Sequences & Series",
+          "level": "Intermediate",
+          "time": "10 min",
+          "summary": "A repeating antagonist calculation grows according to a detectable numerical pattern.",
+          "concept": "Recognize arithmetic or geometric change, determine a general term, and estimate accumulated values with a series.",
+          "activity": "Continue the system sequence and identify the stage at which its value crosses the warning limit.",
+          "history": "Ancient Babylonian tablets recorded geometric sequences, formalized by Carl Friedrich Gauss at age 9.",
+          "graphType": "sequence-curve",
+          "graphTitle": "Numerical Sequence Generator",
+          "graphDesc": "Interactive step bar chart comparing linear growth versus exponential sequence accumulation.",
+          "videoTitle": "Cracking Antagonist Numerical Series",
+          "videoDuration": "4:20",
+          "videoSummary": "Detecting hidden algebraic formulas inside automated adversary calculation loops.",
+          "futureApps": [
+            {
+              "title": "Algorithmic Trading",
+              "desc": "High-frequency time-series forecasting in global stock exchanges."
+            },
+            {
+              "title": "Audio Signal Processing",
+              "desc": "Fourier series decomposition for noise cancellation headphones."
+            },
+            {
+              "title": "Quantum Computing",
+              "desc": "Shor's algorithm for period finding in integer factorization."
+            }
+          ]
+        },
+        {
+          "title": "The Trap",
+          "meta": "Probability & Decision Trees",
+          "level": "Intermediate",
+          "time": "9 min",
+          "summary": "The trap selects outcomes under uncertainty, but its possible results can still be measured.",
+          "concept": "List the sample space, distinguish favourable outcomes, and calculate theoretical probability.",
+          "activity": "Compare the available escape choices and select the path with the strongest probability of success.",
+          "history": "Correspondence between Blaise Pascal and Pierre de Fermat in 1654 established mathematical probability.",
+          "graphType": "probability-radar",
+          "graphTitle": "Probability Decision Tree Radar",
+          "graphDesc": "Dynamic pie chart & decision tree calculating success probability across 3 escape paths.",
+          "videoTitle": "Outsmarting Probabilistic Traps",
+          "videoDuration": "4:15",
+          "videoSummary": "Using expected value and Bayes' theorem to survive high-risk choices.",
+          "futureApps": [
+            {
+              "title": "Risk Assessment AI",
+              "desc": "Automated insurance and medical diagnosis risk prediction models."
+            },
+            {
+              "title": "Game AI & Monte Carlo",
+              "desc": "Monte Carlo Tree Search powering AlphaGo and chess engines."
+            },
+            {
+              "title": "Cyber Threat Detection",
+              "desc": "Anomaly detection screening network packets for malicious traffic."
+            }
+          ]
+        },
+        {
+          "title": "The Purple Orb",
+          "meta": "Complex Numbers & Argand Plane",
+          "level": "Advanced",
+          "time": "13 min",
+          "summary": "The orb models a system whose calculation requires both real and imaginary components.",
+          "concept": "Write values in a + bi form and interpret addition, multiplication, and position on the complex plane.",
+          "activity": "Combine the orb signals and map the resulting complex number to its plane location.",
+          "history": "Introduced by Gerolamo Cardano in 1545 and geometrically unified on the Argand plane by Jean-Robert Argand in 1806.",
+          "graphType": "complex-plane",
+          "graphTitle": "Argand Complex Vector Plane",
+          "graphDesc": "Interactive complex plane illustrating real vs. imaginary vectors with phase rotation.",
+          "videoTitle": "The Physics of the Purple Orb",
+          "videoDuration": "6:00",
+          "videoSummary": "Visualizing complex numbers in wave interference patterns and orb energy fields.",
+          "futureApps": [
+            {
+              "title": "Quantum Mechanics",
+              "desc": "Schrödinger wave function states governed by complex amplitudes."
+            },
+            {
+              "title": "Electrical Engineering",
+              "desc": "AC circuit impedance and phasor vector analysis."
+            },
+            {
+              "title": "Fluid Dynamics",
+              "desc": "Conformal mapping in aerodynamic aircraft wing design."
             }
           ]
         }
