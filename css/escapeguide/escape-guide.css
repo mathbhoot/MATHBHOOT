@@ -17,7 +17,9 @@
 body.escape-page {
     min-height: 100vh;
     min-height: 100svh;
-    padding-bottom: var(--global-footer-height);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
     color: var(--escape-ink);
     background:
         radial-gradient(circle at 12% 8%, rgba(255, 255, 255, .82), transparent 27rem),

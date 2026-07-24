@@ -127,8 +127,8 @@ body {
 @media (min-width: 769px) {
     .part-two-main {
         display: flex;
-        height: calc(100vh - var(--global-header-height) - var(--global-footer-height));
-        height: calc(100svh - var(--global-header-height) - var(--global-footer-height));
+        height: calc(100vh - var(--global-header-height));
+        height: calc(100svh - var(--global-header-height));
         min-height: 0;
         margin-top: var(--global-header-height);
         padding: 0;
@@ -183,14 +183,14 @@ body {
     }
 
     .part-two-cover img {
-        max-height: calc(100vh - var(--global-header-height) - var(--global-footer-height) - 2rem);
-        max-height: calc(100svh - var(--global-header-height) - var(--global-footer-height) - 2rem);
+        max-height: calc(100vh - var(--global-header-height) - 2rem);
+        max-height: calc(100svh - var(--global-header-height) - 2rem);
     }
 }
 
 @media (max-width: 760px) {
     body {
-        padding-bottom: var(--global-footer-height);
+        padding-bottom: 0;
     }
 
     .part-two-main {

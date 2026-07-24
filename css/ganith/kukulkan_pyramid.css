@@ -5,7 +5,7 @@
 .ganith-pyramid {
     position: relative;
     background: linear-gradient(180deg, #fdfcf8 0%, #f7f4eb 28%, #efe6d4 100%);
-    padding: clamp(5rem, 9vw, 8rem) 0 calc(clamp(5rem, 9vw, 8rem) + var(--global-footer-height, 34px));
+    padding: clamp(5rem, 9vw, 8rem) 0;
 }
 
 .pyramid-grid {

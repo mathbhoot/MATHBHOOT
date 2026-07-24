@@ -3,7 +3,7 @@
 =========================================== */
 
 body.theme-ganith {
-    padding: 0 0 var(--global-footer-height, 34px);
+    padding: 0;
 }
 
 .ganith-hero {

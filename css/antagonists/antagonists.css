@@ -20,7 +20,9 @@
   min-width: 320px;
   min-height: 100vh;
   min-height: 100svh;
-  padding-bottom: var(--global-footer-height);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
   overflow-x: hidden;
   color: var(--antagonist-text);
   background:
@@ -65,8 +67,8 @@
 
 .antagonist-interface {
   width: min(100% - (2 * var(--global-page-gutter)), 1320px);
-  min-height: calc(100vh - var(--global-footer-height));
-  min-height: calc(100svh - var(--global-footer-height));
+  min-height: calc(100vh - var(--global-header-height));
+  min-height: calc(100svh - var(--global-header-height));
   margin-inline: auto;
   padding-block: calc(var(--global-header-height) + clamp(1.5rem, 4vw, 3rem))
     clamp(2rem, 5vw, 4rem);

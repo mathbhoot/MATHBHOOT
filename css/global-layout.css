@@ -40,10 +40,16 @@ body {
     min-height: 100vh;
     min-height: 100svh;
     margin: 0;
-    padding-bottom: var(--global-footer-height, 38px);
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     font-size: var(--global-body-size);
     line-height: var(--global-body-line-height);
+}
+
+:where(body > main, main) {
+    flex: 1 0 auto;
 }
 
 :where(h1, h2, h3, h4, h5, h6, p, ul, ol, figure) {
@@ -158,11 +164,10 @@ body {
     line-height: 1;
 }
 
-/* Shared fixed footer geometry; themes retain their own colors and effects. */
+/* Shared footer geometry; themes retain their own colors and effects. */
 :where(.site-footer) {
-    position: fixed;
-    inset: auto 0 0;
-    z-index: 1000;
+    position: relative;
+    z-index: 10;
     display: flex;
     width: 100%;
     min-height: var(--global-footer-height);
@@ -172,6 +177,7 @@ body {
     background: var(--global-footer-background);
     color: var(--global-footer-color);
     text-align: center;
+    margin-top: auto;
 }
 
 :where(.site-footer p) {

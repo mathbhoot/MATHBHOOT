@@ -10,7 +10,10 @@
   --global-footer-background: #180509;
   --global-footer-color: #f8e9eb;
   min-width: 320px;
-  padding-bottom: var(--global-footer-height);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
   color: #f1e9ea;
   background:
     radial-gradient(
