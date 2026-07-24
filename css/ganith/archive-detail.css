@@ -3,7 +3,7 @@
 --------------------------*/
 
 body.theme-ganith.archive-body {
-    padding: var(--global-header-height, 58px) 0 var(--global-footer-height, 34px);
+    padding: var(--global-header-height, 58px) 0 0;
     background:
         radial-gradient(circle at 16% 8%, rgba(101, 52, 180, .16), transparent 22rem),
         radial-gradient(circle at 86% 18%, rgba(193, 154, 82, .12), transparent 20rem),
@@ -12,8 +12,8 @@ body.theme-ganith.archive-body {
 }
 
 .archive-page {
-    min-height: calc(100vh - var(--global-header-height, 58px) - var(--global-footer-height, 34px));
-    min-height: calc(100svh - var(--global-header-height, 58px) - var(--global-footer-height, 34px));
+    min-height: calc(100vh - var(--global-header-height, 58px));
+    min-height: calc(100svh - var(--global-header-height, 58px));
 }
 
 .archive-detail-hero,

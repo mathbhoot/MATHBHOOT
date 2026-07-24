@@ -13,7 +13,10 @@
   --global-nav-background: rgba(3, 2, 3, 0.97);
   --global-footer-background: #090405;
   min-width: 320px;
-  padding-bottom: var(--global-footer-height);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
   color: var(--recruit-text);
   background:
     radial-gradient(

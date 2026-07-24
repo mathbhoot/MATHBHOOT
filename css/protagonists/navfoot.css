@@ -73,14 +73,11 @@ body{
     color:var(--text);
     font-family:Georgia, serif;
     line-height:1.8;
-    padding: 5px 5px var(--global-footer-height, 52px);
+    padding: 5px 5px 0;
 }
 /* Footer */
 .site-footer {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     background:
         linear-gradient(90deg, rgba(5, 11, 9, 0.98), rgba(8, 19, 16, 0.98));
@@ -90,7 +87,7 @@ body{
     padding: 4px 12px;
     text-align: center;
     margin-top: auto; /* Ensures it stays at bottom if page is short */
-    z-index: 1000;
+    z-index: 10;
     box-shadow: 0 -10px 28px rgba(0, 0, 0, 0.3);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
