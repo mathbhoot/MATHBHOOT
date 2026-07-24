@@ -173,6 +173,8 @@ body.escape-page::before {
     font-weight: 700;
     letter-spacing: .12em;
     text-transform: uppercase;
+    text-align: center;
+    width: 100%;
 }
 
 .hero-copy {
