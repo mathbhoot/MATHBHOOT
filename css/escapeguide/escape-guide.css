@@ -147,6 +147,9 @@ body.escape-page::before {
 .archive-hero>.eyebrow {
     grid-area: eyebrow;
     align-self: end;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
 }
 
 .archive-hero h1 {
